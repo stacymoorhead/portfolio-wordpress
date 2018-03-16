@@ -1,0 +1,158 @@
+.site-content {
+    
+}
+
+#gradient {
+	width: inherit;
+
+	padding: 0px;
+	margin: 0px;
+	z-index: 0;
+	/*background: #CCCCCC;*/
+}
+
+.gradient {
+	 background: -webkit-gradient(linear, 0 0, 100% 100%, from($yellow), to($pink));
+	 background: -webkit-linear-gradient(left top, $yellow, $lime-green, $green, $teal, $purple, $pink);
+	 background: -moz-linear-gradient(left top, $yellow, $lime-green, $green, $teal, $purple, $pink);
+	 background: -o-linear-gradient(left top, $yellow, $lime-green, $green, $teal, $purple, $pink);
+	 background: linear-gradient(left top, $yellow, $lime-green, $green, $teal, $purple, $pink); /* For Safari 5.1 to 6.0 */ /* For Opera 11.1 to 12.0 */ /* For Firefox 3.6 to 15 */ /* Standard syntax (must be last) */	
+
+}
+
+.bg {
+	background: url(../img/bg-01.svg) repeat;
+	background-size: 400px 400px;
+	
+
+	z-index: 100;
+	padding: 0;
+	margin: 0;
+	background-attachment: fixed;
+}
+
+.branding {
+	position: relative;
+	height: 100vh;
+	
+}
+
+.title {
+
+	text-align: center;
+	top: 25%;
+	color: white;
+	@media ($screen-lg) {
+		top: 15%;
+	}
+	@media ($screen-xs) {
+		top: 15%;
+	}
+}
+
+.logo {
+	Width: 35%;
+	height: 35%;
+	@media ($screen-sm) {
+		Width: 50%;
+		height: 50%;
+	}
+	@media ($screen-xs) {
+		Width: 50%;
+		height: 50%;
+	}
+}
+
+.services {
+	background-color: rgba(0, 0, 0, 0.7);
+	padding: 50px 25px 100px 25px;
+	
+}
+
+.services-box {
+	margin: 0;
+	background: white;
+	padding: 60px 15px 15px 15px;
+	box-sizing: border-box;
+	text-align: center;
+	/*border-radius: 5px;*/
+	height: 225px;
+	@media ($screen-sm) {
+		margin: 15px auto;
+	}
+	@media ($screen-xs) {
+		margin: 15px auto;
+	}
+}
+
+.services-box h3 {
+	color: black;
+	font-family: $accent-font;
+	font-size: 1.8em;
+	text-transform: none;
+	letter-spacing: 0;
+	background: $orange;
+	background: rgba($orange, .9);
+	/*border-radius: 0 0 5px 5px;*/
+	margin: 0 auto;
+	padding: 15px;
+	box-sizing: border-box;
+	position: absolute;
+	top: -10px;
+}
+
+/*.identity {
+	background: url(../img/knot_fade_away_thumb.svg) no-repeat center;
+	background-size: 250px auto;
+}
+
+.marketing {
+	background: url(../img/wine_labels_2015_cabernet.svg) no-repeat center;
+	background-size: 250px auto;
+}
+
+.invitations {
+	background: url(../img/penny_1st_bday.jpg) no-repeat center;
+	background-size: 350px auto;
+}*/
+
+.services-hover-box {
+	opacity: 0;
+	height: 225px;
+	background: rgba(250,250,250,.92);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	/*border-radius: 5px;*/
+	text-align: center;
+	color: $pink;
+	margin: 0 15px;
+	padding: 50px 15px 15px 15px;
+	box-sizing: border-box;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	line-height: 1.6em;
+	font-size: 1.2em;
+	transition: $transition;
+	cursor: pointer;
+	@media ($screen-sm) {
+		margin: 0 15px;
+	}
+	@media ($screen-xs) {
+		margin: 0 15px;
+	}
+}
+
+.services-hover-box:hover {
+	opacity: 1;
+	transition: $transition;
+}
+
+.hideme {
+    opacity: 0;
+}
+
+.fadein500, .fadein600, .fadein700 {
+	opacity: 0;
+}

@@ -1,6 +1,6 @@
 /*!
 Theme Name: Stacy Lauren
-Theme URI: http://underscores.me/
+Theme URI: https://github.com/stacymoorhead/portfolio-wordpress
 Author: Stacy Moorhead
 Author URI: http://www.stacylauren.com
 Description: Custom portfolio theme
@@ -86,14 +86,14 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "modules/clearings";
 
 /*--------------------------------------------------------------
-# Widgets
---------------------------------------------------------------*/
-@import "site/secondary/widgets";
-
-/*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
 @import "site/site";
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+@import "site/secondary/widgets";
 
 /*--------------------------------------------------------------
 # Infinite scroll

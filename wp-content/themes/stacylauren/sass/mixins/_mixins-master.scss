@@ -27,3 +27,131 @@
 @mixin column-width($numberColumns: 3) {
 	width: map-get( $columns, $numberColumns ) - ( ( $columns__margin * ( $numberColumns - 1 ) ) / $numberColumns );
 }
+
+@mixin button($color_1, $color_2) {
+    font-family: $primary-font;
+    font-weight: 700;
+	color: $color_1;
+	border: 2px solid $color_1;
+	transition: $transition;
+	&:link {
+		background-color: transparent;
+		border-color: $color_1;
+		color: $color_1;
+	}
+	&:hover {
+		background-color: $color_1;
+		border-color: $color_1;
+		color: $color_2;
+		fill: $color_2;
+		text-decoration: none;
+	}
+	&:hover svg {
+		fill: $color_2;
+		left: 5px;
+	}
+	&:active {
+		background-color: $color_1;
+		border-color: $color_1;
+		color: $color_2;
+		box-shadow: none;
+	}
+	&:active svg {
+		fill: $color_2;
+		left: 5px;
+	}
+	&:focus, &:active:focus {
+		background-color: $color_1;
+		border-color: $color_1;
+		color: $color_2;
+		outline: 5px auto $color_1;
+	}
+	&:focus, &:active:focus svg {
+		fill: $color_2;
+		left: 5px;
+	}
+	&:visited {
+		background-color: $color_1;
+		border-color: $color_1;
+	}
+}
+
+@mixin background-opacity($color, $opacity: 0.9) {
+    background: $color; /* The Fallback */
+    background: rgba($color, $opacity);
+}
+
+
+// Media queries 
+// use interpolation syntax 
+@mixin screen-xxs {
+  @media (#{$screen-xxs}) {
+    @content;
+  }
+}
+
+@mixin screen-xs {
+  @media (#{$screen-xs}) {
+    @content;
+  }
+}
+
+@mixin screen-sm {
+  @media (#{$screen-sm}) {
+    @content;
+  }
+}
+
+@mixin screen-md {
+  @media (#{$screen-md}) {
+    @content;
+  }
+}
+
+@mixin screen-lg {
+  @media (#{$screen-lg}) {
+    @content;
+  }
+}
+
+@mixin screen-xl {
+  @media (#{$screen-xl}) {
+    @content;
+  }
+}
+
+@mixin screen-ltmd  {
+  @media (#{$screen-ltmd}) {
+    @content;
+  }
+}
+
+@mixin screen-ltlg  {
+  @media (#{$screen-ltlg}) {
+    @content;
+  }
+}
+
+@mixin screen-ltxl  {
+  @media (#{$screen-ltxl}) {
+    @content;
+  }
+}
+
+@mixin screen-gtxs  {
+  @media (#{$screen-gtxs}) {
+    @content;
+  }
+}
+
+@mixin screen-gtsm  {
+  @media (#{$screen-gtsm}) {
+    @content;
+  }
+}
+
+@mixin screen-gtmd  {
+  @media (#{$screen-gtmd}) {
+    @content;
+  }
+}

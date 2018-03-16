@@ -59,11 +59,11 @@ if ( ! function_exists( 'stacylauren_setup' ) ) :
 			'caption',
 		) );
 
-		// Set up the WordPress core custom background feature.
+		/*// Set up the WordPress core custom background feature. 
 		add_theme_support( 'custom-background', apply_filters( 'stacylauren_custom_background_args', array(
 			'default-color' => 'ffffff',
 			'default-image' => '',
-		) ) );
+		) ) );*/
 
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
@@ -99,6 +99,27 @@ function stacylauren_content_width() {
 add_action( 'after_setup_theme', 'stacylauren_content_width', 0 );
 
 /**
+ * Add preconnect for Google Fonts.
+ *
+ * @since Twenty Seventeen 1.0
+ *
+ * @param array  $urls           URLs to print for resource hints.
+ * @param string $relation_type  The relation type the URLs are printed.
+ * @return array $urls           URLs to print for resource hints.
+ */
+function stacylauren_resource_hints( $urls, $relation_type ) {
+	if ( wp_style_is( 'stacylauren-fonts', 'queue' ) && 'preconnect' === $relation_type ) {
+		$urls[] = array(
+			'href' => 'https://fonts.gstatic.com',
+			'crossorigin',
+		);
+	}
+
+	return $urls;
+}
+add_filter( 'wp_resource_hints', 'stacylauren_resource_hints', 10, 2 );	
+
+/**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
@@ -120,6 +141,9 @@ add_action( 'widgets_init', 'stacylauren_widgets_init' );
  * Enqueue scripts and styles.
  */
 function stacylauren_scripts() {
+	//Enqueue Google Fonts: Montserrat, Open Sans, Covered by your Grace
+	wp_enqueue_style( 'stacylauren-fonts', 'https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300,400,700|Covered+By+Your+Grace');
+	
 	wp_enqueue_style( 'stacylauren-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'stacylauren-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
@@ -129,8 +153,20 @@ function stacylauren_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+	
+	wp_enqueue_script( 'stacylauren-global', get_theme_file_uri( '/js/global.js' ), array( 'jquery' ), '1.11.3', true );
+	
+	// Load the html5 shiv.
+	wp_enqueue_script( 'html5', get_theme_file_uri( '/js/html5.js' ), array(), '3.7.3' );
+	wp_script_add_data( 'html5', 'conditional', 'lt IE 9' );	
 }
+
 add_action( 'wp_enqueue_scripts', 'stacylauren_scripts' );
+	// Load Font Awesome
+	add_action( 'wp_enqueue_scripts', 'enqueue_font_awesome' );
+	function enqueue_font_awesome() {
+		wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css' );
+	}
 
 /**
  * Implement the Custom Header feature.

@@ -634,6 +634,181 @@ textarea {
 }
 
 /*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+#gradient {
+	width: inherit;
+	padding: 0px;
+	margin: 0px;
+	z-index: 0;
+	/*background: #CCCCCC;*/
+}
+
+#bg {
+	background: url(img/body_bg.svg) repeat #CCCCCC;
+	background-size: 400px 400px;
+	z-index: 100;
+	padding: 0;
+	margin: 0;
+	background-attachment: fixed;
+}
+
+.bg {
+	background: url(img/body_bg.svg) repeat;
+	background-size: 400px 400px;
+	z-index: 100;
+	padding: 0;
+	margin: 0;
+	background-attachment: fixed;
+}
+
+.branding {
+	position: relative;
+	height: 100vh;
+}
+
+.title {
+	text-align: center;
+	top: 25%;
+	color: white;
+}
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+	.title {
+		top: 15%;
+	}
+}
+
+@media (max-width: 767px) {
+	.title {
+		top: 15%;
+	}
+}
+
+.logo {
+	Width: 35%;
+	height: 35%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.logo {
+		Width: 50%;
+		height: 50%;
+	}
+}
+
+@media (max-width: 767px) {
+	.logo {
+		Width: 50%;
+		height: 50%;
+	}
+}
+
+.services {
+	background-color: rgba(0, 0, 0, 0.7);
+	padding: 50px 25px 100px 25px;
+}
+
+.services-box {
+	margin: 0;
+	background: white;
+	padding: 60px 15px 15px 15px;
+	box-sizing: border-box;
+	text-align: center;
+	/*border-radius: 5px;*/
+	height: 225px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.services-box {
+		margin: 15px auto;
+	}
+}
+
+@media (max-width: 767px) {
+	.services-box {
+		margin: 15px auto;
+	}
+}
+
+.services-box h3 {
+	color: black;
+	font-family: "Covered By Your Grace", serif;
+	font-size: 1.8em;
+	text-transform: none;
+	letter-spacing: 0;
+	background: #de9a18;
+	background: rgba(222, 154, 24, 0.9);
+	/*border-radius: 0 0 5px 5px;*/
+	margin: 0 auto;
+	padding: 15px;
+	box-sizing: border-box;
+	position: absolute;
+	top: -10px;
+}
+
+/*.identity {
+	background: url(../img/knot_fade_away_thumb.svg) no-repeat center;
+	background-size: 250px auto;
+}
+
+.marketing {
+	background: url(../img/wine_labels_2015_cabernet.svg) no-repeat center;
+	background-size: 250px auto;
+}
+
+.invitations {
+	background: url(../img/penny_1st_bday.jpg) no-repeat center;
+	background-size: 350px auto;
+}*/
+.services-hover-box {
+	opacity: 0;
+	height: 225px;
+	background: rgba(250, 250, 250, 0.92);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	/*border-radius: 5px;*/
+	text-align: center;
+	color: #D4145A;
+	margin: 0 15px;
+	padding: 50px 15px 15px 15px;
+	box-sizing: border-box;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	line-height: 1.6em;
+	font-size: 1.2em;
+	transition: all 0.8s ease-in-out;
+	cursor: pointer;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.services-hover-box {
+		margin: 0 15px;
+	}
+}
+
+@media (max-width: 767px) {
+	.services-hover-box {
+		margin: 0 15px;
+	}
+}
+
+.services-hover-box:hover {
+	opacity: 1;
+	transition: all 0.8s ease-in-out;
+}
+
+.hideme {
+	opacity: 0;
+}
+
+.fadein500, .fadein600, .fadein700 {
+	opacity: 0;
+}
+
+/*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
@@ -852,180 +1027,6 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-/*--------------------------------------------------------------
-## Global
---------------------------------------------------------------*/
-#gradient {
-	width: inherit;
-	padding: 0px;
-	margin: 0px;
-	z-index: 0;
-	/*background: #CCCCCC;*/
-}
-
-.gradient {
-	background: linear-gradient(left top, #FCEE21, #D9E021, #8CC63F, #00B0B0, #93278F, #D4145A);
-	/* For Safari 5.1 to 6.0 */
-	/* For Opera 11.1 to 12.0 */
-	/* For Firefox 3.6 to 15 */
-	/* Standard syntax (must be last) */
-}
-
-.bg {
-	background: url(../img/bg-01.svg) repeat;
-	background-size: 400px 400px;
-	z-index: 100;
-	padding: 0;
-	margin: 0;
-	background-attachment: fixed;
-}
-
-.branding {
-	position: relative;
-	height: 100vh;
-}
-
-.title {
-	text-align: center;
-	top: 25%;
-	color: white;
-}
-
-@media (min-width: 1200px) and (max-width: 1439px) {
-	.title {
-		top: 15%;
-	}
-}
-
-@media (max-width: 767px) {
-	.title {
-		top: 15%;
-	}
-}
-
-.logo {
-	Width: 35%;
-	height: 35%;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-	.logo {
-		Width: 50%;
-		height: 50%;
-	}
-}
-
-@media (max-width: 767px) {
-	.logo {
-		Width: 50%;
-		height: 50%;
-	}
-}
-
-.services {
-	background-color: rgba(0, 0, 0, 0.7);
-	padding: 50px 25px 100px 25px;
-}
-
-.services-box {
-	margin: 0;
-	background: white;
-	padding: 60px 15px 15px 15px;
-	box-sizing: border-box;
-	text-align: center;
-	/*border-radius: 5px;*/
-	height: 225px;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-	.services-box {
-		margin: 15px auto;
-	}
-}
-
-@media (max-width: 767px) {
-	.services-box {
-		margin: 15px auto;
-	}
-}
-
-.services-box h3 {
-	color: black;
-	font-family: "Covered By Your Grace", serif;
-	font-size: 1.8em;
-	text-transform: none;
-	letter-spacing: 0;
-	background: #de9a18;
-	background: rgba(222, 154, 24, 0.9);
-	/*border-radius: 0 0 5px 5px;*/
-	margin: 0 auto;
-	padding: 15px;
-	box-sizing: border-box;
-	position: absolute;
-	top: -10px;
-}
-
-/*.identity {
-	background: url(../img/knot_fade_away_thumb.svg) no-repeat center;
-	background-size: 250px auto;
-}
-
-.marketing {
-	background: url(../img/wine_labels_2015_cabernet.svg) no-repeat center;
-	background-size: 250px auto;
-}
-
-.invitations {
-	background: url(../img/penny_1st_bday.jpg) no-repeat center;
-	background-size: 350px auto;
-}*/
-.services-hover-box {
-	opacity: 0;
-	height: 225px;
-	background: rgba(250, 250, 250, 0.92);
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 10;
-	/*border-radius: 5px;*/
-	text-align: center;
-	color: #D4145A;
-	margin: 0 15px;
-	padding: 50px 15px 15px 15px;
-	box-sizing: border-box;
-	text-transform: uppercase;
-	letter-spacing: .1em;
-	line-height: 1.6em;
-	font-size: 1.2em;
-	transition: all 0.8s ease-in-out;
-	cursor: pointer;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-	.services-hover-box {
-		margin: 0 15px;
-	}
-}
-
-@media (max-width: 767px) {
-	.services-hover-box {
-		margin: 0 15px;
-	}
-}
-
-.services-hover-box:hover {
-	opacity: 1;
-	transition: all 0.8s ease-in-out;
-}
-
-.hideme {
-	opacity: 0;
-}
-
-.fadein500, .fadein600, .fadein700 {
-	opacity: 0;
-}
-
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/

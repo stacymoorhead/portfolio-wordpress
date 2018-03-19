@@ -11,20 +11,18 @@
 	/*background: #CCCCCC;*/
 }
 
-.gradient {
-	 background: -webkit-gradient(linear, 0 0, 100% 100%, from($yellow), to($pink));
-	 background: -webkit-linear-gradient(left top, $yellow, $lime-green, $green, $teal, $purple, $pink);
-	 background: -moz-linear-gradient(left top, $yellow, $lime-green, $green, $teal, $purple, $pink);
-	 background: -o-linear-gradient(left top, $yellow, $lime-green, $green, $teal, $purple, $pink);
-	 background: linear-gradient(left top, $yellow, $lime-green, $green, $teal, $purple, $pink); /* For Safari 5.1 to 6.0 */ /* For Opera 11.1 to 12.0 */ /* For Firefox 3.6 to 15 */ /* Standard syntax (must be last) */	
-
+#bg {
+	background: url(img/body_bg.svg) repeat #CCCCCC;
+	background-size: 400px 400px;
+	z-index: 100;
+	padding: 0;
+	margin: 0;
+	background-attachment: fixed;
 }
 
 .bg {
-	background: url(../img/bg-01.svg) repeat;
+	background: url(img/body_bg.svg) repeat;
 	background-size: 400px 400px;
-	
-
 	z-index: 100;
 	padding: 0;
 	margin: 0;

@@ -141,6 +141,10 @@ add_action( 'widgets_init', 'stacylauren_widgets_init' );
  * Enqueue scripts and styles.
  */
 function stacylauren_scripts() {
+	//Load Bootstrap
+	wp_enqueue_style('bootstrap', get_stylesheet_directory_uri() . '/bootstrap/dist/css/bootstrap.min.css');
+	wp_enqueue_script('bootstrap', get_stylesheet_directory_uri() . '/bootstrap/dist/js/bootstrap.min.js');	
+	
 	//Enqueue Google Fonts: Montserrat, Open Sans, Covered by your Grace
 	wp_enqueue_style( 'stacylauren-fonts', 'https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300,400,700|Covered+By+Your+Grace');
 	
@@ -156,7 +160,8 @@ function stacylauren_scripts() {
 	
 	// Load the html5 shiv.
 	wp_enqueue_script( 'html5', get_theme_file_uri( '/js/html5.js' ), array(), '3.7.3' );
-	wp_script_add_data( 'html5', 'conditional', 'lt IE 9' );	
+	wp_script_add_data( 'html5', 'conditional', 'lt IE 9' );
+	
 }
 
 add_action( 'wp_enqueue_scripts', 'stacylauren_scripts' );

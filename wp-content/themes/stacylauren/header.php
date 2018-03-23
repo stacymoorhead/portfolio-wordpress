@@ -21,38 +21,44 @@
 </head>
 
 <body <?php body_class(); ?> id="gradient">
-<div id="page" class="site bg">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'stacylauren' ); ?></a>
-
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$stacylauren_description = get_bloginfo( 'description', 'display' );
-			if ( $stacylauren_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $stacylauren_description; /* WPCS: xss ok. */ ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'stacylauren' ); ?></button>
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
-
-	<div id="content" class="site-content">
+	<div id="page" class="site bg">
+		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'stacylauren' ); ?></a>
+		<div id="wrapper" class="">
+			<div class="overlay" style="display: none;"></div>
+				<nav id="sidebar-wrapper" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+					<?php
+					wp_nav_menu( array(
+						'theme_location' => 'menu-1',
+						'container'		 => 'ul',
+						'menu_id'        => 'primary-menu',
+						'menu_class'   	 => 'nav sidebar-nav',
+					) );
+					?>
+				</nav><!-- #site-navigation -->	
+			<header id="masthead" class="site-header">
+				<div class="site-branding">
+					<?php
+					the_custom_logo();
+					if ( is_front_page() && is_home() ) :
+						?>
+						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+						<?php
+					else :
+						?>
+						<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+						<?php
+					endif;
+					$stacylauren_description = get_bloginfo( 'description', 'display' );
+					if ( $stacylauren_description || is_customize_preview() ) :
+						?>
+						<p class="site-description"><?php echo $stacylauren_description; /* WPCS: xss ok. */ ?></p>
+					<?php endif; ?>
+				</div><!-- .site-branding -->
+			</header><!-- #masthead -->
+			<div id="content page-content-wrapper" class="site-content">
+				<button type="button" class="hamburger animated fadeInLeft is-closed" data-toggle="offcanvas">
+	            <span class="hamb-top"></span>
+	            <span class="hamb-middle"></span>
+	            <span class="hamb-bottom"></span>
+	            </button>
+				

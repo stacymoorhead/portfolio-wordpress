@@ -433,6 +433,16 @@ h6 {
 	font-size: 1.6em;
 }
 
+h1, h2, h3, h4 {
+	font-family: "Montserrat", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+}
+
+h3, h4 {
+	color: #8CC63F;
+}
+
 p {
 	margin-bottom: 1.5em;
 }
@@ -479,6 +489,130 @@ mark, ins {
 
 big {
 	font-size: 125%;
+}
+
+a {
+	color: #93278F;
+}
+
+a:hover {
+	color: #D9E021;
+}
+
+.title h1 {
+	font-family: "Montserrat", Helvetica, Arial, sans-serif;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: .3em;
+}
+
+@media (max-width: 767px) {
+	.title h1 {
+		font-size: 2em;
+	}
+}
+
+.title p {
+	font-family: "Covered By Your Grace", serif;
+	font-size: 1.8em;
+	letter-spacing: .05em;
+}
+
+@media (max-width: 767px) {
+	.title p {
+		font-size: 1.6em;
+		padding: 0 25px;
+	}
+}
+
+.services h2 {
+	font-family: "Montserrat", Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	font-size: 2.2em;
+	text-transform: uppercase;
+	letter-spacing: .3em;
+	color: white;
+	text-align: center;
+	margin: 0 auto 50px auto;
+	padding: 5px;
+	width: 25%;
+	border-top: 3px solid #D9E021;
+	border-bottom: 3px solid #D9E021;
+}
+
+@media (max-width: 767px) {
+	.services h2 {
+		width: 50%;
+	}
+}
+
+.button {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	color: white;
+	border: 2px solid white;
+	transition: all 0.8s ease-in-out;
+	font-family: "Montserrat", Helvetica, Arial, sans-serif;
+	background-color: transparent;
+	margin: 50px auto 0 auto;
+	width: 200px;
+	height: 40px;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	font-weight: 400;
+	letter-spacing: .1em;
+}
+
+.button:link {
+	background-color: transparent;
+	border-color: white;
+	color: white;
+}
+
+.button:hover {
+	background-color: white;
+	border-color: white;
+	color: white;
+	fill: white;
+	text-decoration: none;
+}
+
+.button:hover svg {
+	fill: white;
+	left: 5px;
+}
+
+.button:active {
+	background-color: white;
+	border-color: white;
+	color: white;
+	box-shadow: none;
+}
+
+.button:active svg {
+	fill: white;
+	left: 5px;
+}
+
+.button:focus, .button:active:focus {
+	background-color: white;
+	border-color: white;
+	color: white;
+	outline: 5px auto white;
+}
+
+.button:focus, .button:active:focus svg {
+	fill: white;
+	left: 5px;
+}
+
+.button:visited {
+	background-color: white;
+	border-color: white;
+}
+
+.button:hover, .button:active, .button:focus {
+	color: #626262;
 }
 
 /*--------------------------------------------------------------
@@ -636,30 +770,123 @@ textarea {
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
-#gradient {
-	width: inherit;
-	padding: 0px;
-	margin: 0px;
-	z-index: 0;
-	/*background: #CCCCCC;*/
+.site-header {
+	background-color: rgba(0, 0, 0, 0.7);
+	padding: 15px 0;
+	position: fixed;
+	width: 100%;
+	z-index: 5000;
 }
 
-#bg {
-	background: url(img/body_bg.svg) repeat #CCCCCC;
-	background-size: 400px 400px;
-	z-index: 100;
-	padding: 0;
-	margin: 0;
-	background-attachment: fixed;
+.site-header a {
+	font-family: "Montserrat", Helvetica, Arial, sans-serif;
+	color: #ffffff !important;
+	text-transform: uppercase;
+	letter-spacing: .25em;
+	text-decoration: none;
+	transition: .5s background-color;
 }
 
-.bg {
-	background: url(img/body_bg.svg) repeat;
-	background-size: 400px 400px;
-	z-index: 100;
-	padding: 0;
-	margin: 0;
-	background-attachment: fixed;
+.site-header a :hover {
+	color: #D4145A;
+}
+
+.site-header ul {
+	list-style-type: none;
+}
+
+.site-header ul li {
+	display: block;
+	float: left;
+	margin: 0 15px;
+}
+
+@media (max-width: 767px) {
+	.site-header ul li {
+		display: inline;
+		margin: 0px;
+	}
+}
+
+.branding-container {
+	width: 75%;
+	height: 30px;
+	float: left;
+	padding-left: 85px;
+}
+
+.branding-container a {
+	font-size: 1.2em;
+}
+
+.branding-container img {
+	height: auto;
+	width: 35px;
+	margin-right: 15px;
+}
+
+@media (max-width: 767px) {
+	.branding-container {
+		width: 70%;
+		padding-left: 0;
+	}
+}
+
+/*.site-header {
+    @media ($screen-xs) {
+		width: 100%;
+		margin: 15px auto;
+	}
+}*/
+.social {
+	width: 40px;
+	height: auto;
+	position: relative;
+	float: right;
+	box-sizing: border-box;
+	padding-right: 50px;
+	/*@media ($screen-xs) {
+		display: inline;
+		float: none;
+		margin: 0 15px;
+	}*/
+}
+
+.social :last-child {
+	padding-right: 0;
+}
+
+@media (max-width: 767px) {
+	.social {
+		width: 30px;
+		margin: 0;
+		padding-right: 0;
+	}
+}
+
+.social-container {
+	width: 25%;
+	float: right;
+	box-sizing: border-box;
+	padding: 5px 0 0 0;
+	position: fixed;
+	right: 0;
+	/* @media ($screen-xs) {
+		width: 200px;
+		margin: 0 auto;
+		text-align: center;
+	}*/
+}
+
+@media (max-width: 767px) {
+	.social-container {
+		width: 30%;
+		padding: 5px 0 0 0;
+	}
+}
+
+.social a {
+	color: white;
 }
 
 .branding {
@@ -685,23 +912,37 @@ textarea {
 	}
 }
 
-.logo {
-	Width: 35%;
-	height: 35%;
+.logo img {
+	Width: auto;
+	height: 40vh;
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-	.logo {
-		Width: 50%;
-		height: 50%;
-	}
+/*#gradient {
+	width: inherit;
+	padding: 0px;
+	margin: 0px;
+	z-index: 0;
+}*/
+#gradient {
+	width: inherit;
+	padding: 0px;
+	margin: 0px;
+	z-index: 0;
+	background: gradient(linear, 0 0, 100% 100%, from(#D9E021), to(#00B0B0));
+	background: linear-gradient(to right top, #D9E021, #00B0B0);
+	/* For Safari 5.1 to 6.0 */
+	/* For Opera 11.1 to 12.0 */
+	/* For Firefox 3.6 to 15 */
+	/* Standard syntax (must be last) */
 }
 
-@media (max-width: 767px) {
-	.logo {
-		Width: 50%;
-		height: 50%;
-	}
+.bg {
+	background: url(img/body_bg.svg) repeat;
+	background-size: 400px 400px;
+	z-index: 100;
+	padding: 0;
+	margin: 0;
+	background-attachment: fixed;
 }
 
 .services {
@@ -843,10 +1084,9 @@ body {
 	overflow-x: hidden !important;
 }
 
-body, html {
-	height: 100% !important;
-}
-
+/*body, html {
+    height: 100% !important;
+}*/
 .nav .open > a {
 	background-color: transparent;
 }
@@ -976,11 +1216,11 @@ body, html {
 	border: none;
 	display: block;
 	height: 32px;
-	margin-left: 15px;
+	margin-left: 35px;
 	position: fixed;
-	top: 20px;
+	top: 15px;
 	width: 32px;
-	z-index: 999;
+	z-index: 6000;
 }
 
 .hamburger:hover {
@@ -1032,7 +1272,7 @@ body, html {
 }
 
 .hamburger.is-closed .hamb-middle {
-	margin-top: -2px;
+	margin-top: -1px;
 	top: 50%;
 }
 
@@ -1042,7 +1282,7 @@ body, html {
 }
 
 .hamburger.is-closed .hamb-top, .hamburger.is-closed .hamb-middle, .hamburger.is-closed .hamb-bottom, .hamburger.is-open .hamb-top, .hamburger.is-open .hamb-middle, .hamburger.is-open .hamb-bottom {
-	height: 4px;
+	height: 2px;
 	left: 0;
 	position: absolute;
 	width: 100%;
@@ -1102,119 +1342,9 @@ body, html {
 }
 
 .hamb-bottom, .hamb-middle, .hamb-top {
-	background-color: black;
+	background-color: white;
 }
 
-/* UNDERSCORES MENU
-.main-navigation {
-	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
-
-	ul {
-		display: none;
-		list-style: none;
-		margin: 0;
-		padding-left: 0;
-
-		ul {
-			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-			float: left;
-			position: absolute;
-			top: 100%;
-			left: -999em;
-			z-index: 99999;
-
-			ul {
-				left: -999em;
-				top: 0;
-			}
-
-			li {
-				&:hover > ul,
-				&.focus > ul {
-					left: 100%;
-				}
-			}
-
-			a {
-				width: 200px;
-			}
-
-			:hover > a,
-			.focus > a {
-			}
-
-			a:hover,
-			a.focus {
-			}
-		}
-
-		li:hover > ul,
-		li.focus > ul {
-			left: auto;
-		}
-	}
-
-	li {
-		float: left;
-		position: relative;
-
-		&:hover > a,
-		&.focus > a {
-		}
-	}
-
-	a {
-		display: block;
-		text-decoration: none;
-	}
-
-	.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a,
-	.current-menu-ancestor > a {
-	}
-}
-
-/* Small menu.
-.menu-toggle,
-.main-navigation.toggled ul {
-	display: block;
-}
-
-@media screen and (min-width: 37.5em) {
-	.menu-toggle {
-		display: none;
-	}
-	.main-navigation ul {
-		display: block;
-	}
-}
-
-.comment-navigation,
-.posts-navigation,
-.post-navigation {
-
-	.site-main & {
-		margin: 0 0 1.5em;
-		overflow: hidden;
-	}
-
-	.nav-previous {
-		float: left;
-		width: 50%;
-	}
-
-	.nav-next {
-		float: right;
-		text-align: right;
-		width: 50%;
-	}
-}
-
-*/
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/

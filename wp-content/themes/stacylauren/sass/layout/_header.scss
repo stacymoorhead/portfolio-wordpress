@@ -1,0 +1,130 @@
+.site-header {
+	background-color: rgba(0, 0, 0, 0.7);
+	padding: 15px 0;
+	position: fixed;
+	width: 100%;
+	z-index: 5000;
+	a {
+    font-family: $secondary-font;
+    color:#ffffff !important;
+    text-transform: uppercase;
+    letter-spacing: .25em; 
+    text-decoration: none;
+    transition: .5s background-color;
+	    :hover {
+	    	color:$pink;
+	    }
+ 	}
+}
+
+.site-header ul {
+     list-style-type: none;
+}
+
+.site-header ul li {
+     display: block;
+     float: left;
+     margin: 0 15px;
+     @media ($screen-xs) {
+		display: inline;
+		margin: 0px;
+	}
+}
+
+.branding-container {
+    width: 75%;
+    height: 30px;
+    float: left;
+    padding-left: 85px;
+    a {
+    	font-size: 1.2em;
+    }
+    img {
+    	height: auto;
+    	width: 35px;
+    	margin-right: 15px;
+    }
+     @media ($screen-xs) {
+        width: 70%;
+		padding-left: 0;
+	}
+}
+
+/*.site-header {
+    @media ($screen-xs) {
+		width: 100%;
+		margin: 15px auto;
+	}
+}*/
+
+
+.social {
+    width: 40px;
+    height: auto;
+    position: relative;
+    float: right;
+    box-sizing: border-box;
+    padding-right: 50px;
+    :last-child {
+    	padding-right: 0;
+    }
+    @media ($screen-xs) {
+        width: 30px;
+		margin: 0;
+		padding-right: 0;
+	}
+     /*@media ($screen-xs) {
+		display: inline;
+		float: none;
+		margin: 0 15px;
+	}*/
+}
+
+.social-container {
+    width: 25%;
+    float: right;
+    box-sizing: border-box;
+    padding: 5px 0 0 0;
+    position: fixed;
+    right: 0;
+    @media ($screen-xs) {
+        width: 30%;
+		padding: 5px 0 0 0;
+	}
+    /* @media ($screen-xs) {
+		width: 200px;
+		margin: 0 auto;
+		text-align: center;
+	}*/
+}
+
+.social a {
+    color: white;
+}
+
+.branding {
+	position: relative;
+	height: 100vh;
+	
+}
+
+.title {
+
+	text-align: center;
+	top: 25%;
+	color: white;
+	@media ($screen-lg) {
+		top: 15%;
+	}
+	@media ($screen-xs) {
+		top: 15%;
+	}
+}
+
+.logo img {
+    Width: auto;
+    height: 40vh;
+	
+}
+
+

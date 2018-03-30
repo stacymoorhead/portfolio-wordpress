@@ -2,22 +2,21 @@
     
 }
 
-#gradient {
+/*#gradient {
 	width: inherit;
-
 	padding: 0px;
 	margin: 0px;
 	z-index: 0;
-	/*background: #CCCCCC;*/
-}
+}*/
 
-#bg {
-	background: url(img/body_bg.svg) repeat #CCCCCC;
-	background-size: 400px 400px;
-	z-index: 100;
-	padding: 0;
-	margin: 0;
-	background-attachment: fixed;
+#gradient {
+    width: inherit;
+	padding: 0px;
+	margin: 0px;
+	z-index: 0;
+	background: gradient(linear, 0 0, 100% 100%, from($lime-green), to($teal));
+	background: linear-gradient(to right top, $lime-green, $teal); /* For Safari 5.1 to 6.0 */ /* For Opera 11.1 to 12.0 */ /* For Firefox 3.6 to 15 */ /* Standard syntax (must be last) */	
+
 }
 
 .bg {
@@ -27,38 +26,6 @@
 	padding: 0;
 	margin: 0;
 	background-attachment: fixed;
-}
-
-.branding {
-	position: relative;
-	height: 100vh;
-	
-}
-
-.title {
-
-	text-align: center;
-	top: 25%;
-	color: white;
-	@media ($screen-lg) {
-		top: 15%;
-	}
-	@media ($screen-xs) {
-		top: 15%;
-	}
-}
-
-.logo {
-	Width: 35%;
-	height: 35%;
-	@media ($screen-sm) {
-		Width: 50%;
-		height: 50%;
-	}
-	@media ($screen-xs) {
-		Width: 50%;
-		height: 50%;
-	}
 }
 
 .services {

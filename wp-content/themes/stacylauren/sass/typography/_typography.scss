@@ -17,3 +17,68 @@ textarea {
 @import "headings";
 
 @import "copy";
+ 
+ a {
+     color: $purple;
+ }
+ 
+ a:hover {
+     color: $lime-green;
+ }
+
+.title h1 {
+	font-family: $secondary-font;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: .3em;
+	@media ($screen-xs) {
+		font-size: 2em;
+	}
+}
+
+.title p {
+	font-family: $accent-font;
+	font-size: 1.8em;
+	letter-spacing: .05em;
+	@media ($screen-xs) {
+		font-size: 1.6em;
+		padding: 0 25px;
+	}
+}
+
+.services h2 {
+    font-family: $secondary-font;
+    font-weight: 400;
+    font-size: 2.2em;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    color: white;
+    text-align: center;
+    margin: 0 auto 50px auto;
+    padding: 5px;
+    width: 25%;
+    border-top: 3px solid $lime-green;
+    border-bottom: 3px solid $lime-green;
+    @media ($screen-xs) {
+		width: 50%;
+	}
+}
+
+.button {
+    @include button(white, white);
+    font-family: $secondary-font;
+    background-color: transparent;
+    margin: 50px auto 0 auto;
+    width: 200px;
+    height: 40px;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: 400;
+    letter-spacing: .1em;
+}
+
+.button:hover, .button:active, .button:focus {
+	color: $gray;
+}
+
+

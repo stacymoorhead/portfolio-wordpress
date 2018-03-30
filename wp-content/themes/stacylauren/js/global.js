@@ -77,7 +77,7 @@ jQuery(document).ready(function($){
 
   //-------------------ANIMATED GRADIENT
 
-  var colors = new Array(
+  /*var colors = new Array(
     [252,238,33],
     [217,224,33],
     [140,198,63],
@@ -136,6 +136,6 @@ jQuery(document).ready(function($){
     }
   }
   
-  setInterval(updateGradient,10);
+  setInterval(updateGradient,10);*/
 
 }); 

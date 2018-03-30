@@ -23,8 +23,8 @@
 <body <?php body_class(); ?> id="gradient">
 	<div id="page" class="site bg">
 		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'stacylauren' ); ?></a>
-		<div id="wrapper" class="">
-			<div class="overlay" style="display: none;"></div>
+			<div id="wrapper" class="">
+				<div class="overlay" style="display: none;"></div>
 				<nav id="sidebar-wrapper" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 					<?php
 					wp_nav_menu( array(
@@ -35,11 +35,13 @@
 					) );
 					?>
 				</nav><!-- #site-navigation -->	
+	        </div> <!-- #wrapper -->				
 				<button type="button" class="hamburger animated fadeInLeft is-closed" data-toggle="offcanvas">
 			    	<span class="hamb-top"></span>
 			        <span class="hamb-middle"></span>
 			        <span class="hamb-bottom"></span>
-		        </button>	
+		        </button>
+	
 			<header id="masthead" class="container-fluid site-header">
 				<div class="row">
 					<div class="branding-container">

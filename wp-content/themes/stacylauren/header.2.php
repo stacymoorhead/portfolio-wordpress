@@ -56,23 +56,24 @@
 			        </div><!-- .social-container -->    
 				</div><!-- .row -->
 			</header><!-- #masthead .container-fluid -->	
-			<?php if ( is_home() ) :
-				?>				
-			<section class="row branding">
-				<div class="col-md-12 title">
-					<div class="logo">
-						<?php the_custom_logo(); ?>
-					</div> <!-- .logo -->
-					<h1 class="fadein600"><?php bloginfo( 'name' ); ?></h1>
-					<?php 
-					$stacylauren_description = get_bloginfo( 'description', 'display' );
-					if ( $stacylauren_description || is_customize_preview() ) :
-						?>
-						<p class="fadein600"><?php echo $stacylauren_description; /* WPCS: xss ok. */ ?></p>
-					<?php endif; ?>
-				</div> <!-- .col-md-12 title -->
-			</section><!-- .row .branding -->
-			<?php endif; ?>
-		<div id="content page-content-wrapper" class="site-content">
+				<?php if ( is_home() ) :
+					?>				
+				<div class="site-branding">
+					<?php
+					the_custom_logo(); ?>
+						<div class="branding">
+							<div class="logo">
+								<h1 class="site-title title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+								<?php 
+								$stacylauren_description = get_bloginfo( 'description', 'display' );
+								if ( $stacylauren_description || is_customize_preview() ) :
+									?>
+									<p class="site-description"><?php echo $stacylauren_description; /* WPCS: xss ok. */ ?></p>
+								<?php endif; ?>
+							</div><!-- .logo -->
+						</div><!-- .branding -->
+				</div><!-- .site-branding -->
+				<?php endif; ?>
+			<div id="content page-content-wrapper" class="site-content">
 
 				

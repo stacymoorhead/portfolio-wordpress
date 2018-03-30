@@ -4,9 +4,9 @@ body {
     overflow-x: hidden !important;
 }
 
-body, html {
+/*body, html {
     height: 100% !important;
-}
+}*/
 
 .nav .open > a {
     background-color: transparent;
@@ -161,11 +161,11 @@ body, html {
     border: none;
     display: block;
     height: 32px;
-    margin-left: 15px;
+    margin-left: 35px;
     position: fixed;
-    top: 20px;
+    top: 15px;
     width: 32px;
-    z-index: 999;
+    z-index: 6000;
 }
 
     .hamburger:hover {
@@ -245,7 +245,7 @@ body, html {
     }
 
     .hamburger.is-closed .hamb-middle {
-        margin-top: -2px;
+        margin-top: -1px;
         top: 50%;
     }
 
@@ -259,7 +259,7 @@ body, html {
     }
 
     .hamburger.is-closed .hamb-top, .hamburger.is-closed .hamb-middle, .hamburger.is-closed .hamb-bottom, .hamburger.is-open .hamb-top, .hamburger.is-open .hamb-middle, .hamburger.is-open .hamb-bottom {
-        height: 4px;
+        height: 2px;
         left: 0;
         position: absolute;
         width: 100%;
@@ -352,120 +352,5 @@ body, html {
 }
 
 .hamb-bottom, .hamb-middle, .hamb-top {
-    background-color: black;
+    background-color: white;
 }
-
-
-
-
-
-/* UNDERSCORES MENU
-.main-navigation {
-	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
-
-	ul {
-		display: none;
-		list-style: none;
-		margin: 0;
-		padding-left: 0;
-
-		ul {
-			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-			float: left;
-			position: absolute;
-			top: 100%;
-			left: -999em;
-			z-index: 99999;
-
-			ul {
-				left: -999em;
-				top: 0;
-			}
-
-			li {
-				&:hover > ul,
-				&.focus > ul {
-					left: 100%;
-				}
-			}
-
-			a {
-				width: 200px;
-			}
-
-			:hover > a,
-			.focus > a {
-			}
-
-			a:hover,
-			a.focus {
-			}
-		}
-
-		li:hover > ul,
-		li.focus > ul {
-			left: auto;
-		}
-	}
-
-	li {
-		float: left;
-		position: relative;
-
-		&:hover > a,
-		&.focus > a {
-		}
-	}
-
-	a {
-		display: block;
-		text-decoration: none;
-	}
-
-	.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a,
-	.current-menu-ancestor > a {
-	}
-}
-
-/* Small menu.
-.menu-toggle,
-.main-navigation.toggled ul {
-	display: block;
-}
-
-@media screen and (min-width: 37.5em) {
-	.menu-toggle {
-		display: none;
-	}
-	.main-navigation ul {
-		display: block;
-	}
-}
-
-.comment-navigation,
-.posts-navigation,
-.post-navigation {
-
-	.site-main & {
-		margin: 0 0 1.5em;
-		overflow: hidden;
-	}
-
-	.nav-previous {
-		float: left;
-		width: 50%;
-	}
-
-	.nav-next {
-		float: right;
-		text-align: right;
-		width: 50%;
-	}
-}
-
-*/

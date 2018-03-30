@@ -775,6 +775,7 @@ textarea {
 	padding: 15px 0;
 	position: fixed;
 	width: 100%;
+	height: 62px;
 	z-index: 5000;
 }
 
@@ -809,10 +810,14 @@ textarea {
 }
 
 .branding-container {
-	width: 75%;
+	/*width: 75%;*/
 	height: 30px;
 	float: left;
-	padding-left: 85px;
+	/*padding-left: 35px;*/
+	/*@media ($screen-xs) {
+        width: 70%;
+		padding-left: 0;
+	}*/
 }
 
 .branding-container a {
@@ -823,13 +828,6 @@ textarea {
 	height: auto;
 	width: 35px;
 	margin-right: 15px;
-}
-
-@media (max-width: 767px) {
-	.branding-container {
-		width: 70%;
-		padding-left: 0;
-	}
 }
 
 /*.site-header {
@@ -865,24 +863,21 @@ textarea {
 }
 
 .social-container {
-	width: 25%;
+	/*width: 25%;*/
 	float: right;
 	box-sizing: border-box;
 	padding: 5px 0 0 0;
 	position: fixed;
-	right: 0;
-	/* @media ($screen-xs) {
+	right: 15px;
+	/*@media ($screen-xs) {
+        width: 30%;
+		padding: 5px 0 0 0;
+	}
+    /* @media ($screen-xs) {
 		width: 200px;
 		margin: 0 auto;
 		text-align: center;
 	}*/
-}
-
-@media (max-width: 767px) {
-	.social-container {
-		width: 30%;
-		padding: 5px 0 0 0;
-	}
 }
 
 .social a {
@@ -915,6 +910,10 @@ textarea {
 .logo img {
 	Width: auto;
 	height: 40vh;
+}
+
+.content-area {
+	margin-top: 62px;
 }
 
 /*#gradient {
@@ -1216,11 +1215,18 @@ body {
 	border: none;
 	display: block;
 	height: 32px;
-	margin-left: 35px;
-	position: fixed;
-	top: 15px;
-	width: 32px;
+	margin: 0 20px;
+	position: relative;
+	float: left;
+	clear: none;
+	width: 32px !important;
 	z-index: 6000;
+}
+
+@media (min-width: 768px) {
+	.hamburger {
+		margin: 0 20px 0 50px;
+	}
 }
 
 .hamburger:hover {

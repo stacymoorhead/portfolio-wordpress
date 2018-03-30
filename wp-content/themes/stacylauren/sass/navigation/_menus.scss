@@ -161,11 +161,16 @@ body {
     border: none;
     display: block;
     height: 32px;
-    margin-left: 35px;
-    position: fixed;
-    top: 15px;
-    width: 32px;
+    margin: 0 20px;
+    position: relative;
+    float: left;
+    clear: none;
+    width: 32px !important;
     z-index: 6000;
+    
+    @media ($screen-gtxs) {
+        margin: 0 20px 0 50px;
+    }
 }
 
     .hamburger:hover {

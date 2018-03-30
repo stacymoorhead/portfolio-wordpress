@@ -35,25 +35,30 @@
 					) );
 					?>
 				</nav><!-- #site-navigation -->	
-				<button type="button" class="hamburger animated fadeInLeft is-closed" data-toggle="offcanvas">
-			    	<span class="hamb-top"></span>
-			        <span class="hamb-middle"></span>
-			        <span class="hamb-bottom"></span>
-		        </button>	
+	
 			<header id="masthead" class="container-fluid site-header">
 				<div class="row">
-					<div class="branding-container">
-					<?php if ( !is_home() ) :
-						the_custom_logo(); ?>
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-					<?php	
-					endif; ?>
-					</div> <!-- .branding-container -->
-					<div class="social-container">
-				        <div class="social"><a href="http://www.facebook.com/stacy.pezzola"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></div>
-				        <div class="social"><a href="http://www.twitter.com/heartshapedfart"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></div>
-				        <div class="social"><a href="http://www.instagram.com/heartshapedfarts"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></div>
-			        </div><!-- .social-container -->    
+					<div class="col-md-6">	
+						<button type="button" class="hamburger animated fadeInLeft is-closed" data-toggle="offcanvas">
+					    	<span class="hamb-top"></span>
+					        <span class="hamb-middle"></span>
+					        <span class="hamb-bottom"></span>
+				        </button>
+						<div class="branding-container">
+						<?php if ( !is_home() ) :
+							the_custom_logo(); ?>
+							
+						<?php	
+						endif; ?>
+						</div> <!-- .branding-container -->
+					</div> <!-- .col-md-6 -->
+					<div class="col-md-6">
+						<div class="social-container">
+					        <div class="social"><a href="http://www.facebook.com/stacy.pezzola"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></div>
+					        <div class="social"><a href="http://www.twitter.com/heartshapedfart"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></div>
+					        <div class="social"><a href="http://www.instagram.com/heartshapedfarts"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></div>
+				        </div><!-- .social-container -->    
+				    </div> <!-- .col-md-6 -->    
 				</div><!-- .row -->
 			</header><!-- #masthead .container-fluid -->	
 			<?php if ( is_home() ) :

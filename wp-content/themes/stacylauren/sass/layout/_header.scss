@@ -1,7 +1,7 @@
 .site-header {
 	background-color: rgba(0, 0, 0, 0.7);
 	padding: 15px 0;
-	position: fixed;
+	position: fixed !important;
 	width: 100%;
 	height: 62px;
 	z-index: 5000;
@@ -45,6 +45,12 @@
     	width: 35px;
     	margin-right: 15px;
     }
+    
+    /* HOVER COLOR */
+
+    &:hover svg  { 
+      fill: $pink;
+    }
      /*@media ($screen-xs) {
         width: 70%;
 		padding-left: 0;
@@ -85,11 +91,9 @@
     /*width: 25%;*/
     float: right;
     box-sizing: border-box;
-    padding: 5px 0 0 0;
-    position: fixed;
-    right: 15px;
-    /*@media ($screen-xs) {
-        width: 30%;
+    padding: 0;
+    position: relative;
+    @media ($screen-xs) {
 		padding: 5px 0 0 0;
 	}
     /* @media ($screen-xs) {
@@ -112,13 +116,14 @@
 .title {
 
 	text-align: center;
-	top: 25%;
+	top: 20%;
 	color: white;
+	min-width: 375px;
 	@media ($screen-lg) {
-		top: 15%;
+		top: 10%;
 	}
 	@media ($screen-xs) {
-		top: 15%;
+		top: 10%;
 	}
 }
 

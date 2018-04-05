@@ -20,3 +20,74 @@
 	clear: both;
 	margin: 0 0 1.5em;
 }
+
+.entry-header {
+	padding: 1em;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    h1 {
+    	font-size: 5em;
+    	font-family: $accent-font;	
+    	margin: 0;
+    }
+	@media ($screen-xs) {
+		padding: .5em;
+		font-size: .8em;
+	}    
+}
+
+.arrow-down {
+	position: relative;
+	left: 50%;
+	width: 0; 
+	height: 0; 
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 15px solid rgba(0, 0, 0, 0.5);
+	@media ($screen-xs) {
+		left: 47%;
+	}
+}
+
+.entry-content {
+	
+	background-color: rgba(255, 255, 255, 0.75);
+}
+
+.projects {
+	column-count: 1;
+    column-gap: 1em;
+    box-sizing: border-box;
+    
+    @media ($screen-gtxs) {
+    	column-count: 3;
+    }
+	
+
+	h3 {
+    	text-align: center;
+    	font-weight: 400;
+    	text-transform: none;
+    	letter-spacing: 0;
+	}
+	
+	h4 {
+		font-size: 1em;
+    	text-align: center;
+    	font-weight: 800;
+    	text-transform: uppercase;
+	}
+	
+	p {
+		margin: 0;
+	}
+	
+	article {
+		display: inline-block;
+    	margin: 0 0 1em;
+   		width: 100%;
+		padding: 1em;
+		box-sizing: border-box;
+	}
+}

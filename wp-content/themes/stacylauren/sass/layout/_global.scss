@@ -2,14 +2,14 @@
     margin-top: 62px;
 }
 
-/*#gradient {
+#gradient {
 	width: inherit;
 	padding: 0px;
 	margin: 0px;
 	z-index: 0;
-}*/
+}
 
-#gradient {
+/*#gradient {
     width: inherit;
 	padding: 0px;
 	margin: 0px;
@@ -17,15 +17,50 @@
 	background: gradient(linear, 0 0, 100% 100%, from($lime-green), to($teal));
 	background: linear-gradient(to right top, $lime-green, $teal); /* For Safari 5.1 to 6.0 */ /* For Opera 11.1 to 12.0 */ /* For Firefox 3.6 to 15 */ /* Standard syntax (must be last) */	
 
-}
+/*}*/
 
 .bg {
-	background: url(img/body_bg.svg) repeat;
-	background-size: 400px 400px;
+	background: url(img/bg.png) repeat;
+	background-size: 75px 75px;
 	z-index: 100;
 	padding: 0;
 	margin: 0;
 	background-attachment: fixed;
+	height: 100vh;
+}
+
+
+.entry-header {
+	padding: 1em;
+    background: rgba(0, 0, 0, 0.5);
+    color: $mutedteal;
+    text-align: center;
+    h1 {
+    	font-size: 5em;
+    	font-family: $accent-font;	
+    }
+	@media ($screen-xs) {
+		padding: .5em;
+		font-size: .8em;
+	}    
+}
+
+.arrow-down {
+	position: relative;
+	left: 50%;
+	width: 0; 
+	height: 0; 
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 15px solid rgba(0, 0, 0, 0.5);
+	@media ($screen-xs) {
+		left: 47%;
+	}
+}
+
+.entry-content {
+	
+	background-color: rgba(255, 255, 255, 0.75);
 }
 
 .services {

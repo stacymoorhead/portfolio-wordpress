@@ -120,17 +120,19 @@
 	color: white;
 	min-width: 375px;
 	@media ($screen-lg) {
-		top: 10%;
+		top: 20%;
 	}
 	@media ($screen-xs) {
-		top: 10%;
+		top: 15%;
 	}
 }
 
 .logo img {
     Width: auto;
     height: 40vh;
-	
+	@media ($screen-xxs) {
+	    height: 25vh;
+	}
 }
 
 

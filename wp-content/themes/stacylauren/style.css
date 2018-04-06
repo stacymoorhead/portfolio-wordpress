@@ -524,7 +524,7 @@ a:hover {
 
 @media (max-width: 767px) {
 	.title p {
-		font-size: 2em;
+		font-size: 1.6em;
 		padding: 0 25px;
 	}
 }
@@ -934,19 +934,25 @@ textarea {
 
 @media (min-width: 1200px) and (max-width: 1439px) {
 	.title {
-		top: 10%;
+		top: 20%;
 	}
 }
 
 @media (max-width: 767px) {
 	.title {
-		top: 10%;
+		top: 15%;
 	}
 }
 
 .logo img {
 	Width: auto;
 	height: 40vh;
+}
+
+@media (max-width: 480px) {
+	.logo img {
+		height: 25vh;
+	}
 }
 
 .content-area {
@@ -979,45 +985,15 @@ textarea {
 	margin: 0;
 	background-attachment: fixed;
 	height: 100vh;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	    flex-direction: column;
 }
 
-.entry-header {
-	padding: 1em;
-	background: rgba(0, 0, 0, 0.5);
-	color: #75b691;
-	text-align: center;
-}
-
-.entry-header h1 {
-	font-size: 5em;
-	font-family: "Covered By Your Grace", serif;
-}
-
-@media (max-width: 767px) {
-	.entry-header {
-		padding: .5em;
-		font-size: .8em;
-	}
-}
-
-.arrow-down {
-	position: relative;
-	left: 50%;
-	width: 0;
-	height: 0;
-	border-left: 15px solid transparent;
-	border-right: 15px solid transparent;
-	border-top: 15px solid rgba(0, 0, 0, 0.5);
-}
-
-@media (max-width: 767px) {
-	.arrow-down {
-		left: 47%;
-	}
-}
-
-.entry-content {
-	background-color: rgba(255, 255, 255, 0.75);
+.site {
+	-ms-flex: 1 0 auto;
+	    flex: 1 0 auto;
 }
 
 .services {
@@ -1126,22 +1102,26 @@ textarea {
 
 .site-footer {
 	background-color: rgba(0, 0, 0, 0.25);
-	padding: 15px 0;
+	padding: 15px 15px 50px 15px;
 	z-index: 5000;
 	text-align: center;
 	color: #e3e3e3;
 	font-size: .8em;
+	box-sizing: border-box;
+	width: 100%;
+	-ms-flex-negative: 0;
+	    flex-shrink: 0;
 }
 
 .site-footer a {
 	font-family: "Montserrat", Helvetica, Arial, sans-serif;
-	color: #ffffff !important;
+	color: white !important;
 	text-decoration: none;
 	transition: .5s background-color;
 }
 
 .site-footer a:hover {
-	color: #D4145A;
+	color: #D4145A !important;
 }
 
 .site-footer p {
@@ -1571,7 +1551,7 @@ body, html {
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: 1.5em 0 0;
+	margin: 1.5em 0;
 }
 
 .page-links {
@@ -1581,8 +1561,8 @@ body, html {
 
 .entry-header {
 	padding: 1em;
-	background: rgba(0, 0, 0, 0.5);
-	color: white;
+	background: rgba(255, 255, 255, 0.5);
+	color: black;
 	text-align: center;
 }
 
@@ -1606,17 +1586,13 @@ body, html {
 	height: 0;
 	border-left: 15px solid transparent;
 	border-right: 15px solid transparent;
-	border-top: 15px solid rgba(0, 0, 0, 0.5);
+	border-top: 15px solid rgba(255, 255, 255, 0.5);
 }
 
 @media (max-width: 767px) {
 	.arrow-down {
 		left: 47%;
 	}
-}
-
-.entry-content {
-	background-color: rgba(255, 255, 255, 0.75);
 }
 
 .projects {
@@ -1658,6 +1634,69 @@ body, html {
 	width: 100%;
 	padding: 1em;
 	box-sizing: border-box;
+}
+
+/* Caption Hoover Effects */
+.projects figure {
+	margin: 0;
+	position: relative;
+}
+
+.projects figure img {
+	max-width: 100%;
+	display: block;
+	position: relative;
+}
+
+.projects figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 20px;
+	background: #2c3f52;
+	color: #ed4e6e;
+}
+
+.projects figcaption h3 {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+}
+
+.projects figcaption span:before {
+	content: 'by ';
+}
+
+.projects figcaption a {
+	text-align: center;
+	padding: 5px 10px;
+	border-radius: 2px;
+	display: inline-block;
+	background: #ed4e6e;
+	color: #fff;
+}
+
+.projects figure img {
+	z-index: 10;
+	transition: transform 0.4s;
+}
+
+.no-touch .projects figure:hover img,
+.projects figure.cs-hover img {
+	transform: translateY(-90px);
+}
+
+.projects figcaption {
+	height: 90px;
+	width: 100%;
+	top: auto;
+	bottom: 0;
+}
+
+.projects figcaption a {
+	position: absolute;
+	right: 20px;
+	top: 30px;
 }
 
 /*--------------------------------------------------------------

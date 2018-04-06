@@ -53,7 +53,6 @@ gulp.task('javascript', function() {
 	.pipe(gulp.dest(js));
 });
 
-
 // Watch everything
 gulp.task('watch', function() {
 	/*browserSync.init({ 

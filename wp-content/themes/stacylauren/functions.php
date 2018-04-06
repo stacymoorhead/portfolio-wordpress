@@ -164,36 +164,23 @@ add_action( 'widgets_init', 'stacylauren_widgets_init' );
 
 	// Return button with link
 	if ( $url ) {
-
 		$link_attr = array(
 			'href'   => esc_url( $url ),
 			'title'  => esc_attr( $title ),
 			'target' => ( 'blank' == $target ) ? '_blank' : '',
 		);
-
 		$link_attrs_str = '';
-
 		foreach ( $link_attr as $key => $val ) {
-
 			if ( $val ) {
-
 				$link_attrs_str .= ' '. $key .'="'. $val .'"';
-
 			}
-
 		}
-
 		return '<a'. $link_attrs_str .'><button>'. do_shortcode( $content ) .'</button></a>';
-
 	}
-
 	// No link defined so return button as a span
 	else {
-
 		return '<button>'. do_shortcode( $content ) .'</button>';
-
 	}
-
 }
 add_shortcode( 'button', 'button_shortcode' );
 
@@ -235,6 +222,12 @@ add_action( 'wp_enqueue_scripts', 'stacylauren_scripts' );
 function wpb_adding_scripts() {
 	wp_register_script('stacylauren-global', get_theme_file_uri('/js/global.js'), array('jquery'),'1.11.3');
 	wp_enqueue_script('stacylauren-global');
+	
+	wp_register_script('stacylauren-modernizr', get_theme_file_uri('/js/modernizr.custom.js'), array('jquery'),'1.11.3');
+	wp_enqueue_script('stacylauren-modernizr');
+	
+	wp_register_script('stacylauren-toucheffects', get_theme_file_uri('/js/toucheffects.js'), array('jquery'),'1.11.3');
+	wp_enqueue_script('stacylauren-toucheffects');
 }
 add_action( 'wp_enqueue_scripts', 'wpb_adding_scripts' ); 	
 

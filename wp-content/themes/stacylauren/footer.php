@@ -12,11 +12,11 @@
 ?>
 
     		</div><!-- #content -->
-    		
+    	</div>	
     </div><!-- #page -->
     <?php wp_footer(); ?>
     <?php if ( !is_front_page() ) : ?>
-    <footer class="container-fluid site-footer">
+    <footer class="site-footer">
         <div class="row">
             <div class="col-md-12">
                 <p>Website design &amp; development by <a href="http://www.stacylauren.com">Stacy Lauren Designs</a> Copyright &copy; <?php echo date(" Y"); ?> </p>

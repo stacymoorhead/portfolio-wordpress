@@ -24,7 +24,7 @@
 .entry-header {
 	padding: 1em;
     background: rgba(255, 255, 255, 0.5);
-    color: black;
+    color: $pink;
     text-align: center;
     h1 {
     	font-size: 5em;
@@ -94,7 +94,8 @@
 }
 
 .projects figure img {
-	max-width: 100%;
+	width: 100%;
+	height: auto;
 	display: block;
 	position: relative;
 }

@@ -22,20 +22,21 @@
 
 <body <?php body_class(); ?> id="gradient">
 	<div class="bg">
+		<?php if ( !is_front_page() ) :?><div class="sticky-footer-box"><?php endif; ?>
 		<div id="page" class="site">
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'stacylauren' ); ?></a>
 			<div id="wrapper" class="">
 				<div class="overlay" style="display: none;"></div>
-					<nav id="sidebar-wrapper" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-						<?php
-						wp_nav_menu( array(
-							'theme_location' => 'menu-1',
-							'container'		 => 'ul',
-							'menu_id'        => 'primary-menu',
-							'menu_class'   	 => 'nav sidebar-nav',
-						) );
-						?>
-					</nav><!-- #site-navigation -->	
+				<nav id="sidebar-wrapper" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+					<?php
+					wp_nav_menu( array(
+						'theme_location' => 'menu-1',
+						'container'		 => 'ul',
+						'menu_id'        => 'primary-menu',
+						'menu_class'   	 => 'nav sidebar-nav',
+					) );
+					?>
+				</nav><!-- #site-navigation -->	
 		
 				<header id="masthead" class="container-fluid site-header">
 					<div class="row">
@@ -61,7 +62,7 @@
 					    </div> <!-- .col-md-6 -->    
 					</div><!-- .row -->
 				</header><!-- #masthead .container-fluid -->	
-	
+            </div> <!-- #wrapper -->				
 			<div id="content page-content-wrapper" class="site-content">
 
 				

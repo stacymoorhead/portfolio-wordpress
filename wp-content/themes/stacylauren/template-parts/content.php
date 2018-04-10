@@ -28,7 +28,11 @@
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
-
+	<div class="row">
+		<div class="col-md-12">
+			<div class="arrow-down"></div>
+		</div> <!-- .col-med-12 -->
+	</div> <!-- row -->	
 	<?php stacylauren_post_thumbnail(); ?>
 
 	<div class="entry-content">

@@ -8,7 +8,7 @@
 		// classie.js https://github.com/desandro/classie/blob/master/classie.js
 		// class helper functions from bonzo https://github.com/ded/bonzo
 
-		function classReg( className ) { // jshint ignore:line
+		function classReg( className ) { 
 			return new RegExp("(^|\\s+)" + className + "(\\s+|$)");
 		}
 
@@ -41,7 +41,7 @@
 			};
 		}
 
-		function toggleClass( elem, c ) { // jshint ignore:line
+		function toggleClass( elem, c ) { 
 			var fn = hasClass( elem, c ) ? removeClass : addClass;
 			fn( elem, c );
 		}

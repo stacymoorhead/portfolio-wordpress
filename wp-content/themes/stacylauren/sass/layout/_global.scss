@@ -1,11 +1,14 @@
+#wpadminbar {
+	position: fixed !important;
+}
+
 .content-area {
     margin-top: 62px;
 }
 
 #gradient {
-	width: inherit;
-	padding: 0px;
-	margin: 0px;
+	padding: 0;
+	margin: 0;
 	z-index: 0;
 }
 
@@ -20,19 +23,27 @@
 /*}*/
 
 .bg {
+	width: 100vw;
 	background: url(img/bg.png) repeat;
 	background-size: 75px 75px;
 	z-index: 100;
 	padding: 0;
 	margin: 0;
 	background-attachment: fixed;
+}
+
+.sticky-footer-box {
 	height: 100vh;
+	width: 100vw;
+	margin: 0;
+	padding: 0;
 	display: flex;
 	flex-direction: column;
 }
 
 .site {
 	flex: 1 0 auto;
+    overflow-x: hidden !important;
 }
 
 .services {

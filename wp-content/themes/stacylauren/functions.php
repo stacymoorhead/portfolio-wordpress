@@ -197,7 +197,15 @@ function stacylauren_scripts() {
 	
 	wp_enqueue_style( 'stacylauren-style', get_stylesheet_uri() );
 
-	//wp_enqueue_script( 'stacylauren-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	// Load Global JS
+	wp_enqueue_script( 'stacylauren-global', get_template_directory_uri() . '/js/global.js', array('jquery'),'1.11.3', true );
+	
+	// Load Modernizr
+	wp_enqueue_script( 'stacylauren-modernizr', get_template_directory_uri() . '/js/modernizr.custom.js', array(), '2.6.2', false );
+	
+	// Load Touch Effects
+	wp_register_script('stacylauren-toucheffects', get_theme_file_uri('/js/toucheffects.js'), array(), '1.0.0', true);
+	wp_enqueue_script('stacylauren-toucheffects');
 
 	wp_enqueue_script( 'stacylauren-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
@@ -217,19 +225,6 @@ add_action( 'wp_enqueue_scripts', 'stacylauren_scripts' );
 	function enqueue_font_awesome() {
 		wp_enqueue_style( 'font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css' );
 	}
-
-// Load Global JS	
-function wpb_adding_scripts() {
-	wp_register_script('stacylauren-global', get_theme_file_uri('/js/global.js'), array('jquery'),'1.11.3', true);
-	wp_enqueue_script('stacylauren-global');
-	
-	wp_register_script('stacylauren-modernizr', get_theme_file_uri('/js/modernizr.custom.js'), '', false);
-	wp_enqueue_script('stacylauren-modernizr');
-	
-	wp_register_script('stacylauren-toucheffects', get_theme_file_uri('/js/toucheffects.js'), '', true);
-	wp_enqueue_script('stacylauren-toucheffects');
-}
-add_action( 'wp_enqueue_scripts', 'wpb_adding_scripts' ); 	
 
 /**
  * Implement the Custom Header feature.

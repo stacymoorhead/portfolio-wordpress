@@ -57,7 +57,7 @@ function custom_posttypes() {
 		'has_archive'        => true,
 		'hierarchical'       => false,
 		'menu_position'      => null,
-		'supports'           => array( 'title', 'editor', 'thumbnail' ),
+		'supports'           => array( 'title', 'excerpt', 'thumbnail' ),
 		'taxonomies'		 => array( 'category', 'post_tag' )
 
 	);

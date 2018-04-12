@@ -1648,67 +1648,95 @@ body, html {
 }
 
 /* Caption Hoover Effects */
-.projects figure {
+.screenshot {
+	width: 100%;
 	margin: 0;
+	float: left;
 	position: relative;
+	overflow: hidden;
 }
 
-.projects figure img {
+.screenshot img {
 	width: 100%;
 	height: auto;
-	display: block;
-	position: relative;
 }
 
-.projects figcaption {
+.screenshot > * {
+	display: block;
+}
+
+.screenshot-caption {
 	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.75);
+	color: #ffffff;
+	transition: all 0.5s ease-out;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-ms-flex-align: center;
+	    align-items: center;
+}
+
+.screenshot-caption div {
+	padding: 1em;
+	background: rgba(98, 98, 98, 0.3);
+	width: 100%;
+}
+
+.screenshot-caption p {
+	display: block;
+	font-size: .8em;
+	font-family: "Montserrat", Helvetica, Arial, sans-serif;
+}
+
+.screenshot-caption h2 {
+	color: #D9E021;
+	font-size: 1.6em;
+	margin-top: 0;
+	display: block;
+	text-align: center;
+}
+
+.screenshot-caption h3 {
+	display: block;
+}
+
+.screenshot-caption ul {
+	list-style: none;
+}
+
+.screenshot-caption a {
+	display: table;
+	margin: 0 auto;
+	text-align: center;
+	background: #2c3e50;
+	padding: 6px 12px;
+	color: white;
+	text-decoration: none;
+}
+
+.screenshot-caption > * {
+	transition: opacity 1s ease;
+	opacity: 0;
+}
+
+.screenshot-caption_bottom {
+	top: 100%;
+	left: 0;
+}
+
+.screenshot:hover .screenshot-caption {
 	top: 0;
 	left: 0;
-	padding: 20px;
-	background: #2c3f52;
-	color: #ed4e6e;
+	transition: all 0.5s ease-out;
 }
 
-.projects figcaption h3 {
-	margin: 0;
-	padding: 0;
-	color: #fff;
-}
-
-.projects figcaption span:before {
-	content: 'by ';
-}
-
-.projects figcaption a {
-	text-align: center;
-	padding: 5px 10px;
-	border-radius: 2px;
-	display: inline-block;
-	background: #ed4e6e;
-	color: #fff;
-}
-
-.projects figure img {
-	z-index: 10;
-	transition: transform 0.4s;
-}
-
-.no-touch .projects figure:hover img,
-.projects figure.cs-hover img {
-	transform: translateY(-90px);
-}
-
-.projects figcaption {
-	height: 90px;
-	width: 100%;
-	top: auto;
-	bottom: 0;
-}
-
-.projects figcaption a {
-	position: absolute;
-	right: 20px;
-	top: 30px;
+.screenshot:hover .screenshot-caption > * {
+	transition: opacity 1s ease;
+	opacity: 1;
 }
 
 /*--------------------------------------------------------------

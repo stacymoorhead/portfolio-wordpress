@@ -201,11 +201,11 @@ function stacylauren_scripts() {
 	wp_enqueue_script( 'stacylauren-global', get_template_directory_uri() . '/js/global.js', array('jquery'),'1.11.3', true );
 	
 	// Load Modernizr
-	wp_enqueue_script( 'stacylauren-modernizr', get_template_directory_uri() . '/js/modernizr.custom.js', array(), '2.6.2', false );
+	//wp_enqueue_script( 'stacylauren-modernizr', get_template_directory_uri() . '/js/modernizr.custom.js', array(), '2.6.2', false );
 	
 	// Load Touch Effects
-	wp_register_script('stacylauren-toucheffects', get_theme_file_uri('/js/toucheffects.js'), array(), '1.0.0', true);
-	wp_enqueue_script('stacylauren-toucheffects');
+	//wp_register_script('stacylauren-toucheffects', get_theme_file_uri('/js/toucheffects.js'), array(), '1.0.0', true);
+	//wp_enqueue_script('stacylauren-toucheffects');
 
 	wp_enqueue_script( 'stacylauren-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 

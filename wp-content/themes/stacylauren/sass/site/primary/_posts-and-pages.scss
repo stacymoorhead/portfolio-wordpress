@@ -88,70 +88,88 @@
 }
 
 /* Caption Hoover Effects */
-.projects figure {
+.screenshot {
+	width: 100%;
 	margin: 0;
-	position: relative;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  img {
+  	width: 100%;
+  	height: auto;
+  }
 }
 
-.projects figure img {
-	width: 100%;
-	height: auto;
+.screenshot > * { display: block; }
+
+.screenshot-caption {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.75);
+  color: #ffffff;
+  transition: all 0.5s ease-out;
+	display: flex;
+	flex-wrap: wrap;
+	-webkit-box-align: center;
+	align-items: center;
+	
+	div {
+		padding: 1em;
+		background: rgba($darkgray, .3);
+		width: 100%;
+	}
+  
+  p {
+  	display: block;
+  	font-size: .8em;
+  	font-family: $secondary-font;
+  }
+  
+  h2 {
+    color: $lime-green;
+    font-size: 1.6em;
+	margin-top: 0;
 	display: block;
-	position: relative;
-}
-
-.projects figcaption {
-	position: absolute;
-	top: 0;
-	left: 0;
-	padding: 20px;
-	background: #2c3f52;
-	color: #ed4e6e;
-}
-
-.projects figcaption h3 {
-	margin: 0;
-	padding: 0;
-	color: #fff;
-}
-
-.projects figcaption span:before {
-	content: 'by ';
-}
-
-.projects figcaption a {
 	text-align: center;
-	padding: 5px 10px;
-	border-radius: 2px;
-	display: inline-block;
-	background: #ed4e6e;
-	color: #fff;
+  }
+  
+  h3 {
+  	display: block;
+  }
+  ul {
+  	list-style: none;
+  }
+
+  a {
+    display: table;
+    margin: 0 auto; 
+    text-align: center;
+    background: #2c3e50;
+    padding: 6px 12px;
+    color: white;
+    text-decoration: none;
+  }
 }
 
-.projects figure img {
-	z-index: 10;
-	-webkit-transition: -webkit-transform 0.4s;
-	-moz-transition: -moz-transform 0.4s;
-	transition: transform 0.4s;
+.screenshot-caption > * {
+  transition: opacity 1s ease;
+  opacity: 0;
 }
 
-.no-touch .projects figure:hover img,
-.projects figure.cs-hover img {
-	-webkit-transform: translateY(-90px);
-	-moz-transform: translateY(-90px);
-	-ms-transform: translateY(-90px);
-	transform: translateY(-90px);
+.screenshot-caption_bottom {
+  top: 100%;
+  left: 0;
 }
 
-.projects figcaption {
-	height: 90px;
-	width: 100%;
-	top: auto;
-	bottom: 0;
+.screenshot:hover .screenshot-caption {
+  top: 0;
+  left: 0;
+  transition: all 0.5s ease-out;
 }
 
-.projects figcaption a {
-	position: absolute;
-	right: 20px;
-	top: 30px;
+.screenshot:hover .screenshot-caption > * {
+  transition: opacity 1s ease;
+  opacity: 1;
+ 
 }

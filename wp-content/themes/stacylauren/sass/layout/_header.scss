@@ -45,12 +45,7 @@
     	width: 35px;
     	margin-right: 15px;
     }
-    
-    /* HOVER COLOR */
 
-    &:hover svg  { 
-      fill: $pink;
-    }
      /*@media ($screen-xs) {
         width: 70%;
 		padding-left: 0;
@@ -110,21 +105,17 @@
 .branding {
 	position: relative;
 	height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+	-webkit-box-align: center;
+	align-items: center;	
 	
 }
 
 .title {
-
 	text-align: center;
-	top: 20%;
 	color: white;
 	min-width: 375px;
-	@media ($screen-lg) {
-		top: 20%;
-	}
-	@media ($screen-xs) {
-		top: 15%;
-	}
 }
 
 .logo img {

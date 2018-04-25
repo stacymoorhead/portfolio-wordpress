@@ -79,12 +79,12 @@ jQuery(document).ready(function($){
   //-------------------ANIMATED GRADIENT
 
   var colors = new Array(
-    [252,238,33],
-    [217,224,33],
-    [140,198,63],
-    [0,176,176],
-    [147,39,143],
-    [212,20,90]);
+    [252,238,33], //yellow
+    [217,224,33], //lime green
+    [140,198,63], //green
+    [0,176,176],  //teal
+    [147,39,143], //purple
+    [212,20,90]); //pink
   
   var step = 0;
   //color table indices for: 

@@ -17,16 +17,16 @@ get_header();
 
 				
 			<section class="row branding">
-				<div class="col-md-12 title">
-					<div class="logo fadein500">
+				<div class="col-md-12 title fadein600">
+					<div class="logo">
 						<?php the_custom_logo(); ?>
 					</div> <!-- .logo -->
-					<h1 class="fadein600"><?php bloginfo( 'name' ); ?></h1>
+					<h1><?php bloginfo( 'name' ); ?></h1>
 					<?php 
 					$stacylauren_description = get_bloginfo( 'description', 'display' );
 					if ( $stacylauren_description || is_customize_preview() ) :
 						?>
-						<p class="fadein600"><?php echo $stacylauren_description; /* WPCS: xss ok. */ ?></p>
+						<p><?php echo $stacylauren_description; /* WPCS: xss ok. */ ?></p>
 					<?php endif; 
 					get_sidebar('homepage-buttons'); ?>
 					<!--<button class="button fadein700">See the Work</button>

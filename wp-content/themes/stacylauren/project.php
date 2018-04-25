@@ -36,7 +36,7 @@ get_header(); ?>
             					      while( $projects->have_posts() ) :
             					        $projects->the_post();
             					        ?>
-            					            <article>
+            					            <article class="hideme">
             					            	<figure class="screenshot"><?php printf( '%1$s<figcaption class="screenshot-caption screenshot-caption_bottom"><div><h2>%2$s</h2><p>%3$s</p></div></figcaption>', get_the_post_thumbnail(), get_the_title(), get_the_excerpt() /*get_field('job_title')*/ ); 
             					        ?>
             									</figure>

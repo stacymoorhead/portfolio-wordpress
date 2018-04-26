@@ -146,6 +146,17 @@ function stacylauren_widgets_init() {
 add_action( 'widgets_init', 'stacylauren_widgets_init' );
 
 /**
+ * Register social media area.
+ *
+ */
+add_action( 'init', 'stacylauren_register_nav_menus' );
+
+function stacylauren_register_nav_menus() {
+	register_nav_menu( 'social', __( 'Social', 'example-textdomain' ) );
+} 
+ 
+
+/**
  * Add buttons shortcode 
  */
  function button_shortcode( $atts, $content = null ) {
@@ -252,5 +263,8 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+
+
 
 

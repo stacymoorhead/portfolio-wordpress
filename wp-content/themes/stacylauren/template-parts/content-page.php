@@ -17,15 +17,10 @@
 			</div> <!-- .col-med-12 -->
 		</div> <!-- row -->
 	</header><!-- .entry-header -->
-	<div class="row">
-		<div class="col-md-12">
-			<div class="arrow-down"></div>
-		</div> <!-- .col-med-12 -->
-	</div> <!-- row -->		
 	<?php stacylauren_post_thumbnail(); ?>
 
 	<div class="entry-content">
-		<div class="container">
+		<div class="container content">
 			<div class="row">
 				<div class="col-md-12">
 				<?php

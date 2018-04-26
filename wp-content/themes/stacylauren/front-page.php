@@ -19,7 +19,18 @@ get_header();
 			<section class="row branding">
 				<div class="col-md-12 title fadein600">
 					<div class="logo">
-						<?php the_custom_logo(); ?>
+						<?php
+						// check to see if the logo exists and add it to the page
+						if ( get_theme_mod( 'stacylauren_homepage_logo' ) ) : ?>
+						 
+						<img src="<?php echo get_theme_mod( 'stacylauren_homepage_logo' ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" >
+						 
+						<?php // add a fallback if the logo doesn't exist
+						else : ?>
+						 
+						<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
+						 
+						<?php endif; ?>
 					</div> <!-- .logo -->
 					<h1><?php bloginfo( 'name' ); ?></h1>
 					<?php 

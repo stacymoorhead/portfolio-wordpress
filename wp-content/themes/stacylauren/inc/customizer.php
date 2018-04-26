@@ -53,3 +53,23 @@ function stacylauren_customize_preview_js() {
 	wp_enqueue_script( 'stacylauren-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20151215', true );
 }
 add_action( 'customize_preview_init', 'stacylauren_customize_preview_js' );
+
+
+/**
+* Create Logo Setting and Upload Control
+*/
+function stacylauren_new_customizer_settings($wp_customize) {
+// add a setting for the site logo
+$wp_customize->add_setting('stacylauren_homepage_logo');
+// Add a control to upload the logo
+$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'stacylauren_homepage_logo',
+array(
+'label' => 'Upload Homepage Logo',
+'section' => 'title_tagline',
+'settings' => 'stacylauren_homepage_logo',
+) ) );
+}
+add_action('customize_register', 'stacylauren_new_customizer_settings');
+
+
+

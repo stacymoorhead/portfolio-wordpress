@@ -21,15 +21,35 @@
 	margin: 0 0 1.5em;
 }
 
+.entry-content {
+    z-index: 0;
+}
+
 .entry-header {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
 	padding: 1em;
-    background: rgba(255, 255, 255, 0.5);
-    color: $pink;
+    background: rgba(255, 255, 255, .85);
+    color: $silver;
     text-align: center;
     h1 {
-    	font-size: 5em;
-    	font-family: $accent-font;	
+    	font-size: 4em;
+    	font-family: $secondary-font;	
     	margin: 0;
+    }
+    ::after {
+        position: absolute;
+        bottom: -15px;
+    	left: 50%;
+    	width: 0; 
+    	height: 0; 
+    	border-left: 15px solid transparent;
+    	border-right: 15px solid transparent;
+    	border-top: 15px solid rgba(255, 255, 255, .85);
+    	@media ($screen-xs) {
+    		left: 47%;
+    	}
     }
 	@media ($screen-xs) {
 		padding: .5em;
@@ -38,16 +58,14 @@
 }
 
 .arrow-down {
-	position: relative;
-	left: 50%;
-	width: 0; 
-	height: 0; 
-	border-left: 15px solid transparent;
-	border-right: 15px solid transparent;
-	border-top: 15px solid rgba(255, 255, 255, 0.5);
-	@media ($screen-xs) {
-		left: 47%;
-	}
+
+}
+
+.content {
+    margin-top: 200px;
+    @media ($screen-xs) {
+        margin-top: 150px;
+    }
 }
 
 .projects {

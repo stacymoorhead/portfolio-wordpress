@@ -19,10 +19,14 @@
 
 	<?php wp_head(); ?>
 </head>
-
+<?php if ( is_front_page() ) { ?>
 <body <?php body_class(); ?> id="gradient">
 	<div class="bg">
-		<?php if ( !is_front_page() ) :?><div class="sticky-footer-box"><?php endif; ?>
+<?php }  else { ?>
+<body <?php body_class(); ?> id="body_bg">
+	<div>
+<?php } ?>		
+		
 		<div id="page" class="site">
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'stacylauren' ); ?></a>
 			<div id="wrapper" class="">
@@ -55,9 +59,10 @@
 						</div> <!-- .col-md-6 -->
 						<div class="col-md-6">
 							<div class="social-container">
-						        <div class="social"><a href="http://www.facebook.com/stacy.pezzola"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></div>
+								<?php get_template_part( 'menu', 'social' ); ?>
+						        <!--<div class="social"><a href="http://www.facebook.com/stacy.pezzola"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></div>
 						        <div class="social"><a href="http://www.twitter.com/heartshapedfart"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></div>
-						        <div class="social"><a href="http://www.instagram.com/heartshapedfarts"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></div>
+						        <div class="social"><a href="http://www.instagram.com/heartshapedfarts"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></div>-->
 					        </div><!-- .social-container -->    
 					    </div> <!-- .col-md-6 -->    
 					</div><!-- .row -->

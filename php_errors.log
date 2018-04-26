@@ -1,0 +1,13 @@
+[25-Apr-2018 19:38:33 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/wp-content/themes/stacylauren/functions.php on line 282
+[25-Apr-2018 19:38:33 UTC] PHP Stack trace:
+[25-Apr-2018 19:38:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[25-Apr-2018 19:38:33 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[25-Apr-2018 19:38:33 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[25-Apr-2018 19:38:33 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[25-Apr-2018 19:38:35 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/wp-content/themes/stacylauren/functions.php on line 282
+[25-Apr-2018 19:38:35 UTC] PHP Stack trace:
+[25-Apr-2018 19:38:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/customize.php:0
+[25-Apr-2018 19:38:35 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/customize.php:13
+[25-Apr-2018 19:38:35 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-admin/admin.php:31
+[25-Apr-2018 19:38:35 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-load.php:37
+[25-Apr-2018 19:38:35 UTC] PHP   5. require_once() /home/ubuntu/workspace/wp-config.php:92

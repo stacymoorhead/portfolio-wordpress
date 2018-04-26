@@ -26,7 +26,7 @@
         </footer>
         <?php	
         endif; ?>
-    <?php if ( !is_front_page() ) :?></div> <!-- .sticky-footer-box --><?php endif; ?>     
+   
     </div> <!-- .bg -->
 </body>
 </html>

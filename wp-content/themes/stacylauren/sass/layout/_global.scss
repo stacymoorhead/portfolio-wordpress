@@ -12,6 +12,17 @@
 	z-index: 0;
 }
 
+#body_bg {
+	/*background: $lightgray url(img/bg.png) repeat;*/
+	background-color: $lightgray;
+	background-image: url(img/bg.png), gradient(linear, 0 0, 100% 100%, from($orange), to($pink));
+	background-image: url(img/bg.png), linear-gradient(to right top, $orange, $pink); /* For Safari 5.1 to 6.0 */ /* For Opera 11.1 to 12.0 */ /* For Firefox 3.6 to 15 */ /* Standard syntax (must be last) */
+	background-repeat: repeat, repeat;
+	background-size: 75px 75px, 100% 100%;	
+	background-attachment: fixed, fixed;
+	
+}
+
 /*#gradient {
     width: inherit;
 	padding: 0px;
@@ -24,6 +35,7 @@
 
 .bg {
 	width: 100vw;
+	height: 100vh;
 	background: url(img/bg.png) repeat;
 	background-size: 75px 75px;
 	z-index: 100;

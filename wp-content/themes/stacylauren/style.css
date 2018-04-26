@@ -385,7 +385,7 @@ input,
 select,
 optgroup,
 textarea {
-	color: #404040;
+	color: #e6e6e6;
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 	font-size: 20px;
 	font-size: 1.25rem;
@@ -440,7 +440,7 @@ h1, h2, h3, h4 {
 }
 
 h3, h4 {
-	color: #8CC63F;
+	color: #78A22F;
 }
 
 p {
@@ -555,7 +555,7 @@ a:hover {
 	font-weight: 700;
 	color: white;
 	border: 2px solid white;
-	transition: all 0.8s ease-in-out;
+	transition: all 0.7s ease-in-out;
 	font-family: "Montserrat", Helvetica, Arial, sans-serif;
 	background-color: transparent;
 	margin: 1em;
@@ -819,7 +819,7 @@ textarea {
 }
 
 .site-header a :hover {
-	color: #D4145A;
+	color: #78A22F;
 }
 
 .site-header ul {
@@ -896,19 +896,13 @@ textarea {
 	/*width: 25%;*/
 	float: right;
 	box-sizing: border-box;
-	padding: 0;
+	padding: 0 20px 0 0;
 	position: relative;
 	/* @media ($screen-xs) {
 		width: 200px;
 		margin: 0 auto;
 		text-align: center;
 	}*/
-}
-
-@media (max-width: 767px) {
-	.social-container {
-		padding: 5px 0 0 0;
-	}
 }
 
 .social a {
@@ -957,6 +951,20 @@ textarea {
 	z-index: 0;
 }
 
+#body_bg {
+	/*background: $lightgray url(img/bg.png) repeat;*/
+	background-color: #e3e3e3;
+	background-image: url(img/bg.png), gradient(linear, 0 0, 100% 100%, from(#de9a18), to(#D4145A));
+	background-image: url(img/bg.png), linear-gradient(to right top, #de9a18, #D4145A);
+	/* For Safari 5.1 to 6.0 */
+	/* For Opera 11.1 to 12.0 */
+	/* For Firefox 3.6 to 15 */
+	/* Standard syntax (must be last) */
+	background-repeat: repeat, repeat;
+	background-size: 75px 75px, 100% 100%;
+	background-attachment: fixed, fixed;
+}
+
 /*#gradient {
     width: inherit;
 	padding: 0px;
@@ -970,6 +978,7 @@ textarea {
 /*}*/
 .bg {
 	width: 100vw;
+	height: 100vh;
 	background: url(img/bg.png) repeat;
 	background-size: 75px 75px;
 	z-index: 100;
@@ -1070,7 +1079,7 @@ textarea {
 	letter-spacing: .1em;
 	line-height: 1.6em;
 	font-size: 1.2em;
-	transition: all 0.8s ease-in-out;
+	transition: all 0.7s ease-in-out;
 	cursor: pointer;
 }
 
@@ -1088,7 +1097,7 @@ textarea {
 
 .services-hover-box:hover {
 	opacity: 1;
-	transition: all 0.8s ease-in-out;
+	transition: all 0.7s ease-in-out;
 }
 
 .hideme {
@@ -1100,7 +1109,7 @@ textarea {
 }
 
 .site-footer {
-	background-color: rgba(0, 0, 0, 0.25);
+	background-color: rgba(0, 0, 0, 0.15);
 	padding: 15px;
 	z-index: 99;
 	text-align: center;
@@ -1120,11 +1129,64 @@ textarea {
 }
 
 .site-footer a:hover {
-	color: #D4145A !important;
+	color: #78A22F !important;
 }
 
 .site-footer p {
 	margin: 0;
+}
+
+.screen-reader-text {
+	position: absolute;
+	top: -9999em;
+	left: -9999em;
+}
+
+#menu-social a:hover, #menu-social a:focus, #menu-social a:active {
+	color: #78A22F !important;
+	transition: all 0.7s ease-in-out;
+}
+
+#menu-social ul {
+	list-style: none;
+	margin: 0;
+	text-align: center;
+}
+
+#menu-social ul li {
+	display: inline-block;
+	position: relative;
+}
+
+#menu-social li a::before {
+	display: inline-block;
+	padding: 0;
+	font-family: 'fontawesome';
+	font-size: 1.5em;
+	vertical-align: top;
+	-webkit-font-smoothing: antialiased;
+}
+
+@media (max-width: 767px) {
+	#menu-social li a::before {
+		padding: 0 5px;
+	}
+}
+
+#menu-social li a[href*="facebook.com"]::before {
+	content: '\f09a';
+}
+
+#menu-social li a[href*="twitter.com"]::before {
+	content: '\f099';
+}
+
+#menu-social li a[href*="instagram.com"]::before {
+	content: '\f16d';
+}
+
+#menu-social li a[href*="linkedin.com"]::before {
+	content: '\f0e1';
 }
 
 /*--------------------------------------------------------------
@@ -1134,15 +1196,16 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: white;
 }
 
 a:visited {
-	color: purple;
+	color: white;
 }
 
 a:hover, a:focus, a:active {
-	color: midnightblue;
+	color: #78A22F;
+	transition: all 0.7s ease-in-out;
 }
 
 a:focus {
@@ -1558,17 +1621,41 @@ body, html {
 	margin: 0 0 1.5em;
 }
 
+.entry-content {
+	z-index: 0;
+}
+
 .entry-header {
+	position: fixed;
+	width: 100%;
+	z-index: 10;
 	padding: 1em;
-	background: rgba(255, 255, 255, 0.5);
-	color: #D4145A;
+	background: rgba(255, 255, 255, 0.85);
+	color: #495E67;
 	text-align: center;
 }
 
 .entry-header h1 {
-	font-size: 5em;
-	font-family: "Covered By Your Grace", serif;
+	font-size: 4em;
+	font-family: "Montserrat", Helvetica, Arial, sans-serif;
 	margin: 0;
+}
+
+.entry-header ::after {
+	position: absolute;
+	bottom: -15px;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 15px solid rgba(255, 255, 255, 0.85);
+}
+
+@media (max-width: 767px) {
+	.entry-header ::after {
+		left: 47%;
+	}
 }
 
 @media (max-width: 767px) {
@@ -1578,19 +1665,13 @@ body, html {
 	}
 }
 
-.arrow-down {
-	position: relative;
-	left: 50%;
-	width: 0;
-	height: 0;
-	border-left: 15px solid transparent;
-	border-right: 15px solid transparent;
-	border-top: 15px solid rgba(255, 255, 255, 0.5);
+.content {
+	margin-top: 200px;
 }
 
 @media (max-width: 767px) {
-	.arrow-down {
-		left: 47%;
+	.content {
+		margin-top: 150px;
 	}
 }
 

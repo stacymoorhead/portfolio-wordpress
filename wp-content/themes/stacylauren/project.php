@@ -13,17 +13,13 @@ get_header(); ?>
     				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
     			</div> <!-- .col-med-12 -->
     		</div> <!-- row -->
+    		
     	</header><!-- .entry-header -->   
-    	<div class="row">
-    		<div class="col-md-12">
-    			<div class="arrow-down"></div>
-    		</div> <!-- .col-med-12 -->
-    	</div> <!-- row -->	
     	<div class="entry-content">
-    		<div class="container">
+    		<div class="container content">
     			<div class="row">
     				<div class="col-md-12">
-            			<section class="projects">
+            			<section class="projects fadein700">
             					<?php
             					$args = array(
             					  'post_type'   => 'projects',
@@ -36,7 +32,7 @@ get_header(); ?>
             					      while( $projects->have_posts() ) :
             					        $projects->the_post();
             					        ?>
-            					            <article class="hideme">
+            					            <article>
             					            	<figure class="screenshot"><?php printf( '%1$s<figcaption class="screenshot-caption screenshot-caption_bottom"><div><h2>%2$s</h2><p>%3$s</p></div></figcaption>', get_the_post_thumbnail(), get_the_title(), get_the_excerpt() /*get_field('job_title')*/ ); 
             					        ?>
             									</figure>

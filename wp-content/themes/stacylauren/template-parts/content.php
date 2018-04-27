@@ -27,6 +27,7 @@
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
+		<div class="arrow-down"></div>
 	</header><!-- .entry-header -->
 	<?php stacylauren_post_thumbnail(); ?>
 

@@ -19,15 +19,19 @@
         <footer class="site-footer">
             <div class="row footer-widgets">
                 <div class="container">
-                    <div class="col-md-4">
+                    <div class="col-md-4 links">
+                        <h2>Links</h2>
+                        <hr>
                         <?php wp_nav_menu( array ( 'menu' => 'footer' ) ); ?>
                     </div><!-- .col-md-4 -->
-                    <div class="col-md-4">
+                    <div class="col-md-4 footer-branding">
+                        <h2>Contact</h2>
+                        <hr>
                         <?php the_custom_logo(); ?>
-                        <?php bloginfo( 'name' ); ?>
                     </div><!-- .col-md-4 -->
-                    <div class="col-md-4">
-                        <h2>Find me on:</h2>
+                    <div class="col-md-4 footer-social">
+                        <h2>Find me on</h2>
+                        <hr>
                         <?php get_template_part( 'menu', 'social' ); ?>
                     </div><!-- .col-md-4 -->
                 </div> <!-- .container -->    

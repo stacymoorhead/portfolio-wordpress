@@ -16,6 +16,7 @@
 				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 			</div> <!-- .col-med-12 -->
 		</div> <!-- row -->
+    	<div class="arrow-down"></div>
 	</header><!-- .entry-header -->
 	<?php stacylauren_post_thumbnail(); ?>
 

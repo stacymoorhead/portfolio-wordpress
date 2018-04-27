@@ -76,6 +76,7 @@ body, html {
     position: absolute;
     top: 0;
     width: 220px;
+    font-weight: bold;
 }
 
     .sidebar-nav li {
@@ -102,7 +103,7 @@ body, html {
         }
 
         .sidebar-nav li:before {
-            background-color: #6bb4e7;
+            background-color: $green;
         }
 
         .sidebar-nav li:hover:before {

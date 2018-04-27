@@ -1,14 +1,13 @@
 .footer-widgets {
 	background-color: rgba(0, 0, 0, 0.7);
-	padding: 15px;
 	z-index: 99;
 	text-align: center;
-	color: $lightgray;
+	color: $medgray;
 	font-size: .8em;
 	box-sizing: border-box;
 	a {
     font-family: $secondary-font;
-    color: white !important;
+    color: $medgray !important;
     text-decoration: none;
     transition: .5s background-color;
 	    &:hover {
@@ -19,13 +18,13 @@
  	    margin: 0;
  	}
  	
- 	img {
- 		width: 50%;
- 	}
  	h2 {
  		text-transform: none;
  		font-size: 1.4em;
  		text-align: center;
+ 		font-weight: 800;
+ 		color: white;
+ 		margin: 0;
  	}
  	#menu-social ul {
  		padding: 0;
@@ -33,6 +32,55 @@
  	#menu-social ul li {
  		margin: 0 5px;
  	}
+}
+
+.links {
+	padding: 1.5em;
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		li {
+			margin: 0;
+			padding: .25em 0;
+			:after {
+				content: '\f105';
+			   font-family: FontAwesome;
+			   font-weight: normal;
+			   font-style: normal;
+			   margin:0px 0px 0px 10px;
+			   text-decoration:none;
+			}
+			
+		}
+	}
+}
+
+.footer-branding {
+	padding: 1.5em;
+	background: rgba(white, .1);
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+ 	img {
+ 		width: 30%;
+ 	}	
+}
+
+.footer-social {
+	padding: 1.5em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	#menu-social {
+		font-size: 2em;
+	}
 }
 
 

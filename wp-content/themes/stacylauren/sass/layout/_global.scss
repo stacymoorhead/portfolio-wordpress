@@ -152,3 +152,16 @@
 .fadein500, .fadein600, .fadein700 {
 	opacity: 0;
 }
+
+.no-margins {
+	margin: 0;
+}
+
+hr {
+	width: 30px;
+	color: $green;
+	background: $green;
+	border: none;
+	margin: 10px;
+	height: 2px;
+}

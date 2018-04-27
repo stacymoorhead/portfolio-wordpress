@@ -385,7 +385,7 @@ input,
 select,
 optgroup,
 textarea {
-	color: #e6e6e6;
+	color: #626262;
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 	font-size: 20px;
 	font-size: 1.25rem;
@@ -642,7 +642,7 @@ a:hover {
 blockquote {
 	font-size: .9em;
 	font-style: italic;
-	border-left: 5px solid #75b691;
+	border-left: 5px solid #78A22F;
 }
 
 /*--------------------------------------------------------------
@@ -813,7 +813,7 @@ textarea {
 	font-family: "Montserrat", Helvetica, Arial, sans-serif;
 	color: #ffffff !important;
 	text-transform: uppercase;
-	letter-spacing: .25em;
+	/*letter-spacing: .25em; */
 	text-decoration: none;
 	transition: .5s background-color;
 }
@@ -1105,19 +1105,31 @@ textarea {
 	opacity: 0;
 }
 
+.no-margins {
+	margin: 0;
+}
+
+hr {
+	width: 30px;
+	color: #78A22F;
+	background: #78A22F;
+	border: none;
+	margin: 10px;
+	height: 2px;
+}
+
 .footer-widgets {
 	background-color: rgba(0, 0, 0, 0.7);
-	padding: 15px;
 	z-index: 99;
 	text-align: center;
-	color: #e3e3e3;
+	color: #9a9a9a;
 	font-size: .8em;
 	box-sizing: border-box;
 }
 
 .footer-widgets a {
 	font-family: "Montserrat", Helvetica, Arial, sans-serif;
-	color: white !important;
+	color: #9a9a9a !important;
 	text-decoration: none;
 	transition: .5s background-color;
 }
@@ -1130,14 +1142,13 @@ textarea {
 	margin: 0;
 }
 
-.footer-widgets img {
-	width: 50%;
-}
-
 .footer-widgets h2 {
 	text-transform: none;
 	font-size: 1.4em;
 	text-align: center;
+	font-weight: 800;
+	color: white;
+	margin: 0;
 }
 
 .footer-widgets #menu-social ul {
@@ -1146,6 +1157,69 @@ textarea {
 
 .footer-widgets #menu-social ul li {
 	margin: 0 5px;
+}
+
+.links {
+	padding: 1.5em;
+	text-align: left;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	    flex-direction: column;
+	-ms-flex-align: center;
+	    align-items: center;
+	-ms-flex-pack: start;
+	    justify-content: flex-start;
+}
+
+.links ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.links ul li {
+	margin: 0;
+	padding: .25em 0;
+}
+
+.links ul li :after {
+	content: '\f105';
+	font-family: FontAwesome;
+	font-weight: normal;
+	font-style: normal;
+	margin: 0px 0px 0px 10px;
+	text-decoration: none;
+}
+
+.footer-branding {
+	padding: 1.5em;
+	background: rgba(255, 255, 255, 0.1);
+	height: 100%;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	    flex-direction: column;
+	-ms-flex-align: center;
+	    align-items: center;
+}
+
+.footer-branding img {
+	width: 30%;
+}
+
+.footer-social {
+	padding: 1.5em;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	    flex-direction: column;
+	-ms-flex-align: center;
+	    align-items: center;
+}
+
+.footer-social #menu-social {
+	font-size: 2em;
 }
 
 .copyright {
@@ -1349,6 +1423,7 @@ body, html {
 	position: absolute;
 	top: 0;
 	width: 220px;
+	font-weight: bold;
 }
 
 .sidebar-nav li {
@@ -1371,7 +1446,7 @@ body, html {
 }
 
 .sidebar-nav li:before {
-	background-color: #6bb4e7;
+	background-color: #78A22F;
 }
 
 .sidebar-nav li:hover:before {
@@ -1665,7 +1740,7 @@ body, html {
 }
 
 .hentry {
-	margin: 0 0 1.5em;
+	margin: 0;
 }
 
 .updated:not(.published) {
@@ -1685,39 +1760,45 @@ body, html {
 
 .entry-content {
 	z-index: 0;
+	margin: 0;
+	background: white;
 }
 
 .entry-header {
-	position: fixed;
+	position: relative;
 	width: 100%;
+	height: 300px;
 	z-index: 10;
 	padding: 1em;
-	background: rgba(255, 255, 255, 0.85);
-	color: #495E67;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	    align-items: center;
+	-ms-flex-pack: center;
+	    justify-content: center;
+	/*background: rgba(255, 255, 255, .85);*/
+	color: black;
 	text-align: center;
+	/*::after {
+        position: absolute;
+        bottom: -15px;
+    	left: 50%;
+    	width: 0; 
+    	height: 0; 
+    	border-left: 15px solid transparent;
+    	border-right: 15px solid transparent;
+    	border-top: 15px solid rgba(255, 255, 255, .85);
+    	@media ($screen-xs) {
+    		left: 47%;
+    	}
+    }*/
 }
 
 .entry-header h1 {
-	font-size: 4em;
-	font-family: "Montserrat", Helvetica, Arial, sans-serif;
-	margin: 0;
-}
-
-.entry-header ::after {
-	position: absolute;
-	bottom: -15px;
-	left: 50%;
-	width: 0;
-	height: 0;
-	border-left: 15px solid transparent;
-	border-right: 15px solid transparent;
-	border-top: 15px solid rgba(255, 255, 255, 0.85);
-}
-
-@media (max-width: 767px) {
-	.entry-header ::after {
-		left: 47%;
-	}
+	font-size: 7em;
+	font-family: "Covered By Your Grace", serif;
+	text-transform: none;
+	margin: -32px 0 0;
 }
 
 @media (max-width: 767px) {
@@ -1727,14 +1808,36 @@ body, html {
 	}
 }
 
-.content {
-	margin-top: 200px;
+.arrow-down {
+	left: 0;
+	right: 0;
+	overflow: hidden;
+	margin-top: 32px;
 }
 
-@media (max-width: 767px) {
-	.content {
-		margin-top: 150px;
-	}
+.arrow-down, .arrow-down:after, .arrow-down:before {
+	content: "";
+	position: absolute;
+	height: 32px;
+	bottom: 0;
+}
+
+.arrow-down:after, .arrow-down:before {
+	left: -16px;
+	width: 50%;
+	background-color: white;
+	transform: skew(45deg, 0);
+	z-index: 100;
+}
+
+.arrow-down:after {
+	left: auto;
+	right: -16px;
+	transform: skew(-45deg, 0);
+}
+
+.content {
+	margin-top: 25px;
 }
 
 .projects {

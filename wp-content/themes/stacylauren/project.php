@@ -15,7 +15,7 @@ get_header(); ?>
     		</div> <!-- row -->
     	<div class="arrow-down"></div>	
     	</header><!-- .entry-header -->   
-    	<div class="entry-content">
+    	<div class="entry-content container-fluid">
     		<div class="content">
     			<div class="row">
     				<div class="col-md-12">

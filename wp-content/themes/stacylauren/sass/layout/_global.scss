@@ -21,6 +21,9 @@
 	/*background-size: 1200px 1200px, 100% 100%;*/	
 	background-size: 600px auto, 100% 100%;
 	background-attachment: fixed, fixed;
+	@media ($screen-xxs) {
+		background-size: 400px auto, 100% 100%;
+	}
 	
 }
 
@@ -43,6 +46,9 @@
 	padding: 0;
 	margin: 0;
 	background-attachment: fixed;
+	@media ($screen-xxs) {
+		background-size: 400px auto, 100% 100%;
+	}	
 }
 
 .sticky-footer-box {

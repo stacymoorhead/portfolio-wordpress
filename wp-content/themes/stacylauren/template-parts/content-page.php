@@ -21,9 +21,10 @@
 	<?php stacylauren_post_thumbnail(); ?>
 
 	<div class="entry-content">
-		<div class="container content">
+		<div class="content">
 			<div class="row">
 				<div class="col-md-12">
+					<div class="container">
 				<?php
 				the_content();
 		
@@ -54,6 +55,7 @@
 						);
 						?>
 					</footer><!-- .entry-footer -->
+					</div> <!--
 				</div> <!-- .col-md-12 -->
 			</div> <!-- .row -->
 		</div> <!-- .container	-->

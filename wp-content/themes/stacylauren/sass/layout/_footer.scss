@@ -5,8 +5,8 @@
 	color: $medgray;
 	font-size: .8em;
 	box-sizing: border-box;
+	font-family: $secondary-font;
 	a {
-    font-family: $secondary-font;
     color: $medgray !important;
     text-decoration: none;
     transition: .5s background-color;
@@ -26,6 +26,11 @@
  		color: white;
  		margin: 0;
  	}
+ 	
+ 	h3 {
+ 		font-size: 1.2em;
+ 	}
+ 	
  	#menu-social ul {
  		padding: 0;
  	}

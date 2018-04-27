@@ -68,8 +68,45 @@ array(
 'section' => 'title_tagline',
 'settings' => 'stacylauren_homepage_logo',
 ) ) );
+
+
+// Contact Section
+    $wp_customize->add_section('contact_section', array(
+            'title' => esc_html__( 'Contact', 'stacylauren' ),
+            'priority' => 150
+        )
+    );      
+     
+    $wp_customize->add_setting('email_link',  array(
+            'sanitize_callback' => 'wp_filter_nohtml_kses' //removes all HTML from content
+        )
+    );
+     
+    $wp_customize->add_control('email_link', array(
+            'label' => esc_html__( 'Add email address', 'stacylauren' ),
+            'section' => 'contact_section',
+            'type' => 'text'
+        )
+    );   
+    
+    $wp_customize->add_setting('phone',  array(
+            'sanitize_callback' => 'wp_filter_nohtml_kses' //removes all HTML from content
+        )
+    );
+     
+    $wp_customize->add_control('phone', array(
+            'label' => esc_html__( 'Add phone number', 'stacylauren' ),
+            'section' => 'contact_section',
+            'type' => 'text'
+        )
+    );   
+
+
+
 }
 add_action('customize_register', 'stacylauren_new_customizer_settings');
+
+
 
 
 

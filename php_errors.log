@@ -21,3 +21,53 @@
 [26-Apr-2018 19:58:45 UTC] PHP   6. WP_Hook->do_action() /home/ubuntu/workspace/wp-includes/plugin.php:453
 [26-Apr-2018 19:58:45 UTC] PHP   7. WP_Hook->apply_filters() /home/ubuntu/workspace/wp-includes/class-wp-hook.php:310
 [26-Apr-2018 19:58:45 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/wp-includes/class-wp-hook.php:286}() /home/ubuntu/workspace/wp-includes/class-wp-hook.php:286
+[27-Apr-2018 19:14:01 UTC] PHP Notice:  Undefined variable: wp_customize in /home/ubuntu/workspace/wp-content/themes/stacylauren/inc/customizer.php on line 75
+[27-Apr-2018 19:14:01 UTC] PHP Stack trace:
+[27-Apr-2018 19:14:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[27-Apr-2018 19:14:01 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[27-Apr-2018 19:14:01 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[27-Apr-2018 19:14:01 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[27-Apr-2018 19:14:01 UTC] PHP   5. include() /home/ubuntu/workspace/wp-settings.php:426
+[27-Apr-2018 19:14:01 UTC] PHP   6. require() /home/ubuntu/workspace/wp-content/themes/stacylauren/functions.php:252
+[27-Apr-2018 19:14:01 UTC] PHP Fatal error:  Call to a member function add_section() on a non-object in /home/ubuntu/workspace/wp-content/themes/stacylauren/inc/customizer.php on line 75
+[27-Apr-2018 19:14:01 UTC] PHP Stack trace:
+[27-Apr-2018 19:14:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[27-Apr-2018 19:14:01 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[27-Apr-2018 19:14:01 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[27-Apr-2018 19:14:01 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[27-Apr-2018 19:14:01 UTC] PHP   5. include() /home/ubuntu/workspace/wp-settings.php:426
+[27-Apr-2018 19:14:01 UTC] PHP   6. require() /home/ubuntu/workspace/wp-content/themes/stacylauren/functions.php:252
+[27-Apr-2018 19:15:47 UTC] PHP Notice:  Undefined variable: wp_customize in /home/ubuntu/workspace/wp-content/themes/stacylauren/inc/customizer.php on line 75
+[27-Apr-2018 19:15:47 UTC] PHP Stack trace:
+[27-Apr-2018 19:15:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[27-Apr-2018 19:15:47 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[27-Apr-2018 19:15:47 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[27-Apr-2018 19:15:47 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[27-Apr-2018 19:15:47 UTC] PHP   5. include() /home/ubuntu/workspace/wp-settings.php:426
+[27-Apr-2018 19:15:47 UTC] PHP   6. require() /home/ubuntu/workspace/wp-content/themes/stacylauren/functions.php:252
+[27-Apr-2018 19:15:47 UTC] PHP Fatal error:  Call to a member function add_section() on a non-object in /home/ubuntu/workspace/wp-content/themes/stacylauren/inc/customizer.php on line 75
+[27-Apr-2018 19:15:47 UTC] PHP Stack trace:
+[27-Apr-2018 19:15:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[27-Apr-2018 19:15:47 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[27-Apr-2018 19:15:47 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[27-Apr-2018 19:15:47 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[27-Apr-2018 19:15:47 UTC] PHP   5. include() /home/ubuntu/workspace/wp-settings.php:426
+[27-Apr-2018 19:15:47 UTC] PHP   6. require() /home/ubuntu/workspace/wp-content/themes/stacylauren/functions.php:252
+[27-Apr-2018 19:15:48 UTC] PHP Notice:  Undefined variable: wp_customize in /home/ubuntu/workspace/wp-content/themes/stacylauren/inc/customizer.php on line 75
+[27-Apr-2018 19:15:48 UTC] PHP Stack trace:
+[27-Apr-2018 19:15:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/nav-menus.php:0
+[27-Apr-2018 19:15:48 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/nav-menus.php:13
+[27-Apr-2018 19:15:48 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-admin/admin.php:31
+[27-Apr-2018 19:15:48 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-load.php:37
+[27-Apr-2018 19:15:48 UTC] PHP   5. require_once() /home/ubuntu/workspace/wp-config.php:92
+[27-Apr-2018 19:15:48 UTC] PHP   6. include() /home/ubuntu/workspace/wp-settings.php:426
+[27-Apr-2018 19:15:48 UTC] PHP   7. require() /home/ubuntu/workspace/wp-content/themes/stacylauren/functions.php:252
+[27-Apr-2018 19:15:48 UTC] PHP Fatal error:  Call to a member function add_section() on a non-object in /home/ubuntu/workspace/wp-content/themes/stacylauren/inc/customizer.php on line 75
+[27-Apr-2018 19:15:48 UTC] PHP Stack trace:
+[27-Apr-2018 19:15:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/nav-menus.php:0
+[27-Apr-2018 19:15:48 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/nav-menus.php:13
+[27-Apr-2018 19:15:48 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-admin/admin.php:31
+[27-Apr-2018 19:15:48 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-load.php:37
+[27-Apr-2018 19:15:48 UTC] PHP   5. require_once() /home/ubuntu/workspace/wp-config.php:92
+[27-Apr-2018 19:15:48 UTC] PHP   6. include() /home/ubuntu/workspace/wp-settings.php:426
+[27-Apr-2018 19:15:48 UTC] PHP   7. require() /home/ubuntu/workspace/wp-content/themes/stacylauren/functions.php:252

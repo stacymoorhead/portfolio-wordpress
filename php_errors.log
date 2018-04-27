@@ -11,3 +11,13 @@
 [25-Apr-2018 19:38:35 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-admin/admin.php:31
 [25-Apr-2018 19:38:35 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-load.php:37
 [25-Apr-2018 19:38:35 UTC] PHP   5. require_once() /home/ubuntu/workspace/wp-config.php:92
+[26-Apr-2018 19:58:45 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'stacylauren_register_nav_menus' not found or invalid function name in /home/ubuntu/workspace/wp-includes/class-wp-hook.php on line 286
+[26-Apr-2018 19:58:45 UTC] PHP Stack trace:
+[26-Apr-2018 19:58:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[26-Apr-2018 19:58:45 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[26-Apr-2018 19:58:45 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[26-Apr-2018 19:58:45 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[26-Apr-2018 19:58:45 UTC] PHP   5. do_action() /home/ubuntu/workspace/wp-settings.php:450
+[26-Apr-2018 19:58:45 UTC] PHP   6. WP_Hook->do_action() /home/ubuntu/workspace/wp-includes/plugin.php:453
+[26-Apr-2018 19:58:45 UTC] PHP   7. WP_Hook->apply_filters() /home/ubuntu/workspace/wp-includes/class-wp-hook.php:310
+[26-Apr-2018 19:58:45 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/wp-includes/class-wp-hook.php:286}() /home/ubuntu/workspace/wp-includes/class-wp-hook.php:286

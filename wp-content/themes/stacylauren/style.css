@@ -956,10 +956,6 @@ textarea {
 	background-color: #e3e3e3;
 	background-image: url(img/bg.png), gradient(linear, 0 0, 100% 100%, from(#de9a18), to(#D4145A));
 	background-image: url(img/bg.png), linear-gradient(to right top, #de9a18, #D4145A);
-	/* For Safari 5.1 to 6.0 */
-	/* For Opera 11.1 to 12.0 */
-	/* For Firefox 3.6 to 15 */
-	/* Standard syntax (must be last) */
 	background-repeat: repeat, repeat;
 	background-size: 75px 75px, 100% 100%;
 	background-attachment: fixed, fixed;
@@ -1108,8 +1104,50 @@ textarea {
 	opacity: 0;
 }
 
-.site-footer {
-	background-color: rgba(0, 0, 0, 0.15);
+.footer-widgets {
+	background-color: rgba(0, 0, 0, 0.7);
+	padding: 15px;
+	z-index: 99;
+	text-align: center;
+	color: #e3e3e3;
+	font-size: .8em;
+	box-sizing: border-box;
+}
+
+.footer-widgets a {
+	font-family: "Montserrat", Helvetica, Arial, sans-serif;
+	color: white !important;
+	text-decoration: none;
+	transition: .5s background-color;
+}
+
+.footer-widgets a:hover {
+	color: #78A22F !important;
+}
+
+.footer-widgets p {
+	margin: 0;
+}
+
+.footer-widgets img {
+	width: 50%;
+}
+
+.footer-widgets h2 {
+	text-transform: none;
+	font-size: 1.4em;
+	text-align: center;
+}
+
+.footer-widgets #menu-social ul {
+	padding: 0;
+}
+
+.footer-widgets #menu-social ul li {
+	margin: 0 5px;
+}
+
+.copyright {
 	padding: 15px;
 	z-index: 99;
 	text-align: center;
@@ -1121,21 +1159,44 @@ textarea {
 	    flex-shrink: 0;
 }
 
-.site-footer a {
+.copyright a {
 	font-family: "Montserrat", Helvetica, Arial, sans-serif;
 	color: white !important;
 	text-decoration: none;
 	transition: .5s background-color;
 }
 
-.site-footer a:hover {
+.copyright a:hover {
 	color: #78A22F !important;
 }
 
-.site-footer p {
+.copyright p {
 	margin: 0;
 }
 
+/*.site-footer {
+	background-color: rgba(0, 0, 0, 0.15);
+	padding: 15px;
+	z-index: 99;
+	text-align: center;
+	color: $lightgray;
+	font-size: .8em;
+	box-sizing: border-box;
+	width: 100%;;
+	flex-shrink: 0;
+	a {
+    font-family: $secondary-font;
+    color: white !important;
+    text-decoration: none;
+    transition: .5s background-color;
+	    &:hover {
+	    	color:$green !important;
+	    }
+ 	}
+ 	p {
+ 	    margin: 0;
+ 	}
+}*/
 .screen-reader-text {
 	position: absolute;
 	top: -9999em;

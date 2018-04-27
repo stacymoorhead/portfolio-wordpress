@@ -45,6 +45,8 @@ if ( ! function_exists( 'stacylauren_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
 			'menu-1' => esc_html__( 'Primary', 'stacylauren' ),
+			'footer' => esc_html__( 'Footer', 'stacylauren' ),
+			'social' => esc_html__( 'Social', 'stacylauren' ),
 		) );
 
 		/*
@@ -145,15 +147,7 @@ function stacylauren_widgets_init() {
 }
 add_action( 'widgets_init', 'stacylauren_widgets_init' );
 
-/**
- * Register social media area.
- *
- */
-add_action( 'init', 'stacylauren_register_nav_menus' );
 
-function stacylauren_register_nav_menus() {
-	register_nav_menu( 'social', __( 'Social', 'example-textdomain' ) );
-} 
  
 
 /**

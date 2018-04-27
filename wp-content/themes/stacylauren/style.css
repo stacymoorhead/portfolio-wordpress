@@ -954,10 +954,11 @@ textarea {
 #body_bg {
 	/*background: $lightgray url(img/bg.png) repeat;*/
 	background-color: #e3e3e3;
-	background-image: url(img/bg.png), gradient(linear, 0 0, 100% 100%, from(#de9a18), to(#D4145A));
-	background-image: url(img/bg.png), linear-gradient(to right top, #de9a18, #D4145A);
+	background-image: url(img/bg3.png), gradient(linear, 0 0, 100% 100%, from(#de9a18), to(#D4145A));
+	background-image: url(img/bg3.png), linear-gradient(to right top, #de9a18, #D4145A);
 	background-repeat: repeat, repeat;
-	background-size: 75px 75px, 100% 100%;
+	/*background-size: 1200px 1200px, 100% 100%;*/
+	background-size: 600px auto, 100% 100%;
 	background-attachment: fixed, fixed;
 }
 
@@ -975,8 +976,8 @@ textarea {
 .bg {
 	width: 100vw;
 	height: 100vh;
-	background: url(img/bg.png) repeat;
-	background-size: 75px 75px;
+	background: url(img/bg3.png) repeat;
+	/*background-size: 75px 75px;*/
 	z-index: 100;
 	padding: 0;
 	margin: 0;

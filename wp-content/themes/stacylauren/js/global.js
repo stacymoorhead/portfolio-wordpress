@@ -118,9 +118,14 @@ jQuery(document).ready(function($){
   var b2 = Math.round(istep * c1_0[2] + step * c1_1[2]);
   var color2 = "rgb("+r2+","+g2+","+b2+")";
   
-   $('#gradient').css({
-     background: "-webkit-gradient(linear, left top, right bottom, from("+color1+"), to("+color2+"))"}).css({
-      background: "-moz-linear-gradient(left top, "+color1+" 0%, "+color2+" 100%)"});
+  $('#gradient').css("background-image", "url(img/bg.png), -webkit-gradient(linear, left top, right bottom, from("+color1+"), to("+color2+"))")
+   .css("background-image", "url(img/bg.png), -moz-linear-gradient(left top, "+color1+" 0%, "+color2+" 100%)")
+   .css("background-repeat", "repeat repeat").css("background-size", "75px 75px, 100% 100%")
+   .css("background-attachment", "fixed, fixed");
+   
+   //$('#gradient').css({
+     //background: "-webkit-gradient(linear, left top, right bottom, from("+color1+"), to("+color2+"))"}).css({
+      //background: "-moz-linear-gradient(left top, "+color1+" 0%, "+color2+" 100%)"});
     
     step += gradientSpeed;
     if ( step >= 1 )

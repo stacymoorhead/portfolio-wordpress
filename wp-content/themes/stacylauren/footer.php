@@ -31,6 +31,7 @@
                         <h3>Stacy Moorhead</h3>
                         <p class="email"><i class="fa fa-envelope"></i> <a href="mailto:<?php echo ( get_theme_mod('email_link') ); ?>"><?php echo ( get_theme_mod('email_link') ); ?></a></p>
                         <p class="phone"><i class="fa fa-phone"></i> <?php echo ( get_theme_mod('phone') ); ?></p>
+                        <?php get_sidebar('footer-button'); ?>
                     </div><!-- .col-md-4 -->
                     <div class="col-md-4 footer-social">
                         <h2>Find me on</h2>

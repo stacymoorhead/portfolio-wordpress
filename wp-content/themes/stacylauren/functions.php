@@ -144,6 +144,14 @@ function stacylauren_widgets_init() {
 		'before_widget' => '<button id="%1$s" class="button fadein700 %2$s">',
 		'after_widget'  => '</button>',
 	) );	
+	
+	register_sidebar( array(
+		'name'          => esc_html__( 'Footer Project Button', 'stacylauren' ),
+		'id'            => 'footer-button',
+		'description'   => esc_html__( 'Add link to projects to footer button.', 'stacylauren' ),
+		'before_widget' => '<button id="%1$s" class="button %2$s">',
+		'after_widget'  => '</button>',
+	) );		
 }
 add_action( 'widgets_init', 'stacylauren_widgets_init' );
 

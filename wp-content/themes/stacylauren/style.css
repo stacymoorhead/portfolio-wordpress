@@ -560,7 +560,7 @@ a:hover {
 	background-color: transparent;
 	margin: 1em;
 	/*width: 200px;*/
-	height: 40px;
+	height: auto;
 	text-transform: uppercase;
 	font-size: 1.2em;
 	font-weight: 400;
@@ -622,21 +622,32 @@ a:hover {
 	font-weight: 700;
 	letter-spacing: .1em;
 	margin: 0;
+	padding: 0;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	    align-items: center;
+	-ms-flex-pack: center;
+	    justify-content: center;
 	/*padding: 6px 2px;*/
 }
 
-.button a, .button a:visited {
+.button a {
 	color: white;
 	text-decoration: none;
 }
 
-.button a :hover, .button a :active, .button a :focus, .button a:visited :hover, .button a:visited :active, .button a:visited :focus {
-	color: #626262;
+.button a :hover, .button a :active, .button a :focus {
+	color: #78A22F !important;
 	text-decoration: none;
 }
 
 .button:hover, .button:active, .button:focus {
-	color: #626262;
+	color: #78A22F;
+}
+
+.button:hover a, .button:active a, .button:focus a {
+	color: #78A22F;
 }
 
 blockquote {
@@ -1833,7 +1844,7 @@ body, html {
 
 @media (max-width: 480px) {
 	.entry-header {
-		min-height: 200px;
+		min-height: 150px;
 	}
 }
 

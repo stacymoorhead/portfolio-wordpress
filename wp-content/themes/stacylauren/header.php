@@ -23,8 +23,8 @@
 <body <?php body_class(); ?> id="gradient">
 	<div class="bg">
 <?php }  else { ?>
-<body <?php body_class(); ?> id="body_bg">
-	<div>
+<body <?php body_class(); ?> id="gradient">
+	<div  class="bg">
 <?php } ?>		
 		
 		<div id="page" class="site">

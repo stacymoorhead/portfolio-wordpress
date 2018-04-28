@@ -74,11 +74,12 @@ textarea {
     background-color: transparent;
     margin: 1em;
     /*width: 200px;*/
-    height: 40px;
+    height: auto;
     text-transform: uppercase;
     font-size: 1.2em;
     font-weight: 400;
     letter-spacing: .1em;
+
     p {
         font-family: $secondary-font;
         text-transform: uppercase;
@@ -86,20 +87,27 @@ textarea {
         font-weight: 700;
         letter-spacing: .1em;
         margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         /*padding: 6px 2px;*/
     }
-    a, a:visited {
+    a {
         color: white;
         text-decoration: none;
         :hover, :active, :focus {
-            color: $gray;
+            color: $green !important;
             text-decoration: none;
         }
     }    
 }
 
 .button:hover, .button:active, .button:focus {
-	color: $gray;
+	color: $green;
+	a {
+	    color: $green;
+	}
 }
 
 blockquote {

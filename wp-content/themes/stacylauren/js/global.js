@@ -143,4 +143,20 @@ jQuery(document).ready(function($){
   }
   
   setInterval(updateGradient,10);
+  
+  
+//----------------- Randomize bg gradient
+
+/*function randombg(){
+  var random= Math.floor(Math.random() * 3) + 0;
+  var bigSize = ["url(img/bg3.png), linear-gradient(to right top, $orange, $pink)",
+                 "url(img/bg3.png), linear-gradient(to right top, $yellow, $lime-green)",
+                 "url(img/bg3.png), linear-gradient(to right top, $lime-green, $teal)",
+                 "url('http://placehold.it/300&text=banner4')",
+                 "url('http://placehold.it/300&text=banner5')",
+                 "url('http://placehold.it/300&text=banner6')"];
+  document.getElementById("body_bg").style.backgroundImage=bigSize[random];
+}*/
+  
+  
 }); 

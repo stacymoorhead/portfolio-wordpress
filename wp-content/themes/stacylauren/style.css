@@ -556,15 +556,18 @@ a:hover {
 	color: white;
 	border: 2px solid white;
 	transition: all 0.7s ease-in-out;
+	display: inline-block;
 	font-family: "Montserrat", Helvetica, Arial, sans-serif;
 	background-color: transparent;
 	margin: 1em;
-	/*width: 200px;*/
+	padding: .5em 1em;
+	width: auto;
 	height: auto;
 	text-transform: uppercase;
 	font-size: 1.2em;
 	font-weight: 400;
 	letter-spacing: .1em;
+	border-radius: 2px;
 }
 
 .button:link {
@@ -1187,6 +1190,12 @@ hr {
 	margin: 0 5px;
 }
 
+@media (max-width: 767px) {
+	.footer-widgets {
+		font-size: 1em;
+	}
+}
+
 .links {
 	padding: 1.5em;
 	text-align: left;
@@ -1221,7 +1230,7 @@ hr {
 }
 
 .footer-branding {
-	padding: 1.5em;
+	padding: 1.5em 1em;
 	background: rgba(255, 255, 255, 0.1);
 	height: 100%;
 	display: -ms-flexbox;
@@ -1232,8 +1241,32 @@ hr {
 	    align-items: center;
 }
 
-.footer-branding img {
-	width: 30%;
+.footer-branding .button a {
+	color: white !important;
+}
+
+.footer-branding .button a :hover, .footer-branding .button a :active {
+	color: #78A22F !important;
+}
+
+.contact-box {
+	margin: 1em auto 0 auto;
+	width: 300px;
+	text-align: left;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	    align-items: center;
+	-ms-flex-pack: space-evenly;
+	    justify-content: space-evenly;
+}
+
+.contact-box h3 {
+	margin: 0 0 5px 0;
+}
+
+.footer-logo {
+	width: 70px;
 }
 
 .footer-social {
@@ -1781,6 +1814,25 @@ body, html {
 	margin: 1.5em 0;
 }
 
+.page-content a,
+.entry-content a,
+.entry-summary a {
+	color: black;
+	font-weight: 800;
+}
+
+.page-content a:hover, .page-content a:active, .page-content a:focus,
+.entry-content a:hover,
+.entry-content a:active,
+.entry-content a:focus,
+.entry-summary a:hover,
+.entry-summary a:active,
+.entry-summary a:focus {
+	color: #78A22F !important;
+	transition: all 0.7s ease-in-out !important;
+	text-decoration: none !important;
+}
+
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
@@ -1844,7 +1896,7 @@ body, html {
 
 @media (max-width: 480px) {
 	.entry-header {
-		min-height: 150px;
+		min-height: 200px;
 	}
 }
 
@@ -2030,6 +2082,17 @@ body, html {
 .screenshot:hover .screenshot-caption > * {
 	transition: opacity 1s ease;
 	opacity: 1;
+}
+
+.filter {
+	width: 100%;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.filter .button {
+	border: 2px solid black;
+	font-size: .8em;
 }
 
 /*--------------------------------------------------------------

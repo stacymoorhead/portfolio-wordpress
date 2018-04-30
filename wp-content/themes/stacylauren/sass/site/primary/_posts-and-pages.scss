@@ -14,6 +14,15 @@
 .entry-content,
 .entry-summary {
 	margin: 1.5em 0 ;
+	a {
+	  color: black;
+	  font-weight: 800;
+	  &:hover, &:active, &:focus {
+	     color: $green !important;
+	     transition: $transition !important;
+	     text-decoration: none !important;
+	  }
+	}
 }
 
 .page-links {
@@ -67,7 +76,7 @@
 	}   
 	
 	@media ($screen-xxs) {
-	  min-height: 150px;
+	  min-height: 200px;
 	}
 }
 
@@ -237,4 +246,14 @@
   transition: opacity 1s ease;
   opacity: 1;
  
+}
+
+.filter {
+  width: 100%;
+  display: flex;
+  .button {
+    border: 2px solid black;
+    font-size: .8em;
+    
+  }
 }

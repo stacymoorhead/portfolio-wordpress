@@ -27,10 +27,16 @@
                     <div class="col-md-4 footer-branding">
                         <h2>Contact</h2>
                         <hr>
-                        <?php the_custom_logo(); ?>
-                        <h3>Stacy Moorhead</h3>
-                        <p class="email"><i class="fa fa-envelope"></i> <a href="mailto:<?php echo ( get_theme_mod('email_link') ); ?>"><?php echo ( get_theme_mod('email_link') ); ?></a></p>
-                        <p class="phone"><i class="fa fa-phone"></i> <?php echo ( get_theme_mod('phone') ); ?></p>
+                        <div class="contact-box">
+                            <div class="footer-logo">
+                                <?php the_custom_logo(); ?>
+                            </div><!-- .footer-logo -->
+                            <div class="contact-info">
+                                <h3>Stacy Moorhead</h3>
+                                <p class="email"><i class="fa fa-envelope"></i> <a href="mailto:<?php echo ( get_theme_mod('email_link') ); ?>"><?php echo ( get_theme_mod('email_link') ); ?></a></p>
+                                <p class="phone"><i class="fa fa-phone"></i> <?php echo ( get_theme_mod('phone') ); ?></p>
+                           </div> <!-- .contact-info -->
+                       </div><!-- .contact-box -->
                         <?php get_sidebar('footer-button'); ?>
                     </div><!-- .col-md-4 -->
                     <div class="col-md-4 footer-social">

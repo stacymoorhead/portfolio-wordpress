@@ -37,6 +37,10 @@
  	#menu-social ul li {
  		margin: 0 5px;
  	}
+ 	
+ 	@media ($screen-xs) {
+ 		font-size: 1em;
+ 	}
 }
 
 .links {
@@ -67,15 +71,34 @@
 }
 
 .footer-branding {
-	padding: 1.5em;
+	padding: 1.5em 1em;
 	background: rgba(white, .1);
 	height: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
- 	img {
- 		width: 30%;
- 	}	
+	.button a{
+		color: white !important;
+		:hover, :active {
+			color: $green !important;
+		}
+	}
+}
+
+.contact-box {
+	margin: 1em auto 0 auto;
+	width: 300px;
+	text-align: left;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	h3 {
+		margin: 0 0 5px 0;
+	}
+} 
+
+.footer-logo {
+	width: 70px;
 }
 
 .footer-social {

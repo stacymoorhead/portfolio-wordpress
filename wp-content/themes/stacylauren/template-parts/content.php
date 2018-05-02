@@ -27,40 +27,34 @@
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
-		<div class="arrow-down"></div>
 	</header><!-- .entry-header -->
 	<?php stacylauren_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<div class="contaner content">
-			<div class="row">
-				<div class="col-md-12">			
-					<?php
-					the_content( sprintf(
-						wp_kses(
-							/* translators: %s: Name of current post. Only visible to screen readers */
-							__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'stacylauren' ),
-							array(
-								'span' => array(
-									'class' => array(),
-								),
-							)
+			<?php
+			the_content( sprintf(
+				wp_kses(
+					/* translators: %s: Name of current post. Only visible to screen readers */
+					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'stacylauren' ),
+					array(
+						'span' => array(
+							'class' => array(),
 						),
-						get_the_title()
-					) );
-			
-					wp_link_pages( array(
-						'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'stacylauren' ),
-						'after'  => '</div>',
-					) );
-					?>
-				</div> <!-- .col-md-12 -->
-			</div> <!-- .row -->
-			<footer class="entry-footer row">
-				<div class="col-md-12">
-					<?php stacylauren_entry_footer(); ?>
-				</div><!-- .col-md-12 -->
-			</footer><!-- .entry-footer .row -->
+					)
+				),
+				get_the_title()
+			) );
+	
+			wp_link_pages( array(
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'stacylauren' ),
+				'after'  => '</div>',
+			) );
+			?>
 		</div> <!-- .container .content -->	
 	</div><!-- .entry-content -->
+
+	<footer class="entry-footer">
+		<?php stacylauren_entry_footer(); ?>
+	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

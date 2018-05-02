@@ -168,6 +168,7 @@
   float: left;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
   img {
   	width: 100%;
   	height: auto;
@@ -213,17 +214,20 @@
   }
   ul {
   	list-style: none;
+  	text-align: center;
+  	margin: 0 0 1em 0;
+  	li {
+  	  display: inline-block;
+  	  margin: 0;
+  	}
   }
 
   a {
-    display: table;
-    margin: 0 auto; 
-    text-align: center;
-    background: #2c3e50;
-    padding: 6px 12px;
     color: white;
     text-decoration: none;
+    font-size: .8em;
   }
+  
 }
 
 .screenshot-caption > * {
@@ -246,6 +250,18 @@
   transition: opacity 1s ease;
   opacity: 1;
  
+}
+
+.category {
+  display: flex !important;
+  justify-content: center;
+  margin: 0 auto 1em auto !important;
+  span {
+    display: block;
+    color: $medgray;
+    background: rgba(255, 255, 255, .15);
+    padding: .25em .5em;
+  }
 }
 
 .filter {

@@ -19,6 +19,11 @@ get_header(); ?>
     		<div class="content">
     			<div class="row">
     				<div class="col-md-12">
+    					<?php do_action('show_beautiful_filters'); ?>
+    				</div>
+    			</div>
+    			<div class="row">
+    				<div class="col-md-12">
             			<section class="projects fadein700">
             					<?php
             					$args = array(
@@ -26,16 +31,25 @@ get_header(); ?>
             					  'post_status' => 'publish',
             					  
             					 );
-            					  
+            					$category = get_the_category();
             					$projects = new WP_Query( $args );
             					if( $projects->have_posts() ) :
             					      while( $projects->have_posts() ) :
             					        $projects->the_post();
             					        ?>
             					            <article>
-            					            	<figure class="screenshot"><?php printf( '%1$s<figcaption class="screenshot-caption screenshot-caption_bottom"><div><h2>%2$s</h2><p>%3$s</p></div></figcaption>', get_the_post_thumbnail(), get_the_title(), get_the_excerpt() /*get_field('job_title')*/ ); 
-            					        ?>
-            									</figure>
+            					            	<a href="<?php the_permalink() ?>">
+            					            		<figure class="screenshot">
+	            					            		<?php echo(the_post_thumbnail()); ?>
+	            					            		<figcaption class="screenshot-caption screenshot-caption_bottom">
+	            					            			<div>
+	            					            				<h2><?php echo(the_title()) ?></h2>
+	            					            				<p class="category"><span><?php foreach((get_the_category()) as $category) { echo $category->cat_name . ' '; } ?></span></p>
+	            					            				<p><?php echo(the_excerpt()) ?> </p>
+	            					            			</div>
+	            					            		</figcaption>
+	            									</figure>
+            									</a>
             								</article>
             					        
             					        <?php

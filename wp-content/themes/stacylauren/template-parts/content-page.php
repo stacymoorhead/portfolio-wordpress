@@ -55,10 +55,9 @@
 						);
 						?>
 					</footer><!-- .entry-footer -->
-					</div> <!--
-				</div> <!-- .col-md-12 -->
-			</div> <!-- .row -->
-		</div> <!-- .container	-->
+				</div> <!-- .container	-->
+			</div> <!-- .col-md-12 -->
+		</div> <!-- .row -->
 	</div><!-- .entry-content -->		
 	<?php endif; ?>
 </article><!-- #post-<?php the_ID(); ?> -->

@@ -1999,6 +1999,7 @@ body, html {
 	float: left;
 	position: relative;
 	overflow: hidden;
+	cursor: pointer;
 }
 
 .screenshot img {
@@ -2051,16 +2052,19 @@ body, html {
 
 .screenshot-caption ul {
 	list-style: none;
+	text-align: center;
+	margin: 0 0 1em 0;
+}
+
+.screenshot-caption ul li {
+	display: inline-block;
+	margin: 0;
 }
 
 .screenshot-caption a {
-	display: table;
-	margin: 0 auto;
-	text-align: center;
-	background: #2c3e50;
-	padding: 6px 12px;
 	color: white;
 	text-decoration: none;
+	font-size: .8em;
 }
 
 .screenshot-caption > * {
@@ -2082,6 +2086,21 @@ body, html {
 .screenshot:hover .screenshot-caption > * {
 	transition: opacity 1s ease;
 	opacity: 1;
+}
+
+.category {
+	display: -ms-flexbox !important;
+	display: flex !important;
+	-ms-flex-pack: center;
+	    justify-content: center;
+	margin: 0 auto 1em auto !important;
+}
+
+.category span {
+	display: block;
+	color: #9a9a9a;
+	background: rgba(255, 255, 255, 0.15);
+	padding: .25em .5em;
 }
 
 .filter {

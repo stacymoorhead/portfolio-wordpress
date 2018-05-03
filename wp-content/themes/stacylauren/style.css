@@ -2166,6 +2166,54 @@ ul.post-categories li a:hover {
 	font-size: .8em;
 }
 
+.nav-links {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: justify;
+	    justify-content: space-between;
+}
+
+.nav-previous .button, .nav-next .button {
+	height: auto;
+	border: 2px solid black;
+	font-size: .7em;
+	color: black;
+	padding: .25em .5em;
+	margin: 1em 0 0 0;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	    align-items: center;
+}
+
+.nav-previous .button a, .nav-next .button a {
+	color: black !important;
+}
+
+.nav-previous .button:hover, .nav-next .button:hover {
+	transition: all 0.7s ease-in-out;
+	border: 2px solid #78A22F;
+	color: #78A22F;
+}
+
+.nav-previous a :before {
+	content: '\f104';
+	font-family: FontAwesome;
+	font-weight: normal;
+	font-style: normal;
+	margin: 0 5px 0 0;
+	text-decoration: none;
+}
+
+.nav-next a :after {
+	content: '\f105';
+	font-family: FontAwesome;
+	font-weight: normal;
+	font-style: normal;
+	margin: 0 0 0 5px;
+	text-decoration: none;
+}
+
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/

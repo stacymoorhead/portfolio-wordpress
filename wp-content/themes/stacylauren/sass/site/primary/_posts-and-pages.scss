@@ -312,3 +312,51 @@ ul.post-categories {
     
   }
 }
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-previous, .nav-next {
+  .button {
+    height: auto;
+    border: 2px solid black;
+    font-size: .7em;
+    color: black;
+    padding: .25em .5em;
+    margin: 1em 0 0 0;
+    display: flex;
+    align-items: center;
+    a {
+      color: black !important;
+    }
+    &:hover {
+      transition: $transition;
+      border: 2px solid $green;
+      color: $green;
+    }
+  }
+}
+
+.nav-previous a{
+	:before {
+		content: '\f104';
+	   font-family: FontAwesome;
+	   font-weight: normal;
+	   font-style: normal;
+	   margin: 0 5px 0 0;
+	   text-decoration:none;
+	}
+}
+
+.nav-next a{
+	:after {
+		content: '\f105';
+	   font-family: FontAwesome;
+	   font-weight: normal;
+	   font-style: normal;
+	   margin: 0 0 0 5px;
+	   text-decoration:none;
+	}
+}

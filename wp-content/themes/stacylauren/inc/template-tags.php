@@ -146,3 +146,15 @@ if ( ! function_exists( 'stacylauren_post_thumbnail' ) ) :
 		endif; // End is_singular().
 	}
 endif;
+
+/**
+ * Post navigation (previous/next post)
+ */
+function stacylauren_post_navigation() {
+	the_post_navigation( array(
+		'next_text' => '<span class="meta-nav button" aria-hidden="true">' . __( 'Next', 'stacylauren' ) . '</span> ' .
+			'<span class="screen-reader-text">' . __( 'Next project:', 'stacylauren' ) . '</span> ',
+		'prev_text' => '<span class="meta-nav button" aria-hidden="true">' . __( 'Previous', 'stacylauren' ) . '</span> ' .
+			'<span class="screen-reader-text">' . __( 'Previous project:', 'stacylauren' ) . '</span> ',
+	) );
+}

@@ -59,10 +59,11 @@
 						<?php if ( 'projects' == get_post_type() ) {
 							the_category();
 							the_field('project_description'); 
-							the_post_navigation();
-							get_sidebar('projects');	
+							get_sidebar('projects');
+							stacylauren_post_navigation();
 						} else 
 							get_sidebar(); 
+							//stacylauren_post_navigation();
 						?>
 					</div><!-- .col-md-4 -->
 				</div> <!-- .container	-->	

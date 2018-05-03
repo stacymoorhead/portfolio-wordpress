@@ -5,4 +5,35 @@
 	select {
 		max-width: 100%;
 	}
+	
+}
+
+.widget_categories {
+	ul {
+		list-style-type: none;
+		margin: auto 0;
+		padding: 0;
+		li {
+			display: inline-block;
+			margin: .25em .25em .25em 0;
+			a {
+				color: $medgray;
+				background: $lightgray;
+				color: $medgray;
+				
+				padding: .25em .5em;
+				font-size: .8em;	
+				&:hover {
+					background: $darkgray;
+					transition: $transition;
+					color: $lime-green !important;
+				}
+			}
+		}
+	}
+}
+
+.widget-title {
+	font-size: 1.2em;
+	color: $green;
 }

@@ -19,11 +19,6 @@ get_header(); ?>
     		<div class="content">
     			<div class="row">
     				<div class="col-md-12">
-    					<?php do_action('show_beautiful_filters'); ?>
-    				</div>
-    			</div>
-    			<div class="row">
-    				<div class="col-md-12">
             			<section class="projects fadein700">
             					<?php
             					$args = array(

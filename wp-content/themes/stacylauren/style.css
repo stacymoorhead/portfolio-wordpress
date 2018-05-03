@@ -1932,6 +1932,28 @@ body, html {
 	margin: 25px 0;
 }
 
+ul.post-categories {
+	list-style-type: none !important;
+	margin: 0 0 1em 0;
+	padding: 0;
+}
+
+ul.post-categories li {
+	margin: 0 !important;
+	display: inline-block !important;
+}
+
+ul.post-categories li a {
+	background: #D9E021 !important;
+	padding: .25em .5em !important;
+}
+
+ul.post-categories li a:hover {
+	transition: all 0.7s ease-in-out !important;
+	background: #626262 !important;
+	color: white !important;
+}
+
 .comments-area {
 	background: #626262;
 	margin: 0;
@@ -1989,6 +2011,36 @@ body, html {
 	.projects article {
 		margin: 0;
 	}
+}
+
+.single-project {
+	-webkit-column-count: 1 !important;
+	        column-count: 1 !important;
+}
+
+.single-project img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 6px;
+}
+
+@media (min-width: 992px) {
+	.single-project {
+		-webkit-column-count: 1 !important;
+		        column-count: 1 !important;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.single-project {
+		-webkit-column-count: 1 !important;
+		        column-count: 1 !important;
+	}
+}
+
+.project-excerpt {
+	color: #626262;
+	font-size: 1.4em;
 }
 
 /* Caption Hoover Effects */
@@ -2135,6 +2187,36 @@ body, html {
 
 .widget select {
 	max-width: 100%;
+}
+
+.widget_categories ul {
+	list-style-type: none;
+	margin: auto 0;
+	padding: 0;
+}
+
+.widget_categories ul li {
+	display: inline-block;
+	margin: .25em .25em .25em 0;
+}
+
+.widget_categories ul li a {
+	color: #9a9a9a;
+	background: #e3e3e3;
+	color: #9a9a9a;
+	padding: .25em .5em;
+	font-size: .8em;
+}
+
+.widget_categories ul li a:hover {
+	background: #626262;
+	transition: all 0.7s ease-in-out;
+	color: #D9E021 !important;
+}
+
+.widget-title {
+	font-size: 1.2em;
+	color: #78A22F;
 }
 
 /*--------------------------------------------------------------

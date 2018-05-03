@@ -151,7 +151,16 @@ function stacylauren_widgets_init() {
 		'description'   => esc_html__( 'Add link to projects to footer button.', 'stacylauren' ),
 		'before_widget' => '<div id="%1$s" class="button %2$s">',
 		'after_widget'  => '</div>',
-	) );		
+	) );	
+	register_sidebar( array(
+		'name'          => esc_html__( 'Sidebar Projects', 'stacylauren' ),
+		'id'            => 'sidebar-projects',
+		'description'   => esc_html__( 'Add widgets here.', 'stacylauren' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );	
 }
 add_action( 'widgets_init', 'stacylauren_widgets_init' );
 

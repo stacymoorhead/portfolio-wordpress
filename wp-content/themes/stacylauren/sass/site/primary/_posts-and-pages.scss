@@ -112,6 +112,25 @@
     margin: 25px 0;
 }
 
+ul.post-categories {
+  list-style-type: none !important;
+  margin: 0 0 1em 0;
+  padding: 0;
+  li {
+    margin: 0 !important;
+    display: inline-block !important;
+    a {
+      background: $lime-green !important;
+      padding: .25em .5em !important;
+      &:hover {
+  				transition: $transition !important;        
+  				background: $darkgray !important;
+  				color: white !important;
+  			}
+    }		
+  }
+}
+
 .comments-area {
   background: $darkgray;
   margin: 0;
@@ -158,6 +177,26 @@
 		  margin: 0;
 		}
 	}
+}
+
+.single-project {
+    column-count: 1 !important;
+    img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 6px;
+    }
+    @media ($screen-gtsm) {
+    	column-count: 1 !important;
+    }
+    @media ($screen-sm) {
+    	column-count: 1 !important;
+    } 
+}
+
+.project-excerpt {
+  color: $darkgray;
+  font-size: 1.4em;
 }
 
 /* Caption Hoover Effects */

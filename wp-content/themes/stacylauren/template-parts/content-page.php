@@ -23,8 +23,9 @@
 	<div class="entry-content">
 		<div class="content">
 			<div class="row">
-				<div class="col-md-12">
-					<div class="container">
+				<div class="container">
+					<div class="col-md-12">
+					
 				<?php
 				the_content();
 		
@@ -35,28 +36,9 @@
 				?>
 
 				<?php if ( get_edit_post_link() ) : ?>
-					<footer class="entry-footer row">
-						<?php
-						edit_post_link(
-							sprintf(
-								wp_kses(
-									/* translators: %s: Name of current post. Only visible to screen readers */
-									__( 'Edit <span class="screen-reader-text">%s</span>', 'stacylauren' ),
-									array(
-										'span' => array(
-											'class' => array(),
-										),
-									)
-								),
-								get_the_title()
-							),
-							'<span class="edit-link">',
-							'</span>'
-						);
-						?>
-					</footer><!-- .entry-footer -->
-				</div> <!-- .container	-->
-			</div> <!-- .col-md-12 -->
+				
+				</div> <!-- .col-md-12 -->
+			</div> <!-- .container	-->
 		</div> <!-- .row -->
 	</div><!-- .entry-content -->		
 	<?php endif; ?>

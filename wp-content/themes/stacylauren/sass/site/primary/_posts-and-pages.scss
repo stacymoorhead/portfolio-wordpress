@@ -13,7 +13,9 @@
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: 1.5em 0 ;
+    z-index: 0;
+    margin: 0;
+    background: rgba(255, 255, 255, 1);
 	a {
 	  color: black;
 	  font-weight: 800;
@@ -30,10 +32,8 @@
 	margin: 0 0 1.5em;
 }
 
-.entry-content {
-    z-index: 0;
-    margin: 0;
-    background: rgba(255, 255, 255, 1);
+.entry-content, .page-content {
+
 }
 
 .entry-header {
@@ -81,6 +81,19 @@
 
 h2.entry-title {
     font-size: 2em;
+}
+
+.entry-title {
+    a {
+      background: $lime-green !important;
+      padding: .25em .5em !important;
+      line-height: 2em;
+      &:hover {
+  				transition: $transition !important;        
+  				background: $darkgray !important;
+  				color: white !important;
+  			}
+    }    
 }
 
 .arrow-down {

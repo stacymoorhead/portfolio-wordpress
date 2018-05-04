@@ -28,12 +28,35 @@ get_header();
 				<?php endif; ?>
 			</div> <!-- row -->
 	    	<div class="arrow-down"></div>
-		</header><!-- .entry-header -->			
+		</header><!-- .entry-header -->	
+		<div class="entry-content">
+			<div class="content">
+				<div class="row">
+					<div class="container">
+						<div class="col-md-8">		
 		<?php
 		while ( have_posts() ) :
 			the_post();
-			get_template_part( 'template-parts/content', get_post_type() );
-			// If comments are open or we have at least one comment, load up the comment template.
+			get_template_part( 'template-parts/content', get_post_type() ); ?>
+						</div> <!-- .col-md-8 -->
+						<div class="col-md-4">
+							<?php if ( 'projects' == get_post_type() ) {
+								the_category(); ?>
+								<p class="project_description">
+									<?php the_field('project_description'); ?>
+								</p>	
+								<?php get_sidebar('projects');
+								stacylauren_post_navigation();
+							} else 
+								get_sidebar(); 
+								//stacylauren_post_navigation();
+							?>
+						</div><!-- .col-md-4 -->
+					</div> <!-- .container	-->	
+				</div> <!-- .row -->
+			</div> <!-- .content -->
+		</div><!-- .entry-content -->				
+			<?php // If comments are open or we have at least one comment, load up the comment template.
 			if ( comments_open() || get_comments_number() ) :
 				comments_template();
 			endif;

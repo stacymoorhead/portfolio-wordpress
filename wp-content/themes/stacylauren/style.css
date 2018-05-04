@@ -550,6 +550,137 @@ a:hover {
 	}
 }
 
+blockquote {
+	font-size: .9em;
+	font-style: italic;
+	border-left: 5px solid #78A22F;
+}
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	/* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+body {
+	/*background: $color__background-body;  Fallback for when there is no custom background color defined. */
+}
+
+hr {
+	width: 30px;
+	color: #78A22F;
+	background: #78A22F;
+	border: none;
+	margin: 10px;
+	height: 2px;
+}
+
+ul, ol {
+	margin: 0 0 1.5em 3em;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
+
+img {
+	height: auto;
+	/* Make sure images are scaled correctly. */
+	max-width: 100%;
+	/* Adhere to container width. */
+}
+
+figure {
+	margin: 1em 0;
+	/* Extra wide images within figure tags don't overflow the content area. */
+}
+
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	display: inline-block;
+	font-family: "Montserrat", Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	background-color: #D9E021;
+	color: black;
+	margin: 0;
+	padding: .25em .5em;
+	width: auto;
+	height: auto;
+	font-weight: 800;
+	border-style: none;
+	/*	border: 1px solid;
+	border-color: $color__border-button;
+	border-radius: 3px;
+	background: $color__background-button;
+	color: rgba(0, 0, 0, .8);
+	@include font-size(0.75);
+	line-height: 1;
+	padding: .6em 1em .4em;
+
+	&:hover {
+		border-color: $color__border-button-hover;
+	}
+
+	&:active,
+	&:focus {
+		border-color: $color__border-button-focus;
+	}*/
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+	background: #626262;
+	color: white;
+}
+
+button:active, button:focus,
+input[type="button"]:active,
+input[type="button"]:focus,
+input[type="reset"]:active,
+input[type="reset"]:focus,
+input[type="submit"]:active,
+input[type="submit"]:focus {
+	border-color: black;
+}
+
 .button {
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 	font-weight: 700;
@@ -653,117 +784,6 @@ a:hover {
 	color: #78A22F;
 }
 
-blockquote {
-	font-size: .9em;
-	font-style: italic;
-	border-left: 5px solid #78A22F;
-}
-
-/*--------------------------------------------------------------
-# Elements
---------------------------------------------------------------*/
-html {
-	box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-	/* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
-	box-sizing: inherit;
-}
-
-body {
-	/*background: $color__background-body;  Fallback for when there is no custom background color defined. */
-}
-
-hr {
-	width: 30px;
-	color: #78A22F;
-	background: #78A22F;
-	border: none;
-	margin: 10px;
-	height: 2px;
-}
-
-ul, ol {
-	margin: 0 0 1.5em 3em;
-}
-
-ul {
-	list-style: disc;
-}
-
-ol {
-	list-style: decimal;
-}
-
-li > ul,
-li > ol {
-	margin-bottom: 0;
-	margin-left: 1.5em;
-}
-
-dt {
-	font-weight: bold;
-}
-
-dd {
-	margin: 0 1.5em 1.5em;
-}
-
-img {
-	height: auto;
-	/* Make sure images are scaled correctly. */
-	max-width: 100%;
-	/* Adhere to container width. */
-}
-
-figure {
-	margin: 1em 0;
-	/* Extra wide images within figure tags don't overflow the content area. */
-}
-
-table {
-	margin: 0 0 1.5em;
-	width: 100%;
-}
-
-/*--------------------------------------------------------------
-# Forms
---------------------------------------------------------------*/
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-	border: 1px solid;
-	border-color: #ccc #ccc #bbb;
-	border-radius: 3px;
-	background: #e6e6e6;
-	color: rgba(0, 0, 0, 0.8);
-	font-size: 15px;
-	font-size: 0.9375rem;
-	line-height: 1;
-	padding: .6em 1em .4em;
-}
-
-button:hover,
-input[type="button"]:hover,
-input[type="reset"]:hover,
-input[type="submit"]:hover {
-	border-color: #ccc #bbb #aaa;
-}
-
-button:active, button:focus,
-input[type="button"]:active,
-input[type="button"]:focus,
-input[type="reset"]:active,
-input[type="reset"]:focus,
-input[type="submit"]:active,
-input[type="submit"]:focus {
-	border-color: #aaa #bbb #bbb;
-}
-
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -780,10 +800,10 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-	color: #666;
-	border: 1px solid #ccc;
-	border-radius: 3px;
+	color: #626262;
+	border: 2px solid #ccc;
 	padding: 3px;
+	border-radius: 2px;
 }
 
 input[type="text"]:focus,
@@ -802,7 +822,7 @@ input[type="datetime"]:focus,
 input[type="datetime-local"]:focus,
 input[type="color"]:focus,
 textarea:focus {
-	color: #111;
+	color: #78A22F;
 }
 
 select {
@@ -1807,7 +1827,9 @@ body, html {
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: 1.5em 0;
+	z-index: 0;
+	margin: 0;
+	background: white;
 }
 
 .page-content a,
@@ -1832,12 +1854,6 @@ body, html {
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
-}
-
-.entry-content {
-	z-index: 0;
-	margin: 0;
-	background: white;
 }
 
 .entry-header {
@@ -1897,6 +1913,18 @@ body, html {
 
 h2.entry-title {
 	font-size: 2em;
+}
+
+.entry-title a {
+	background: #D9E021 !important;
+	padding: .25em .5em !important;
+	line-height: 2em;
+}
+
+.entry-title a:hover {
+	transition: all 0.7s ease-in-out !important;
+	background: #626262 !important;
+	color: white !important;
 }
 
 .arrow-down {
@@ -2254,18 +2282,18 @@ ul.post-categories li a:hover {
 	padding: 0 !important;
 }
 
-.widget_categories ul {
+.widget_categories ul, .widget_archive ul, .widget_tags ul {
 	list-style-type: none;
 	margin: auto 0 !important;
 	padding: 0 !important;
 }
 
-.widget_categories ul li {
+.widget_categories ul li, .widget_archive ul li, .widget_tags ul li {
 	display: inline-block;
 	margin: .25em .25em .25em 0 !important;
 }
 
-.widget_categories ul li a {
+.widget_categories ul li a, .widget_archive ul li a, .widget_tags ul li a {
 	color: #9a9a9a;
 	background: #e3e3e3;
 	color: #9a9a9a;
@@ -2273,7 +2301,7 @@ ul.post-categories li a:hover {
 	font-size: .8em;
 }
 
-.widget_categories ul li a:hover {
+.widget_categories ul li a:hover, .widget_archive ul li a:hover, .widget_tags ul li a:hover {
 	background: #626262;
 	transition: all 0.7s ease-in-out;
 	color: #D9E021 !important;

@@ -68,51 +68,6 @@ textarea {
 	}
 }
 
-.button {
-    @include button(white, white);
-    display: inline-block;
-    font-family: $secondary-font;
-    background-color: transparent;
-    margin: 1em;
-    padding: .5em 1em;
-    width: auto;
-    height: auto;
-    text-transform: uppercase;
-    font-size: 1.2em;
-    font-weight: 400;
-    letter-spacing: .1em;
-    border-radius: 2px; 
-
-    p {
-        font-family: $secondary-font;
-        text-transform: uppercase;
-        font-size: 1em;
-        font-weight: 700;
-        letter-spacing: .1em;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        /*padding: 6px 2px;*/
-    }
-    a {
-        color: white;
-        text-decoration: none;
-        :hover, :active, :focus {
-            color: $green !important;
-            text-decoration: none;
-        }
-    }    
-}
-
-.button:hover, .button:active, .button:focus {
-	color: $green;
-	a {
-	    color: $green;
-	}
-}
-
 blockquote {
     font-size: .9em;
     font-style: italic;

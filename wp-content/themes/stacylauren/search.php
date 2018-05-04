@@ -15,13 +15,19 @@ get_header();
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
+		<header class="entry-header container-fluid">
+			<div class="row">
+				<div class="col-md-12">
 				<h1 class="page-title">
 					<?php
 					/* translators: %s: search query. */
 					printf( esc_html__( 'Search Results for: %s', 'stacylauren' ), '<span>' . get_search_query() . '</span>' );
 					?>
 				</h1>
+						</div> <!-- .col-md-12 -->
+					</div> <!-- .container -->
+				</div><!-- .row -->
+			<div class="arrow-down"></div>	
 			</header><!-- .page-header -->
 
 			<?php
@@ -38,7 +44,7 @@ get_header();
 
 			endwhile;
 
-			the_posts_navigation();
+
 
 		else :
 
@@ -51,5 +57,4 @@ get_header();
 	</section><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();

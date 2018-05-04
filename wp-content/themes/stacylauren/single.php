@@ -12,6 +12,23 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
+		<header class="entry-header container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+				<?php	the_title( '<h1 class="entry-title">', '</h1>' ); ?>		
+				</div> <!-- .col-md-12 -->
+				<?php if ( is_single() && 'projects' == get_post_type()) : ?>
+				<div class="row">
+					<div class="container">
+						<div class="col-md-12 project-excerpt">
+							<?php the_excerpt(); ?>
+						</div> <!-- .col-md-12 -->
+					</div> <!-- .container -->
+				</div><!-- .row -->
+				<?php endif; ?>
+			</div> <!-- row -->
+	    	<div class="arrow-down"></div>
+		</header><!-- .entry-header -->			
 		<?php
 		while ( have_posts() ) :
 			the_post();

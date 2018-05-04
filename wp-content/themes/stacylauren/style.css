@@ -1895,6 +1895,10 @@ body, html {
 	}
 }
 
+h2.entry-title {
+	font-size: 2em;
+}
+
 .arrow-down {
 	left: 0;
 	right: 0;
@@ -1947,6 +1951,12 @@ ul.post-categories li a:hover {
 	transition: all 0.7s ease-in-out !important;
 	background: #626262 !important;
 	color: white !important;
+}
+
+@media (max-width: 767px) {
+	ul.post-categories {
+		margin: 1em 0;
+	}
 }
 
 .comments-area {
@@ -2036,6 +2046,7 @@ ul.post-categories li a:hover {
 .project-excerpt {
 	color: black;
 	font-size: 1.4em;
+	margin-top: 1em;
 }
 
 /* Caption Hoover Effects */
@@ -2135,7 +2146,7 @@ ul.post-categories li a:hover {
 	opacity: 1;
 }
 
-.category {
+.category-name {
 	display: -ms-flexbox !important;
 	display: flex !important;
 	-ms-flex-pack: center;
@@ -2143,7 +2154,7 @@ ul.post-categories li a:hover {
 	margin: 0 auto 1em auto !important;
 }
 
-.category span {
+.category-name span {
 	display: block;
 	color: #9a9a9a;
 	background: rgba(255, 255, 255, 0.15);
@@ -2232,15 +2243,26 @@ ul.post-categories li a:hover {
 	max-width: 100%;
 }
 
+.widget-area ul {
+	list-style-type: none;
+	margin-left: 0 !important;
+	padding: 0;
+}
+
+.widget-area ul li {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
 .widget_categories ul {
 	list-style-type: none;
-	margin: auto 0;
-	padding: 0;
+	margin: auto 0 !important;
+	padding: 0 !important;
 }
 
 .widget_categories ul li {
 	display: inline-block;
-	margin: .25em .25em .25em 0;
+	margin: .25em .25em .25em 0 !important;
 }
 
 .widget_categories ul li a {
@@ -2260,6 +2282,7 @@ ul.post-categories li a:hover {
 .widget-title {
 	font-size: 1.2em;
 	color: #78A22F;
+	font-weight: 800;
 }
 
 /*--------------------------------------------------------------

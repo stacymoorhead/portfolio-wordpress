@@ -79,6 +79,10 @@
 	}
 }
 
+h2.entry-title {
+    font-size: 2em;
+}
+
 .arrow-down {
     left: 0;
     right: 0;
@@ -127,6 +131,9 @@ ul.post-categories {
   				color: white !important;
   			}
     }		
+  }
+  @media ($screen-xs) {
+    margin: 1em 0;
   }
 }
 
@@ -196,6 +203,7 @@ ul.post-categories {
 .project-excerpt {
   color: black;
   font-size: 1.4em;
+  margin-top: 1em;
 }
 
 /* Caption Hoover Effects */
@@ -290,7 +298,7 @@ ul.post-categories {
  
 }
 
-.category {
+.category-name {
   display: flex !important;
   justify-content: center;
   margin: 0 auto 1em auto !important;

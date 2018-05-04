@@ -39,7 +39,7 @@ get_header(); ?>
 	            					            		<figcaption class="screenshot-caption screenshot-caption_bottom">
 	            					            			<div>
 	            					            				<h2><?php echo(the_title()) ?></h2>
-	            					            				<p class="category"><span><?php foreach((get_the_category()) as $category) { echo $category->cat_name . ' '; } ?></span></p>
+	            					            				<p class="category-name"><span><?php foreach((get_the_category()) as $category) { echo $category->cat_name . ' '; } ?></span></p>
 	            					            				<p><?php echo(the_excerpt()) ?> </p>
 	            					            			</div>
 	            					            		</figcaption>

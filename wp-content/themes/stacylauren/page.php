@@ -17,7 +17,19 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-
+			<header class="entry-header container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+					</div> <!-- .col-med-12 -->
+				</div> <!-- row -->
+		    	<div class="arrow-down"></div>
+			</header><!-- .entry-header -->
+			<div class="entry-content">
+				<div class="content">
+					<div class="row">
+						<div class="container">
+							<div class="col-md-12">			
 		<?php
 		while ( have_posts() ) :
 			the_post();

@@ -1,6 +1,13 @@
+.comment-content {
+	color: $medgray;
+}
+
 .comment-content a {
 	word-wrap: break-word;
 }
 .bypostauthor {
 	display: block;
+}
+.comment-form-comment {
+	color: $medgray;
 }

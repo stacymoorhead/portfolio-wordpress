@@ -10,36 +10,20 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header container-fluid">
-		<div class="row">
-			<div class="col-md-12">
-				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-			</div> <!-- .col-med-12 -->
-		</div> <!-- row -->
-    	<div class="arrow-down"></div>
-	</header><!-- .entry-header -->
 	<?php stacylauren_post_thumbnail(); ?>
 
-	<div class="entry-content">
-		<div class="content">
-			<div class="row">
-				<div class="container">
-					<div class="col-md-12">
-					
-				<?php
-				the_content();
 		
-				wp_link_pages( array(
-					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'stacylauren' ),
-					'after'  => '</div>',
-				) );
-				?>
+	<?php
+	the_content();
 
-				<?php if ( get_edit_post_link() ) : ?>
+	wp_link_pages( array(
+		'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'stacylauren' ),
+		'after'  => '</div>',
+	) );
+	?>
+
+	<?php if ( get_edit_post_link() ) : ?>
 				
-				</div> <!-- .col-md-12 -->
-			</div> <!-- .container	-->
-		</div> <!-- .row -->
-	</div><!-- .entry-content -->		
+
 	<?php endif; ?>
 </article><!-- #post-<?php the_ID(); ?> -->

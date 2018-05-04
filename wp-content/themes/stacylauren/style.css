@@ -2251,12 +2251,20 @@ ul.post-categories li a:hover {
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
+.comment-content {
+	color: #9a9a9a;
+}
+
 .comment-content a {
 	word-wrap: break-word;
 }
 
 .bypostauthor {
 	display: block;
+}
+
+.comment-form-comment {
+	color: #9a9a9a;
 }
 
 /*--------------------------------------------------------------

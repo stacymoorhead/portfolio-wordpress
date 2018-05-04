@@ -678,10 +678,12 @@ body {
 }
 
 hr {
-	background-color: #ccc;
-	border: 0;
-	height: 1px;
-	margin-bottom: 1.5em;
+	width: 30px;
+	color: #78A22F;
+	background: #78A22F;
+	border: none;
+	margin: 10px;
+	height: 2px;
 }
 
 ul, ol {
@@ -996,7 +998,7 @@ textarea {
 /*}*/
 .bg {
 	width: 100vw;
-	height: 100vh;
+	/*height: 100vh;*/
 	background: url(img/bg3.png) repeat;
 	/*background-size: 75px 75px;*/
 	z-index: 100;
@@ -1023,8 +1025,7 @@ textarea {
 }
 
 .site {
-	-ms-flex: 1 0 auto;
-	    flex: 1 0 auto;
+	/*flex: 1 0 auto;*/
 	overflow-x: hidden !important;
 }
 
@@ -1136,13 +1137,8 @@ textarea {
 	margin: 0;
 }
 
-hr {
-	width: 30px;
-	color: #78A22F;
-	background: #78A22F;
-	border: none;
-	margin: 10px;
-	height: 2px;
+.no-overflow {
+	overflow: hidden;
 }
 
 .footer-widgets {
@@ -1849,7 +1845,7 @@ body, html {
 	width: 100%;
 	min-height: 300px;
 	z-index: 10;
-	padding: 1em;
+	padding: 5em 1em;
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-align: center;
@@ -1889,7 +1885,6 @@ body, html {
 
 @media (max-width: 767px) {
 	.entry-header {
-		padding: .5em;
 		font-size: .8em;
 	}
 }
@@ -2039,7 +2034,7 @@ ul.post-categories li a:hover {
 }
 
 .project-excerpt {
-	color: #626262;
+	color: black;
 	font-size: 1.4em;
 }
 

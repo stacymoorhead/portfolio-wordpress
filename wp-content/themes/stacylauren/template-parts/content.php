@@ -21,7 +21,7 @@
 				endif;
 			?>		
 			</div> <!-- .col-md-12 -->
-			<?php if ( is_single() ) : ?>
+			<?php if ( is_single() && 'projects' == get_post_type()) : ?>
 			<div class="row">
 				<div class="container">
 					<div class="col-md-12 project-excerpt">
@@ -57,9 +57,11 @@
 					</div> <!-- .col-md-8 -->
 					<div class="col-md-4">
 						<?php if ( 'projects' == get_post_type() ) {
-							the_category();
-							the_field('project_description'); 
-							get_sidebar('projects');
+							the_category(); ?>
+							<p class="project_description">
+								<?php the_field('project_description'); ?>
+							</p>	
+							<?php get_sidebar('projects');
 							stacylauren_post_navigation();
 						} else 
 							get_sidebar(); 

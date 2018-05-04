@@ -41,7 +41,7 @@
     width: 100%;
     min-height: 300px;
     z-index: 10;
-	padding: 1em;
+		padding: 5em 1em;
 	display: flex;
 	align-items: center;
     justify-content: center;
@@ -71,7 +71,6 @@
     	}
     }*/
 	@media ($screen-xs) {
-		padding: .5em;
 		font-size: .8em;
 	}   
 	
@@ -195,7 +194,7 @@ ul.post-categories {
 }
 
 .project-excerpt {
-  color: $darkgray;
+  color: black;
   font-size: 1.4em;
 }
 

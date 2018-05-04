@@ -13,10 +13,12 @@ body {
 }
 
 hr {
-	background-color: $color__background-hr;
-	border: 0;
-	height: 1px;
-	margin-bottom: 1.5em;
+	width: 30px;
+	color: $green;
+	background: $green;
+	border: none;
+	margin: 10px;
+	height: 2px;
 }
 
 @import "lists";

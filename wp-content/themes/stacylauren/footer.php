@@ -57,7 +57,6 @@
         </footer>
         <?php	
         endif; ?>
-   
     </div> <!-- .bg -->
 </body>
 </html>

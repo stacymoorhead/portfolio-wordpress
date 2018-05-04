@@ -20,11 +20,11 @@
 	<?php wp_head(); ?>
 </head>
 <?php if ( is_front_page() ) { ?>
-<body <?php body_class(); ?> id="gradient">
-	<div class="bg">
+<body <?php body_class('no-overflow'); ?> id="body_bg">
+	<div class="">
 <?php }  else { ?>
-<body <?php body_class(); ?> id="gradient">
-	<div  class="bg">
+<body <?php body_class(); ?> id="body_bg">
+	<div  class="">
 <?php } ?>		
 		
 		<div id="page" class="site">

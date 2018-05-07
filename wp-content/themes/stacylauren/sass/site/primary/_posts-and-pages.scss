@@ -227,7 +227,6 @@ ul.post-categories {
   float: left;
   position: relative;
   overflow: hidden;
-  cursor: pointer;
   img {
   	width: 100%;
   	height: auto;
@@ -320,7 +319,14 @@ ul.post-categories {
     color: $medgray;
     background: rgba(255, 255, 255, .15);
     padding: .25em .5em;
+    margin: 0 .5em;
   }
+}
+
+.view-project {
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: .1em;
 }
 
 .filter {

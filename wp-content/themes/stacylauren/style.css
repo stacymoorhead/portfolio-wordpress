@@ -2085,7 +2085,6 @@ ul.post-categories li a:hover {
 	float: left;
 	position: relative;
 	overflow: hidden;
-	cursor: pointer;
 }
 
 .screenshot img {
@@ -2187,6 +2186,13 @@ ul.post-categories li a:hover {
 	color: #9a9a9a;
 	background: rgba(255, 255, 255, 0.15);
 	padding: .25em .5em;
+	margin: 0 .5em;
+}
+
+.view-project {
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: .1em;
 }
 
 .filter {

@@ -41,7 +41,7 @@
 				</div><!--.col-md-12-->		
 				<?php elseif ( is_search() ) :
 					?>
-				<div class="col-md-8">
+				<div class="col-md-12">
 					<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'stacylauren' ); ?></p>
 				</div><!--.col-md-8>-->
 				<div class="col-md-4">
@@ -50,7 +50,7 @@
 				</div><!--.col-md-4-->
 				<?php else :
 					?>
-				<div class="col-md-8">
+				<div class="col-md-12">
 					<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'stacylauren' ); ?></p>
 				</div><!--.col-md-8>-->	
 				<div class="col-md-4">

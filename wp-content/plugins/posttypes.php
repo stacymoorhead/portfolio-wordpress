@@ -38,7 +38,7 @@ function custom_posttypes() {
 		'view_item'          => 'View Project' ,
 		'all_items'          => 'All Projects',
 		'search_items'       => 'Search Project',
-		'parent_item_colon'  => 'Parent Projects:',
+		'parent_item_colon'  => 'Parent Projects',
 		'not_found'          => 'No projects found.',
 		'not_found_in_trash' => 'No projects found in Trash.' 
 	);
@@ -93,4 +93,14 @@ function set_custom_post_types_admin_order($wp_query) {
   }
 }
 add_filter('pre_get_posts', 'set_custom_post_types_admin_order');
+
+function custom_post_type_cat_filter($query) {
+  if ( !is_admin() && $query->is_main_query() ) {
+    if ($query->is_category()) {
+      $query->set( 'post_type', array( 'post', 'Projects' ) );
+    }
+  }
+}
+
+add_action('pre_get_posts','custom_post_type_cat_filter');
 

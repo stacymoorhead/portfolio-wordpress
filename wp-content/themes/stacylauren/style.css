@@ -842,10 +842,6 @@ textarea {
 	width: 100%;
 }
 
-textarea #comment {
-	border-style: none !important;
-}
-
 textarea#comment {
 	border-style: none;
 }

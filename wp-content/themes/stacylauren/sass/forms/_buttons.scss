@@ -13,9 +13,10 @@ input[type="submit"] {
     height: auto;
     font-weight: 800;
     border-style: none;
-    
+    transition: $transition;
     
 	&:hover {
+	    
 		background: $darkgray;
 		color: white;
 	}
@@ -87,5 +88,18 @@ input[type="submit"] {
 	a {
 	    color: $green;
 	}
+}
+
+.comment-form {
+    button,
+    input[type="button"],
+    input[type="reset"],
+    input[type="submit"] {
+    	&:hover {
+    	    
+    		background: black ;
+    		color: white;
+    	}       
+    }
 }
 

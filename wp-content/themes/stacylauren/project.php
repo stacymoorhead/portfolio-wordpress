@@ -38,9 +38,9 @@ get_header(); ?>
 	            					            		<figcaption class="screenshot-caption screenshot-caption_bottom">
 	            					            			<div>
 	            					            				<h2><?php echo(the_title()) ?></h2>
-	            					            				<p class="category-name"><span><?php foreach((get_the_category()) as $category) { echo $category->cat_name . ' '; } ?></span></p>
+	            					            				<p class="category-name"><?php foreach((get_the_category()) as $category) { echo '<span>' . $category->cat_name . '</span>'; } ?></p>
 	            					            				<p><?php echo(the_excerpt()) ?> </p>
-	            					            				<p class="view-project"><a href="<?php the_permalink() ?>">View Project </a></p>
+	            					            				<p class="view-project"><a href="<?php the_permalink() ?>">View Project <i class="fa fa-arrow-right"></i></a></p>
 	            					            			</div>
 	            					            		</figcaption>
 	            									</figure>

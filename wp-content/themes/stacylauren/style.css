@@ -644,6 +644,7 @@ input[type="submit"] {
 	height: auto;
 	font-weight: 800;
 	border-style: none;
+	transition: all 0.7s ease-in-out;
 	/*	border: 1px solid;
 	border-color: $color__border-button;
 	border-radius: 3px;
@@ -784,6 +785,14 @@ input[type="submit"]:focus {
 	color: #78A22F;
 }
 
+.comment-form button:hover,
+.comment-form input[type="button"]:hover,
+.comment-form input[type="reset"]:hover,
+.comment-form input[type="submit"]:hover {
+	background: black;
+	color: white;
+}
+
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -831,6 +840,14 @@ select {
 
 textarea {
 	width: 100%;
+}
+
+textarea #comment {
+	border-style: none !important;
+}
+
+textarea#comment {
+	border-style: none;
 }
 
 /*--------------------------------------------------------------
@@ -2271,6 +2288,20 @@ ul.post-categories li a:hover {
 
 .comment-form-comment {
 	color: #9a9a9a;
+}
+
+ol.comment-list {
+	margin: 0 0 1em 0;
+	padding: 0;
+}
+
+ol.comment-list li {
+	margin: 0 0 1em 0;
+	padding: 0;
+}
+
+.comment-author {
+	color: #78A22F;
 }
 
 /*--------------------------------------------------------------

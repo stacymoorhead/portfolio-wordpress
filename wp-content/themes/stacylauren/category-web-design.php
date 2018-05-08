@@ -16,7 +16,7 @@ get_header();
 				<div class="row">
 					<div class="col-md-12">
 					<?php
-						the_archive_title( '<h1>', '</h1>' );
+						single_cat_title( '<h1>', '</h1>' );
 					?>		
 					</div> <!-- .col-md-12 -->
 					<div class="row">
@@ -38,9 +38,8 @@ get_header();
 								
 								/* Start the Loop */
 								while ( have_posts() ) :
-									
 									the_post();
-									
+					
 									/*
 									 * Include the Post-Type-specific template for the content.
 									 * If you want to override this in a child theme, then include a file
@@ -59,7 +58,7 @@ get_header();
 							endif;
 							?>					</div> <!-- .col-md-8 -->
 							<div class="col-md-4">					
-								<?php get_sidebar(); ?>
+								<?php get_sidebar('projects'); ?>
 							</div><!-- .col-md-4 -->
 						</div> <!-- .container	-->	
 					</div> <!-- .row -->

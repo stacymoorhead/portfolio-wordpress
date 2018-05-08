@@ -25,7 +25,7 @@
 				<div class="container">
 				<?php
 				if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
-				<div class="col-md-12">
+				<div class="col-md-8">
 				<?php	printf(
 						'<p>' . wp_kses(
 							/* translators: 1: link to WP admin new post page. */
@@ -41,7 +41,7 @@
 				</div><!--.col-md-12-->		
 				<?php elseif ( is_search() ) :
 					?>
-				<div class="col-md-12">
+				<div class="col-md-8">
 					<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'stacylauren' ); ?></p>
 				</div><!--.col-md-8>-->
 				<div class="col-md-4">

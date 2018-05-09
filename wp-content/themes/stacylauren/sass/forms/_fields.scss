@@ -24,7 +24,15 @@ textarea {
 }
 
 select {
-	border: 1px solid $color__border-input;
+	font-weight: 800;
+	background: transparent;
+	color: $color__text-input;
+	border: 2px solid $color__border-input;
+	padding: 3px !important;
+	border-radius: 2px !important;
+	&:focus {
+		color: $color__text-input-focus;
+	}
 }
 
 textarea {

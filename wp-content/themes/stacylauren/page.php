@@ -30,13 +30,13 @@ get_header();
 					<div class="row">
 						<div class="container">
 							<div class="col-md-12">			
-		<?php
-		while ( have_posts() ) :
-			the_post();
-
-			get_template_part( 'template-parts/content', 'page' );
-
-		?>
+							<?php
+							while ( have_posts() ) :
+								the_post();
+					
+								get_template_part( 'template-parts/content', 'page' );
+					
+							?>
 						</div> <!-- .col-md-12 -->
 					</div> <!-- .container	-->
 				</div> <!-- .row -->

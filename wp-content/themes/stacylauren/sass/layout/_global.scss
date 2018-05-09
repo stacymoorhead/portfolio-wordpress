@@ -12,19 +12,33 @@
 	z-index: 0;
 }
 
-#body_bg {
-	/*background: $lightgray url(img/bg.png) repeat;*/
+/*#body_bg {
 	background-color: $lightgray;
 	background-image: url(img/bg3.png), gradient(linear, 0 0, 100% 100%, from($orange), to($pink));
 	background-image: url(img/bg3.png), linear-gradient(to right top, $orange, $pink); 
 	background-repeat: repeat, repeat;
-	/*background-size: 1200px 1200px, 100% 100%;*/	
 	background-size: 600px auto, 100% 100%;
 	background-attachment: fixed, fixed;
 	@media ($screen-xxs) {
 		background-size: 400px auto, 100% 100%;
 	}
 	
+}*/
+
+#body_bg {
+	background-color: $lime-green;	
+	background-image: linear-gradient(134deg, #e3f816, $lime-green, $teal, $purple, $pink);
+	background-repeat: repeat;
+	background-size: 1000% 1000%;
+	background-attachment: fixed;
+	
+	animation: animated-gradient 115s ease infinite;
+	
+	@keyframes animated-gradient { 
+	    0%{background-position:2% 0%}
+	    50%{background-position:99% 100%}
+	    100%{background-position:2% 0%}
+	}
 }
 
 /*#gradient {
@@ -37,17 +51,22 @@
 
 /*}*/
 
+#bg {
+	background: url(img/bg3.png) repeat;
+}
+
 .bg {
 	width: 100vw;
-	height: 100vh; /*had turned off to fix issue in mobile, can't figuer out problem*/
+	/*height: 100vh; had turned off to fix issue in mobile, can't figuer out problem*/
 	background: url(img/bg3.png) repeat;
 	/*background-size: 75px 75px;*/
 	z-index: 100;
 	padding: 0;
 	margin: 0;
 	background-attachment: fixed;
-	@media ($screen-xxs) {
-		background-size: 400px auto, 100% 100%;
+	@media ($screen-xs) {
+		background-size: 400px auto;
+		height: auto;
 	}	
 }
 

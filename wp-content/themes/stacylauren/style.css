@@ -835,7 +835,16 @@ textarea:focus {
 }
 
 select {
-	border: 1px solid #ccc;
+	font-weight: 800;
+	background: transparent;
+	color: #626262;
+	border: 2px solid #ccc;
+	padding: 3px !important;
+	border-radius: 2px !important;
+}
+
+select:focus {
+	color: black;
 }
 
 textarea {
@@ -1001,20 +1010,36 @@ textarea#comment {
 	z-index: 0;
 }
 
-#body_bg {
-	/*background: $lightgray url(img/bg.png) repeat;*/
-	background-color: #e3e3e3;
-	background-image: url(img/bg3.png), gradient(linear, 0 0, 100% 100%, from(#de9a18), to(#D4145A));
-	background-image: url(img/bg3.png), linear-gradient(to right top, #de9a18, #D4145A);
+/*#body_bg {
+	background-color: $lightgray;
+	background-image: url(img/bg3.png), gradient(linear, 0 0, 100% 100%, from($orange), to($pink));
+	background-image: url(img/bg3.png), linear-gradient(to right top, $orange, $pink); 
 	background-repeat: repeat, repeat;
-	/*background-size: 1200px 1200px, 100% 100%;*/
 	background-size: 600px auto, 100% 100%;
 	background-attachment: fixed, fixed;
+	@media ($screen-xxs) {
+		background-size: 400px auto, 100% 100%;
+	}
+	
+}*/
+#body_bg {
+	background-color: #D9E021;
+	background-image: linear-gradient(134deg, #e3f816, #D9E021, #00B0B0, #93278F, #D4145A);
+	background-repeat: repeat;
+	background-size: 1000% 1000%;
+	background-attachment: fixed;
+	animation: animated-gradient 115s ease infinite;
 }
 
-@media (max-width: 480px) {
-	#body_bg {
-		background-size: 400px auto, 100% 100%;
+@keyframes animated-gradient {
+	0% {
+		background-position: 2% 0%;
+	}
+	50% {
+		background-position: 99% 100%;
+	}
+	100% {
+		background-position: 2% 0%;
 	}
 }
 
@@ -1029,10 +1054,13 @@ textarea#comment {
 /* For Firefox 3.6 to 15 */
 /* Standard syntax (must be last) */
 /*}*/
+#bg {
+	background: url(img/bg3.png) repeat;
+}
+
 .bg {
 	width: 100vw;
-	height: 100vh;
-	/*had turned off to fix issue in mobile, can't figuer out problem*/
+	/*height: 100vh; had turned off to fix issue in mobile, can't figuer out problem*/
 	background: url(img/bg3.png) repeat;
 	/*background-size: 75px 75px;*/
 	z-index: 100;
@@ -1041,9 +1069,10 @@ textarea#comment {
 	background-attachment: fixed;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
 	.bg {
-		background-size: 400px auto, 100% 100%;
+		background-size: 400px auto;
+		height: auto;
 	}
 }
 
@@ -2204,6 +2233,7 @@ ul.post-categories li a:hover {
 }
 
 .view-project {
+	margin-top: 1em !important;
 	text-transform: uppercase;
 	text-align: center;
 	letter-spacing: .1em;

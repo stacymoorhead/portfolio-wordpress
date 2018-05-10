@@ -832,9 +832,11 @@ input[type="datetime-local"]:focus,
 input[type="color"]:focus,
 textarea:focus {
 	color: black;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(217, 224, 33, 0.75);
+	outline: 0 none;
 }
 
-select {
+select, select[multiple] {
 	font-weight: 800;
 	background: transparent;
 	color: #626262;
@@ -843,8 +845,10 @@ select {
 	border-radius: 2px !important;
 }
 
-select:focus {
+select:focus, select:active, select:focus-within, select[multiple]:focus, select[multiple]:active, select[multiple]:focus-within {
 	color: black;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(217, 224, 33, 0.75);
+	outline: 0 none;
 }
 
 textarea {
@@ -853,6 +857,33 @@ textarea {
 
 textarea#comment {
 	border-style: none;
+}
+
+.wpcf7-form label {
+	width: 100%;
+}
+
+.wpcf7-form input {
+	width: 100%;
+}
+
+.wpcf7-form input[type="submit"] {
+	width: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+.wpcf7-form select[multiple], .wpcf7-form select {
+	width: 100%;
+}
+
+.wpcf7-form select[multiple] option:hover, .wpcf7-form select[multiple] option:active, .wpcf7-form select[multiple] option:focus, .wpcf7-form select[multiple] option:focus-within, .wpcf7-form select option:hover, .wpcf7-form select option:active, .wpcf7-form select option:focus, .wpcf7-form select option:focus-within {
+	background-color: #D9E021;
+}
+
+.wpcf7-form select[multiple] option:focus, .wpcf7-form select[multiple] option:focus-within, .wpcf7-form select option:focus, .wpcf7-form select option:focus-within {
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(217, 224, 33, 0.75);
+	outline: 0 none;
 }
 
 /*--------------------------------------------------------------

@@ -20,18 +20,22 @@ textarea {
 	border-radius: 2px;
 	&:focus {
 		color: $color__text-input-focus;
+		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba($lime-green, 0.75);
+  		outline: 0 none;
 	}
 }
 
-select {
+select, select[multiple] {
 	font-weight: 800;
 	background: transparent;
 	color: $color__text-input;
 	border: 2px solid $color__border-input;
 	padding: 3px !important;
 	border-radius: 2px !important;
-	&:focus {
+	&:focus, &:active, &:focus-within {
 		color: $color__text-input-focus;
+		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba($lime-green, 0.75) ;
+  		outline: 0 none;		
 	}
 }
 
@@ -41,4 +45,28 @@ textarea {
 
 textarea#comment {
     border-style: none;
+}
+
+.wpcf7-form {
+	label {
+		width: 100%;
+	}
+	input {
+		width: 100%;
+	}
+	input[type="submit"] {
+		width: auto;
+		display: block;
+		margin: 0 auto;
+	}
+	select[multiple], select, {
+		width: 100%;
+		option:hover, option:active, option:focus, option:focus-within {
+			background-color: $lime-green;
+		}
+		option:focus, option:focus-within {
+			box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba($lime-green, 0.75);
+	  		outline: 0 none;				
+		}
+	}
 }

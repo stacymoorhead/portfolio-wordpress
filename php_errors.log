@@ -71,3 +71,90 @@
 [27-Apr-2018 19:15:48 UTC] PHP   5. require_once() /home/ubuntu/workspace/wp-config.php:92
 [27-Apr-2018 19:15:48 UTC] PHP   6. include() /home/ubuntu/workspace/wp-settings.php:426
 [27-Apr-2018 19:15:48 UTC] PHP   7. require() /home/ubuntu/workspace/wp-content/themes/stacylauren/functions.php:252
+[10-May-2018 14:52:53 UTC] PHP Parse error:  syntax error, unexpected 'true' (T_STRING) in /home/ubuntu/workspace/wp-content/themes/stacylauren/functions.php on line 249
+[10-May-2018 14:52:53 UTC] PHP Stack trace:
+[10-May-2018 14:52:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[10-May-2018 14:52:53 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[10-May-2018 14:52:53 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[10-May-2018 14:52:53 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[10-May-2018 14:54:54 UTC] PHP Parse error:  syntax error, unexpected 'true' (T_STRING) in /home/ubuntu/workspace/wp-content/themes/stacylauren/functions.php on line 249
+[10-May-2018 14:54:54 UTC] PHP Stack trace:
+[10-May-2018 14:54:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[10-May-2018 14:54:54 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[10-May-2018 14:54:54 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[10-May-2018 14:54:54 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[10-May-2018 14:56:54 UTC] PHP Parse error:  syntax error, unexpected 'true' (T_STRING) in /home/ubuntu/workspace/wp-content/themes/stacylauren/functions.php on line 249
+[10-May-2018 14:56:54 UTC] PHP Stack trace:
+[10-May-2018 14:56:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[10-May-2018 14:56:54 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[10-May-2018 14:56:54 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[10-May-2018 14:56:54 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[10-May-2018 14:58:55 UTC] PHP Parse error:  syntax error, unexpected 'true' (T_STRING) in /home/ubuntu/workspace/wp-content/themes/stacylauren/functions.php on line 249
+[10-May-2018 14:58:55 UTC] PHP Stack trace:
+[10-May-2018 14:58:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[10-May-2018 14:58:55 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[10-May-2018 14:58:55 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[10-May-2018 14:58:55 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[10-May-2018 15:00:56 UTC] PHP Parse error:  syntax error, unexpected 'true' (T_STRING) in /home/ubuntu/workspace/wp-content/themes/stacylauren/functions.php on line 249
+[10-May-2018 15:00:56 UTC] PHP Stack trace:
+[10-May-2018 15:00:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[10-May-2018 15:00:56 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[10-May-2018 15:00:56 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[10-May-2018 15:00:56 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[10-May-2018 15:02:56 UTC] PHP Parse error:  syntax error, unexpected 'true' (T_STRING) in /home/ubuntu/workspace/wp-content/themes/stacylauren/functions.php on line 249
+[10-May-2018 15:02:56 UTC] PHP Stack trace:
+[10-May-2018 15:02:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[10-May-2018 15:02:56 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[10-May-2018 15:02:56 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[10-May-2018 15:02:56 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[10-May-2018 15:04:58 UTC] PHP Parse error:  syntax error, unexpected 'true' (T_STRING) in /home/ubuntu/workspace/wp-content/themes/stacylauren/functions.php on line 249
+[10-May-2018 15:04:58 UTC] PHP Stack trace:
+[10-May-2018 15:04:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[10-May-2018 15:04:58 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[10-May-2018 15:04:58 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[10-May-2018 15:04:58 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[10-May-2018 15:06:59 UTC] PHP Parse error:  syntax error, unexpected 'true' (T_STRING) in /home/ubuntu/workspace/wp-content/themes/stacylauren/functions.php on line 249
+[10-May-2018 15:06:59 UTC] PHP Stack trace:
+[10-May-2018 15:06:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[10-May-2018 15:06:59 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[10-May-2018 15:06:59 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[10-May-2018 15:06:59 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[10-May-2018 15:09:00 UTC] PHP Parse error:  syntax error, unexpected 'true' (T_STRING) in /home/ubuntu/workspace/wp-content/themes/stacylauren/functions.php on line 249
+[10-May-2018 15:09:00 UTC] PHP Stack trace:
+[10-May-2018 15:09:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[10-May-2018 15:09:00 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[10-May-2018 15:09:00 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[10-May-2018 15:09:00 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[10-May-2018 15:10:09 UTC] PHP Fatal error:  Call to a member function add_rewrite_tag() on a non-object in /home/ubuntu/workspace/wp-includes/rewrite.php on line 172
+[10-May-2018 15:10:09 UTC] PHP Stack trace:
+[10-May-2018 15:10:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[10-May-2018 15:10:09 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[10-May-2018 15:10:09 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[10-May-2018 15:10:09 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[10-May-2018 15:10:09 UTC] PHP   5. include_once() /home/ubuntu/workspace/wp-settings.php:305
+[10-May-2018 15:10:09 UTC] PHP   6. register_taxonomy() /home/ubuntu/workspace/wp-content/plugins/posttypes.php:75
+[10-May-2018 15:10:09 UTC] PHP   7. WP_Taxonomy->add_rewrite_rules() /home/ubuntu/workspace/wp-includes/taxonomy.php:386
+[10-May-2018 15:10:09 UTC] PHP   8. add_rewrite_tag() /home/ubuntu/workspace/wp-includes/class-wp-taxonomy.php:379
+[10-May-2018 15:10:11 UTC] PHP Fatal error:  Call to a member function add_rewrite_tag() on a non-object in /home/ubuntu/workspace/wp-includes/rewrite.php on line 172
+[10-May-2018 15:10:11 UTC] PHP Stack trace:
+[10-May-2018 15:10:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/edit.php:0
+[10-May-2018 15:10:11 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/edit.php:10
+[10-May-2018 15:10:11 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-admin/admin.php:31
+[10-May-2018 15:10:11 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-load.php:37
+[10-May-2018 15:10:11 UTC] PHP   5. require_once() /home/ubuntu/workspace/wp-config.php:92
+[10-May-2018 15:10:11 UTC] PHP   6. include_once() /home/ubuntu/workspace/wp-settings.php:305
+[10-May-2018 15:10:11 UTC] PHP   7. register_taxonomy() /home/ubuntu/workspace/wp-content/plugins/posttypes.php:75
+[10-May-2018 15:10:11 UTC] PHP   8. WP_Taxonomy->add_rewrite_rules() /home/ubuntu/workspace/wp-includes/taxonomy.php:386
+[10-May-2018 15:10:11 UTC] PHP   9. add_rewrite_tag() /home/ubuntu/workspace/wp-includes/class-wp-taxonomy.php:379
+[11-May-2018 16:49:39 UTC] PHP Parse error:  syntax error, unexpected '{', expecting '(' in /home/ubuntu/workspace/wp-content/plugins/posttypes.php on line 110
+[11-May-2018 16:49:39 UTC] PHP Stack trace:
+[11-May-2018 16:49:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[11-May-2018 16:49:39 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[11-May-2018 16:49:39 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[11-May-2018 16:49:39 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[11-May-2018 16:49:54 UTC] PHP Parse error:  syntax error, unexpected '{', expecting '(' in /home/ubuntu/workspace/wp-content/plugins/posttypes.php on line 110
+[11-May-2018 16:49:54 UTC] PHP Stack trace:
+[11-May-2018 16:49:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[11-May-2018 16:49:54 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[11-May-2018 16:49:54 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[11-May-2018 16:49:54 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92

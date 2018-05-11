@@ -16,13 +16,13 @@ get_header();
 				<div class="row">
 					<div class="col-md-12">
 					<?php
-						the_archive_title( '<h1>', '</h1>' );
+						single_term_title( '<h1>', '</h1>' );
 					?>		
 					</div> <!-- .col-md-12 -->
 					<div class="row">
 						<div class="container">
 							<div class="col-md-12 project-excerpt">
-								<?php the_archive_description(); ?>
+								<?php term_description(); ?>
 							</div> <!-- .col-md-12 -->
 						</div> <!-- .container -->
 					</div><!-- .row -->
@@ -30,16 +30,26 @@ get_header();
 		    	<div class="arrow-down"></div>
 			</header><!-- .entry-header -->	
 			<div class="entry-content">
-				<div class="content fadein700">
+				<div class="content">
 					<div class="row">
 						<div class="container">
 							<div class="col-md-8">			
-							<?php if ( have_posts() ) : 
+							<?php 
+							            				
+            					$args = array(
+            					  'post_type'   => 'projects',
+            					  'post_status' => 'publish',
+            					  
+            					 );
+            					$category = get_terms('project-categories');
+            					$projects = new WP_Query( $args );
+							
+							if ( $projects->have_posts() ) : 
 								
 								/* Start the Loop */
-								while ( have_posts() ) :
+								while ( $projects->have_posts() ) :
 
-									the_post();
+									$projects->the_post();
 									
 									/*
 									 * Include the Post-Type-specific template for the content.

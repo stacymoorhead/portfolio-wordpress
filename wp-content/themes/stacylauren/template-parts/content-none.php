@@ -11,7 +11,7 @@
 
 <section class="no-results not-found">
 	<div class="entry-content">
-		<div class="content">
+		<div class="content fadein700">
 			<div class="row">
 				<div class="container">
 				<?php

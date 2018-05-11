@@ -16,7 +16,7 @@ get_header();
 				<div class="row">
 					<div class="col-md-12">
 					<?php
-						single_cat_title( '<h1>', '</h1>' );
+						single_term_title( '<h1>', '</h1>' );
 					?>		
 					</div> <!-- .col-md-12 -->
 					<div class="row">
@@ -30,7 +30,7 @@ get_header();
 		    	<div class="arrow-down"></div>
 			</header><!-- .entry-header -->	
 			<div class="entry-content">
-				<div class="content">
+				<div class="content fadein700">
 					<div class="row">
 						<div class="container">
 							<div class="col-md-8">			
@@ -38,14 +38,16 @@ get_header();
 								
 								/* Start the Loop */
 								while ( have_posts() ) :
+
 									the_post();
-					
+									
 									/*
 									 * Include the Post-Type-specific template for the content.
 									 * If you want to override this in a child theme, then include a file
 									 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
 									 */
 									get_template_part( 'template-parts/content', get_post_type() );
+
 					
 								endwhile;
 					
@@ -58,7 +60,8 @@ get_header();
 							endif;
 							?>					</div> <!-- .col-md-8 -->
 							<div class="col-md-4">					
-								<?php get_sidebar('projects'); ?>
+								<?php 
+								get_sidebar('projects'); ?>
 							</div><!-- .col-md-4 -->
 						</div> <!-- .container	-->	
 					</div> <!-- .row -->

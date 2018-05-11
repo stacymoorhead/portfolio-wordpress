@@ -239,6 +239,7 @@ function stacylauren_scripts() {
 	wp_enqueue_script( 'html5', get_theme_file_uri( '/js/html5.js' ), array(), '3.7.3' );
 	wp_script_add_data( 'html5', 'conditional', 'lt IE 9' );
 	
+	
 }
 
 add_action( 'wp_enqueue_scripts', 'stacylauren_scripts' );

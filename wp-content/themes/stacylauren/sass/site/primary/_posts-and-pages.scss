@@ -138,6 +138,7 @@ ul.post-categories {
     a {
       background: $lime-green !important;
       padding: .25em .5em !important;
+      margin-right: .5em;
       &:hover {
   				transition: $transition !important;        
   				background: $darkgray !important;
@@ -314,12 +315,18 @@ ul.post-categories {
   display: flex !important;
   justify-content: center;
   margin: 0 auto 1em auto !important;
-  span {
-    display: block;
-    color: $medgray;
-    background: rgba(255, 255, 255, .15);
-    padding: .25em .5em;
-    margin: 0 .5em;
+  a {
+    text-transform: uppercase !important;
+    letter-spacing: .1em !important;    
+    display: block !important;
+    color: $medgray !important;
+    font-weight: 400;
+    background: rgba(255, 255, 255, .15) !important;
+    padding: .25em .5em !important;
+    margin: 0 .5em !important;
+    &:hover {
+      background: rgba(0, 0, 0, 1) !important;
+    }
   }
 }
 

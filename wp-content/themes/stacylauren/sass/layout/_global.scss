@@ -58,7 +58,7 @@
 
 .bg {
 	width: 100vw;
-	/*height: 100vh; had turned off to fix issue in mobile, can't figuer out problem*/
+	height: 100vh; /*had turned off to fix issue in mobile, can't figuer out problem*/
 	background: url(img/bg3.png) repeat;
 	/*background-size: 75px 75px;*/
 	z-index: 100;
@@ -68,6 +68,7 @@
 	@media ($screen-xs) {
 		background-size: 400px auto;
 		height: auto;
+		overflow-x: hidden;
 	}	
 }
 
@@ -185,5 +186,5 @@
 
 
 .no-overflow {
-	overflow: hidden;
+	overflow: hidden !important;
 }

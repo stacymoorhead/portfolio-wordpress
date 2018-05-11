@@ -11,6 +11,20 @@ get_header(); ?>
     			<div class="col-md-12">
     				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
     			</div> <!-- .col-med-12 -->
+    			<div class="row">
+					<div class="container">
+						<div class="col-md-12 project-excerpt">
+								<?php while ( have_posts() ) :
+									the_post();
+									the_content(sprintf(
+										/* translators: %s: Name of current post. */
+										wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'stacylauren' ), array( 'span' => array( 'class' => array() ) ) ),
+										the_title( '<span class="screen-reader-text">"', '"</span>', false )
+									)); 
+								endwhile;	?>
+						</div> <!-- .col-md-12 -->
+					</div> <!-- .container -->
+				</div><!-- .row -->
     		</div> <!-- row -->
     	<div class="arrow-down"></div>	
     	</header><!-- .entry-header -->   
@@ -25,7 +39,7 @@ get_header(); ?>
             					  'post_status' => 'publish',
             					  
             					 );
-            					$category = get_the_category();
+            					$terms = wp_get_post_terms($post->ID , 'project-categories');
             					$projects = new WP_Query( $args );
             					if( $projects->have_posts() ) :
             					      while( $projects->have_posts() ) :
@@ -38,7 +52,9 @@ get_header(); ?>
 	            					            		<figcaption class="screenshot-caption screenshot-caption_bottom">
 	            					            			<div>
 	            					            				<h2><?php echo(the_title()) ?></h2>
-	            					            				<p class="category-name"><?php foreach((get_the_category()) as $category) { echo '<span>' . $category->cat_name . '</span>'; } ?></p>
+	            					            				<p class="category-name">
+																	<?php the_terms( $post->ID, 'project-categories', '', ' ', ''); ?> 
+																</p>
 	            					            				<p><?php echo(the_excerpt()) ?> </p>
 	            					            				<p class="view-project"><a href="<?php the_permalink() ?>">View Project <i class="fa fa-arrow-right"></i></a></p>
 	            					            			</div>

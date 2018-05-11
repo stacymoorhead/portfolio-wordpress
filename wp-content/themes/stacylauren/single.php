@@ -30,7 +30,7 @@ get_header();
 	    	<div class="arrow-down"></div>
 		</header><!-- .entry-header -->	
 		<div class="entry-content">
-			<div class="content">
+			<div class="content fadein700">
 				<div class="row">
 					<div class="container">
 						<div class="col-md-8">		
@@ -39,9 +39,11 @@ get_header();
 			the_post();
 			get_template_part( 'template-parts/content', get_post_type() ); ?>
 						</div> <!-- .col-md-8 -->
-						<div class="col-md-4">
-							<?php if ( 'projects' == get_post_type() ) {
-								the_category(); ?>
+						<div class="col-md-4 projects-sidebar">
+							<?php if ( 'projects' == get_post_type() ) { ?>
+								<ul class="post-categories">
+									<?php the_terms( $post->ID, 'project-categories', '<li>', '', '</li>'); ?> 
+								</ul>	
 								<p class="project_description">
 									<?php the_field('project_description'); ?>
 								</p>	

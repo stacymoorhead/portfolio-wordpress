@@ -34,7 +34,7 @@ get_header();
 
 		<?php if ( have_posts() ) : ?>
 			<div class="entry-content">
-				<div class="content">
+				<div class="content fadein700">
 					<div class="row">
 						<div class="container">
 							<div class="col-md-8">				

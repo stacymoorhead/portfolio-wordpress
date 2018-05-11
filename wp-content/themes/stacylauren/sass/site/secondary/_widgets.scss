@@ -50,3 +50,30 @@
 	color: $green;
 	font-weight: 800;
 }
+
+ul.project-terms {
+	list-style-type: none;
+	margin: .5em 0 1em 0 !important;
+	padding: 0 !important;
+	li {
+		display: inline-block;
+		margin: .25em .25em .25em 0 !important;
+		a {
+			color: $medgray;
+			background: $lightgray;
+			color: $medgray;
+			
+			padding: .25em .5em;
+			font-size: .8em;	
+			&:hover {
+				background: $darkgray;
+				transition: $transition;
+				color: $lime-green !important;
+			}
+		}
+	}
+}
+
+.tag-cloud-link {
+		color: $gray !important;
+}

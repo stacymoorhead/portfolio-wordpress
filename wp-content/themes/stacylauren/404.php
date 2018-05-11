@@ -29,7 +29,7 @@ get_header();
 			</header><!-- .entry-header -->
 			<section class="error-404 not-found">			
 				<div class="entry-content">
-					<div class="content">
+					<div class="content fadein700">
 						<div class="row">
 							<div class="container">
 								<div class="col-md-8">	

@@ -54,15 +54,18 @@ function custom_posttypes() {
 		'query_var'          => true,
 		'rewrite'            => array( 'slug' => 'projects' ),
 		'capability_type'    => 'post',
-		'has_archive'        => true,
+		'has_archive'        => 'projects',
 		'hierarchical'       => false,
 		'menu_position'      => null,
 		'supports'           => array( 'title', 'editor', 'excerpt', 'thumbnail' ),
-		'taxonomies'		 => array( 'category', 'post_tag' )
+		//'taxonomies'		 => array( 'category', 'post_tag' )
 
 	);
     register_post_type('projects', $args);
+    
 }
+
+
 add_action('init', 'custom_posttypes');
 
 function my_rewrite_flush() {
@@ -92,15 +95,28 @@ function set_custom_post_types_admin_order($wp_query) {
     }
   }
 }
-add_filter('pre_get_posts', 'set_custom_post_types_admin_order');
+/*add_filter('pre_get_posts', 'set_custom_post_types_admin_order');
 
 function custom_post_type_cat_filter($query) {
   if ( !is_admin() && $query->is_main_query() ) {
-    if ($query->is_category()) {
+    if ($query->is_term()) {
       $query->set( 'post_type', array( 'post', 'Projects' ) );
     }
   }
 }
 
-add_action('pre_get_posts','custom_post_type_cat_filter');
+add_action('pre_get_posts','custom_post_type_cat_filter');*/
 
+function custom_taxonomies() {
+		register_taxonomy( "project-categories", 
+		array( 	"projects" ), 
+		array( 	"hierarchical" => true,
+				"labels" => array('name'=>"Project Categories",'add_new_item'=>"Add New category"), 
+				"singular_label" => __( "Project Category" ), 
+				"rewrite" => array( 'slug' => 'project-categories', // This controls the base slug that will display before each term 
+				                    'with_front' => false),
+			 ) 
+	);  
+}
+
+add_action('init', 'custom_taxonomies');

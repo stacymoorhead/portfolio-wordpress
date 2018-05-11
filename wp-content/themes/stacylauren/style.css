@@ -1092,7 +1092,8 @@ textarea#comment {
 
 .bg {
 	width: 100vw;
-	/*height: 100vh; had turned off to fix issue in mobile, can't figuer out problem*/
+	height: 100vh;
+	/*had turned off to fix issue in mobile, can't figuer out problem*/
 	background: url(img/bg3.png) repeat;
 	/*background-size: 75px 75px;*/
 	z-index: 100;
@@ -1105,6 +1106,7 @@ textarea#comment {
 	.bg {
 		background-size: 400px auto;
 		height: auto;
+		overflow-x: hidden;
 	}
 }
 
@@ -1233,7 +1235,7 @@ textarea#comment {
 }
 
 .no-overflow {
-	overflow: hidden;
+	overflow: hidden !important;
 }
 
 .footer-widgets {
@@ -2048,6 +2050,7 @@ ul.post-categories li {
 ul.post-categories li a {
 	background: #D9E021 !important;
 	padding: .25em .5em !important;
+	margin-right: .5em;
 }
 
 ul.post-categories li a:hover {
@@ -2256,12 +2259,19 @@ ul.post-categories li a:hover {
 	margin: 0 auto 1em auto !important;
 }
 
-.category-name span {
-	display: block;
-	color: #9a9a9a;
-	background: rgba(255, 255, 255, 0.15);
-	padding: .25em .5em;
-	margin: 0 .5em;
+.category-name a {
+	text-transform: uppercase !important;
+	letter-spacing: .1em !important;
+	display: block !important;
+	color: #9a9a9a !important;
+	font-weight: 400;
+	background: rgba(255, 255, 255, 0.15) !important;
+	padding: .25em .5em !important;
+	margin: 0 .5em !important;
+}
+
+.category-name a:hover {
+	background: black !important;
 }
 
 .view-project {
@@ -2415,6 +2425,35 @@ ol.comment-list li {
 	font-size: 1.2em;
 	color: #78A22F;
 	font-weight: 800;
+}
+
+ul.project-terms {
+	list-style-type: none;
+	margin: .5em 0 1em 0 !important;
+	padding: 0 !important;
+}
+
+ul.project-terms li {
+	display: inline-block;
+	margin: .25em .25em .25em 0 !important;
+}
+
+ul.project-terms li a {
+	color: #9a9a9a;
+	background: #e3e3e3;
+	color: #9a9a9a;
+	padding: .25em .5em;
+	font-size: .8em;
+}
+
+ul.project-terms li a:hover {
+	background: #626262;
+	transition: all 0.7s ease-in-out;
+	color: #D9E021 !important;
+}
+
+.tag-cloud-link {
+	color: #626262 !important;
 }
 
 /*--------------------------------------------------------------

@@ -232,6 +232,9 @@ ul.post-categories {
   	width: 100%;
   	height: auto;
   }
+  @media ($screen-xs) {
+    font-size: 1.4em;
+  }
 }
 
 .screenshot > * { display: block; }

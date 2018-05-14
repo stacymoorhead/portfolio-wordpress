@@ -23,15 +23,18 @@
 		
 		<?php
 		} endif; ?>
+		<?php if (is_single()) : {
+			the_content( sprintf(
+			/* translators: %s: Name of current post. */
+			wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'stacylauren' ), array( 'span' => array( 'class' => array() ) ) ),
+			the_title( '<span class="screen-reader-text">"', '"</span>', false )
+		) );
+		} else : ?>
 		<p>
 			<?php $the_excerpt = get_the_excerpt(); if ( '' != $the_excerpt ) {}	echo $the_excerpt; ?>
 			<a class="read-more" href="<?php echo esc_url( get_permalink() ) ?>" rel="bookmark">Read More <i class="fa fa-arrow-right"></i></a>
 		</p>
-		<?php /*the_content( sprintf(
-			/* translators: %s: Name of current post. */
-		/*	wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'stacylauren' ), array( 'span' => array( 'class' => array() ) ) ),
-			the_title( '<span class="screen-reader-text">"', '"</span>', false )
-		) );*/
+		<?php endif;
 
 		wp_link_pages( array(
 			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'stacylauren' ),

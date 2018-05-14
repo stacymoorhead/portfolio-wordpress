@@ -21,10 +21,8 @@
 </head>
 <?php if ( is_front_page() ) { ?>
 <body <?php body_class('no-overflow'); ?> id="body_bg">
-	<div class="bg">
 <?php }  else { ?>
 <body <?php body_class(); ?> id="body_bg">
-	<div  class="bg">
 <?php } ?>		
 		
 		<div id="page" class="site">

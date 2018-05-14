@@ -6,83 +6,21 @@
     margin-top: 62px;
 }
 
-#gradient {
-	padding: 0;
-	margin: 0;
-	z-index: 0;
-}
-
-/*#body_bg {
-	background-color: $lightgray;
-	background-image: url(img/bg3.png), gradient(linear, 0 0, 100% 100%, from($orange), to($pink));
-	background-image: url(img/bg3.png), linear-gradient(to right top, $orange, $pink); 
-	background-repeat: repeat, repeat;
-	background-size: 600px auto, 100% 100%;
-	background-attachment: fixed, fixed;
-	@media ($screen-xxs) {
-		background-size: 400px auto, 100% 100%;
-	}
-	
-}*/
-
 #body_bg {
-	background-color: $lime-green;	
-	background-image: linear-gradient(134deg, $lime-green, $green, $teal, $purple, $pink);
-	background-repeat: repeat;
-	background-size: 1000% 1000%;
-	background-attachment: fixed;
-	
-	animation: animated-gradient 115s ease infinite;
-	
-	@keyframes animated-gradient { 
-	    0%{background-position:2% 0%}
-	    50%{background-position:99% 100%}
-	    100%{background-position:2% 0%}
-	}
+overflow-x: hidden !important;	
+  background: url(img/bg3.png) 50% repeat, linear-gradient(134deg, $lime-green, $green, $teal, $purple, $pink) repeat ;
+  background-size: 600px auto ,1000% auto ;
+  animation: bg-grad 90s infinite alternate linear;
+}
+@keyframes bg-grad {
+  to {
+    background-position: center, right;
+  }
+
 }
 
-/*#gradient {
-    width: inherit;
-	padding: 0px;
-	margin: 0px;
-	z-index: 0;
-	background: gradient(linear, 0 0, 100% 100%, from($lime-green), to($teal));
-	background: linear-gradient(to right top, $lime-green, $teal); /* For Safari 5.1 to 6.0 */ /* For Opera 11.1 to 12.0 */ /* For Firefox 3.6 to 15 */ /* Standard syntax (must be last) */	
-
-/*}*/
-
-#bg {
-	background: url(img/bg3.png) repeat;
-	z-index: 100;	
-}
-
-.bg {
-	width: 100vw;
-	height: 100vh; /*had turned off to fix issue in mobile, can't figuer out problem*/
-	background: url(img/bg3.png) repeat;
-	/*background-size: 75px 75px;*/
-	z-index: 100;
-	padding: 0;
-	margin: 0;
-	background-attachment: fixed;
-	@media ($screen-xs) {
-		background-size: 400px auto;
-		height: auto;
-		overflow-x: hidden;
-	}	
-}
-
-.sticky-footer-box {
-	height: 100vh;
-	width: 100vw;
-	margin: 0;
-	padding: 0;
-	display: flex;
-	flex-direction: column;
-}
 
 .site {
-	/*flex: 1 0 auto;*/
     overflow-x: hidden !important;
 }
 

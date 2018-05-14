@@ -20,11 +20,10 @@ $args = array(
 );
  
 // We wrap it in unordered list 
-echo '<h2 class="widget-title">Project Categories';
+echo '<h2 class="widget-title">Project Categories</h2>';
 echo '<ul class="project-terms">'; 
 echo wp_list_categories($args);
 echo '</ul>';
-echo '</h2>';
 }
  
 // Add a shortcode that executes our function

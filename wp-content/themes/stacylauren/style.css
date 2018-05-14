@@ -832,7 +832,7 @@ input[type="datetime-local"]:focus,
 input[type="color"]:focus,
 textarea:focus {
 	color: black;
-	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(217, 224, 33, 0.75);
+	/*box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba($lime-green, 0.75);*/
 	outline: 0 none;
 }
 
@@ -847,7 +847,7 @@ select, select[multiple] {
 
 select:focus, select:active, select:focus-within, select[multiple]:focus, select[multiple]:active, select[multiple]:focus-within {
 	color: black;
-	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(217, 224, 33, 0.75);
+	/*box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba($lime-green, 0.75);*/
 	outline: 0 none;
 }
 
@@ -878,11 +878,11 @@ textarea#comment {
 }
 
 .wpcf7-form select[multiple] option:hover, .wpcf7-form select[multiple] option:active, .wpcf7-form select[multiple] option:focus, .wpcf7-form select[multiple] option:focus-within, .wpcf7-form select option:hover, .wpcf7-form select option:active, .wpcf7-form select option:focus, .wpcf7-form select option:focus-within {
-	background-color: #D9E021;
+	background-color: #e3e3e3;
 }
 
 .wpcf7-form select[multiple] option:focus, .wpcf7-form select[multiple] option:focus-within, .wpcf7-form select option:focus, .wpcf7-form select option:focus-within {
-	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(217, 224, 33, 0.75);
+	/*box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba($lime-green, 0.75);*/
 	outline: 0 none;
 }
 
@@ -2306,6 +2306,7 @@ ul.post-categories li a:hover {
 	color: black;
 	padding: .25em .5em;
 	margin: 1em 0 0 0;
+	font-weight: 800;
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-align: center;
@@ -2338,6 +2339,61 @@ ul.post-categories li a:hover {
 	font-style: normal;
 	margin: 0 0 0 5px;
 	text-decoration: none;
+}
+
+.entry-footer {
+	margin: 0 auto 1em auto !important;
+	font-size: .8em !important;
+	color: #9a9a9a;
+}
+
+.entry-footer a {
+	display: inline-block !important;
+	color: #9a9a9a !important;
+	background: rgba(0, 0, 0, 0.15) !important;
+	padding: .25em .5em !important;
+	margin: 0 .5em !important;
+}
+
+.entry-footer a:hover {
+	background: black !important;
+}
+
+.entry-meta {
+	font-size: .8em;
+	color: #9a9a9a;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	margin-bottom: 1em;
+}
+
+.read-more {
+	font-size: .8em;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+}
+
+.edit-link {
+	display: block;
+	margin: 1em 0;
+}
+
+a.post-edit-link {
+	height: auto;
+	border: 2px solid black;
+	background: transparent !important;
+	color: black !important;
+	padding: .25em .5em;
+	margin: 0 !important;
+	color: black !important;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+}
+
+a.post-edit-link:hover {
+	transition: all 0.7s ease-in-out;
+	border: 2px solid #78A22F;
+	color: #78A22F;
 }
 
 /*--------------------------------------------------------------

@@ -17,7 +17,7 @@
 			<div class="entry-meta">
 				<?php
 				stacylauren_posted_on();
-				stacylauren_posted_by();
+				//stacylauren_posted_by();
 				?>
 			</div><!-- .entry-meta -->
 			<?php endif; ?>

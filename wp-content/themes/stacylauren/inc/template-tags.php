@@ -158,3 +158,9 @@ function stacylauren_post_navigation() {
 			'<span class="screen-reader-text">' . __( 'Previous project:', 'stacylauren' ) . '</span> ',
 	) );
 }
+
+function stacylauren_excerpt_more( $more ) {
+	return "… ";
+}
+
+add_filter('excerpt_more', 'stacylauren_excerpt_more');

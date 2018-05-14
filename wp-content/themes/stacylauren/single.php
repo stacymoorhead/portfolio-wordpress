@@ -37,7 +37,11 @@ get_header();
 		<?php
 		while ( have_posts() ) :
 			the_post();
-			get_template_part( 'template-parts/content', get_post_type() ); ?>
+			if ( is_single() && 'projects' == get_post_type()) :  {
+				get_template_part( 'template-parts/content', 'projects' );
+			}
+			else : get_template_part( 'template-parts/content', get_post_type() ); 
+			endif; ?>
 						</div> <!-- .col-md-8 -->
 						<div class="col-md-4 projects-sidebar">
 							<?php if ( 'projects' == get_post_type() ) { ?>

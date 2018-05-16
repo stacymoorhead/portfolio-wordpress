@@ -8,7 +8,7 @@
 
 #body_bg {
 overflow-x: hidden !important;	
-  background: url(img/bg3.png) 50% repeat, linear-gradient(134deg, $lime-green, $green, $teal, $purple, $pink) repeat ;
+  background: url(img/bg3.png) 50% repeat, linear-gradient(134deg, $lime-green, $cyan, $purple, $pink, $orange) repeat ;
   background-size: 600px auto ,1000% auto ;
   animation: bg-grad 90s infinite alternate linear;
 }
@@ -124,5 +124,7 @@ overflow-x: hidden !important;
 
 
 .no-overflow {
+	display: block !important;
+	height: 100vh !important;
 	overflow: hidden !important;
 }

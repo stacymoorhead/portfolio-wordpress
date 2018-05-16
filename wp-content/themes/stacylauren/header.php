@@ -31,13 +31,21 @@
 				<div class="overlay" style="display: none;"></div>
 				<nav id="sidebar-wrapper" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 					<?php
+					if ( is_user_logged_in() ) {
+					    wp_nav_menu( array(
+						'theme_location' => 'menu-1',
+						'container'		 => 'ul',
+						'menu_id'        => 'primary-menu',
+						'menu_class'   	 => 'nav sidebar-nav sidebar-nav-logged-in',
+						) );
+				    } else {
 					wp_nav_menu( array(
 						'theme_location' => 'menu-1',
 						'container'		 => 'ul',
 						'menu_id'        => 'primary-menu',
 						'menu_class'   	 => 'nav sidebar-nav',
-					) );
-					?>
+					 ) );
+					} ?>
 				</nav><!-- #site-navigation -->	
 		
 				<header id="masthead" class="container-fluid site-header">

@@ -626,6 +626,29 @@ table {
 	width: 100%;
 }
 
+thead {
+	color: #78A22F;
+	text-transform: uppercase;
+	border-bottom: 4px solid #e3e3e3;
+	font-size: 1.2em;
+}
+
+thead th {
+	padding: .5em 0;
+}
+
+tr {
+	border-bottom: 2px solid #e3e3e3;
+}
+
+tr:last-child {
+	border: 0;
+}
+
+td {
+	padding: .5em 0;
+}
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -1037,7 +1060,7 @@ textarea#comment {
 
 #body_bg {
 	overflow-x: hidden !important;
-	background: url(img/bg3.png) 50% repeat, linear-gradient(134deg, #D9E021, #78A22F, #00B0B0, #93278F, #D4145A) repeat;
+	background: url(img/bg3.png) 50% repeat, linear-gradient(134deg, #D9E021, #0df3e8, #93278F, #D4145A, #de9a18) repeat;
 	background-size: 600px auto ,1000% auto;
 	animation: bg-grad 90s infinite alternate linear;
 }
@@ -1161,6 +1184,8 @@ textarea#comment {
 }
 
 .no-overflow {
+	display: block !important;
+	height: 100vh !important;
 	overflow: hidden !important;
 }
 
@@ -1499,11 +1524,15 @@ body, html {
 .sidebar-nav {
 	list-style: none;
 	margin: 0;
-	padding: 0;
+	padding: 10px 0 0 0;
 	position: absolute;
 	top: 0;
 	width: 220px;
 	font-weight: bold;
+}
+
+.sidebar-nav-logged-in {
+	padding-top: 45px;
 }
 
 .sidebar-nav li {
@@ -2110,7 +2139,7 @@ ul.post-categories li a:hover {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background: rgba(0, 0, 0, 0.75);
+	background: rgba(0, 0, 0, 0.95);
 	color: #ffffff;
 	transition: all 0.5s ease-out;
 	display: -ms-flexbox;

@@ -47,7 +47,7 @@ get_header();
 							<?php if ( 'projects' == get_post_type() ) { ?>
 								<ul class="post-categories">
 									<?php the_terms( $post->ID, 'project-categories', '<li>', '', '</li>'); ?> 
-								</ul>	
+								</ul>
 								<p class="project_description">
 									<?php the_field('project_description'); ?>
 								</p>	

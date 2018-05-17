@@ -58,7 +58,7 @@ function custom_posttypes() {
 		'hierarchical'       => false,
 		'menu_position'      => null,
 		'supports'           => array( 'title', 'editor', 'excerpt', 'thumbnail' ),
-		'taxonomies'		 => array( 'post_tag' )
+		//'taxonomies'		 => array( 'post_tag' )
 
 	);
     register_post_type('projects', $args);
@@ -108,15 +108,24 @@ function custom_post_type_cat_filter($query) {
 add_action('pre_get_posts','custom_post_type_cat_filter');*/
 
 function custom_taxonomies() {
-		register_taxonomy( "project-categories", 
+	register_taxonomy( "project-categories", 
 		array( 	"projects" ), 
 		array( 	"hierarchical" => true,
-				"labels" => array('name'=>"Project Categories",'add_new_item'=>"Add New category"), 
+				"labels" => array('name'=>"Project Categories",'add_new_item'=>"Add New Category"), 
 				"singular_label" => __( "Project Category" ), 
 				"rewrite" => array( 'slug' => 'project-categories', // This controls the base slug that will display before each term 
 				                    'with_front' => false),
 			 ) 
 	);  
+	register_taxonomy( "project-tags", 
+		array( 	"projects" ), 
+		array( 	"hierarchical" => false,
+				"labels" => array('name'=>"Project Tags",'add_new_item'=>"Add New Tag"), 
+				"singular_label" => __( "Project Tag" ), 
+				"rewrite" => array( 'slug' => 'project-tags', // This controls the base slug that will display before each term 
+				                    'with_front' => false),
+			 ) 
+	); 	
 }
 
 add_action('init', 'custom_taxonomies');

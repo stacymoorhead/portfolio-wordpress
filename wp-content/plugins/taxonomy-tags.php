@@ -19,11 +19,8 @@ $args = array(
 'title_li' => ''
 );
  
-// We wrap it in unordered list 
-echo '<h2 class="widget-title">Project Tags</h2>';
-echo '<ul class="project-terms">'; 
-echo wp_list_categories($args);
-echo '</ul>';
+echo wp_tag_cloud($args);
+
 }
  
 // Add a shortcode that executes our function

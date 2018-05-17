@@ -58,7 +58,7 @@ function custom_posttypes() {
 		'hierarchical'       => false,
 		'menu_position'      => null,
 		'supports'           => array( 'title', 'editor', 'excerpt', 'thumbnail' ),
-		//'taxonomies'		 => array( 'category', 'post_tag' )
+		'taxonomies'		 => array( 'post_tag' )
 
 	);
     register_post_type('projects', $args);

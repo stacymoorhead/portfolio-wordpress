@@ -15,7 +15,7 @@
 .entry-summary {
     z-index: 0;
     margin: 0;
-    background: rgba(255, 255, 255, 1);
+    background: rgba(255, 255, 255, .90);
 	a {
 	  color: black;
 	  font-weight: 800;
@@ -113,7 +113,7 @@ h2.entry-title {
 .arrow-down:after, .arrow-down:before {
     left: -16px;
     width: 50%;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, .90);
     transform: skew(45deg,0);
     z-index: 100;
 }

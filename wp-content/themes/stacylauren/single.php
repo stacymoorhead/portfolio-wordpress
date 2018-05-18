@@ -17,7 +17,10 @@ get_header();
 				<div class="col-md-12">
 				<?php	the_title( '<h1 class="entry-title">', '</h1>' ); ?>		
 				</div> <!-- .col-md-12 -->
-				<?php if ( is_single() && 'projects' == get_post_type()) : ?>
+				<?php //if ( is_single() && 'projects' == get_post_type()) : 
+
+				while ( have_posts() ) :
+					the_post(); ?>
 				<div class="row">
 					<div class="container">
 						<div class="col-md-12 project-excerpt">
@@ -25,7 +28,7 @@ get_header();
 						</div> <!-- .col-md-12 -->
 					</div> <!-- .container -->
 				</div><!-- .row -->
-				<?php endif; ?>
+				<?php //endif; ?>
 			</div> <!-- row -->
 	    	<div class="arrow-down"></div>
 		</header><!-- .entry-header -->	
@@ -34,10 +37,8 @@ get_header();
 				<div class="row">
 					<div class="container">
 						<div class="col-md-8">		
-		<?php
-		while ( have_posts() ) :
-			the_post();
-			if ( is_single() && 'projects' == get_post_type()) :  {
+
+			<?php if ( is_single() && 'projects' == get_post_type()) :  {
 				get_template_part( 'template-parts/content', 'projects' );
 			}
 			else : get_template_part( 'template-parts/content', get_post_type() ); 

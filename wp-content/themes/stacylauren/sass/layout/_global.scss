@@ -7,16 +7,19 @@
 }
 
 #body_bg {
-overflow-x: hidden !important;	
-  background: url(img/bg3.png) 50% repeat, linear-gradient(134deg, $lime-green, $cyan, $purple, $pink, $orange) repeat ;
-  background-size: 600px auto ,1000% auto ;
-  animation: bg-grad 90s infinite alternate linear;
+	overflow-x: hidden !important;	
+	background: url(img/bg3.png) 50% repeat fixed, linear-gradient(134deg, $lime-green, $cyan, $purple, $pink, $orange) repeat ;
+	background-size: 600px auto ,1000% auto ;
+	animation: bg-grad 90s infinite alternate linear;
+ 	@media ($screen-xs) {
+ 		background: url(img/bg3.png) 50% repeat initial, linear-gradient(134deg, $lime-green, $cyan, $purple, $pink, $orange) repeat;
+		background-size: 400px auto , 2000% auto ;
+	} 
 }
 @keyframes bg-grad {
-  to {
-    background-position: center, right;
-  }
-
+	to {
+		background-position: center, right;
+	}
 }
 
 

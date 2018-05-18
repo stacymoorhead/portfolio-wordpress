@@ -14,16 +14,16 @@
 	<?php if (! is_single()) : {
 		the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' ); 
 		} endif; 
-		
-		stacylauren_post_thumbnail(); 
 		if (! get_post_type('projects')) : { ?>
 		<div class="entry-meta">
 			<?php stacylauren_posted_on(); ?>
 		</div><!-- .entry-meta -->
 		
 		<?php
-		} endif; ?>
-		<?php if (is_single()) : {
+		} endif; 	
+		stacylauren_post_thumbnail(); 
+
+		if (is_single()) : {
 			the_content( sprintf(
 			/* translators: %s: Name of current post. */
 			wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'stacylauren' ), array( 'span' => array( 'class' => array() ) ) ),

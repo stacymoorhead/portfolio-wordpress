@@ -79,6 +79,20 @@
 	}
 }
 
+article.sticky h2 {
+    ::before {
+    content: '\f004' !important;
+    font-family: FontAwesome !important;
+    font-weight: normal !important;
+    font-style: normal !important;
+    margin: 0 10px 0px -1em !important;
+    background: #0df3e8;
+    text-decoration: none !important;
+    padding: 0.15em .15em .15em .25em;
+    color: white;
+    }
+}
+
 h2.entry-title {
     font-size: 2em;
 }
@@ -218,6 +232,15 @@ ul.post-categories {
   color: black;
   font-size: 1.4em;
   margin-top: 1em;
+  a {
+    font-weight: 800;
+    color: black;
+    &:hover {
+      transition: $transition;
+      text-decoration: none;
+      color: $green;
+    }  
+  }
 }
 
 /* Caption Hoover Effects */
@@ -453,4 +476,11 @@ a.post-edit-link{
       color: $green;
     }
   
+}
+
+.about-img {
+  @media ($screen-xxs){
+    clear: both;
+    width: 100%;
+  }
 }

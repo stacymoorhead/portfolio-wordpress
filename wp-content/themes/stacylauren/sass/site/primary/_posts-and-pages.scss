@@ -284,6 +284,7 @@ ul.post-categories {
   	display: block;
   	font-size: .8em;
   	font-family: $secondary-font;
+  	text-align: center;
   }
   
   h2 {
@@ -436,6 +437,9 @@ ul.post-categories {
 
     &:hover {
       background: rgba(0, 0, 0, 1) !important;
+    }
+    @media ($screen-xxs) {
+      margin: .25em .5em !important;
     }
   }
 }

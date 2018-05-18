@@ -584,21 +584,29 @@ hr {
 }
 
 ul, ol {
-	margin: 0 0 1.5em 3em;
+	margin: 0 0 1.5em 1em;
 }
 
 ul {
 	list-style: disc;
 }
 
+ul li > ul {
+	list-style: circle;
+}
+
 ol {
 	list-style: decimal;
+}
+
+ol li > ol {
+	list-style: lower-alpha;
 }
 
 li > ul,
 li > ol {
 	margin-bottom: 0;
-	margin-left: 1.5em;
+	margin-left: 0;
 }
 
 dt {
@@ -606,7 +614,7 @@ dt {
 }
 
 dd {
-	margin: 0 1.5em 1.5em;
+	margin: 0 1.5em 1em;
 }
 
 img {
@@ -2190,6 +2198,7 @@ ul.post-categories li a:hover {
 	display: block;
 	font-size: .8em;
 	font-family: "Montserrat", Helvetica, Arial, sans-serif;
+	text-align: center;
 }
 
 .screenshot-caption h2 {
@@ -2348,6 +2357,12 @@ ul.post-categories li a:hover {
 
 .entry-footer a:hover {
 	background: black !important;
+}
+
+@media (max-width: 480px) {
+	.entry-footer a {
+		margin: .25em .5em !important;
+	}
 }
 
 .entry-meta {

@@ -14,10 +14,12 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
+    appearance: none;	
 	color: $color__text-input;
 	border: 2px solid $color__border-input;
 	padding: 3px;
 	border-radius: 2px;
+	background: transparent;
 	&:focus {
 		color: $color__text-input-focus;
 		/*box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba($lime-green, 0.75);*/
@@ -26,8 +28,9 @@ textarea {
 }
 
 select, select[multiple] {
+    appearance: none;	
 	font-weight: 800;
-	background: transparent;
+	background: white;
 	color: $color__text-input;
 	border: 2px solid $color__border-input;
 	padding: 3px !important;
@@ -50,17 +53,26 @@ textarea#comment {
 .wpcf7-form {
 	label {
 		width: 100%;
+		margin-bottom: 1em;		
 	}
-	input {
+	input, textarea {
+		border: 0;
+		padding: 10px;
+		margin: .5em auto 0 auto;
 		width: 100%;
 	}
 	input[type="submit"] {
 		width: auto;
 		display: block;
+		padding: .25em .5em;
 		margin: 0 auto;
 	}
 	select[multiple], select, {
+		border: 0;
+		margin: .5em auto 0 auto;
+		padding: 10px !important;
 		width: 100%;
+		color: $medgray;
 		option:hover, option:active, option:focus, option:focus-within {
 			background-color: $lightgray;
 		}

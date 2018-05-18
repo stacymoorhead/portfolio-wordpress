@@ -840,10 +840,14 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	        appearance: none;
 	color: #626262;
 	border: 2px solid #ccc;
 	padding: 3px;
 	border-radius: 2px;
+	background: transparent;
 }
 
 input[type="text"]:focus,
@@ -868,8 +872,11 @@ textarea:focus {
 }
 
 select, select[multiple] {
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	        appearance: none;
 	font-weight: 800;
-	background: transparent;
+	background: white;
 	color: #626262;
 	border: 2px solid #ccc;
 	padding: 3px !important;
@@ -892,20 +899,29 @@ textarea#comment {
 
 .wpcf7-form label {
 	width: 100%;
+	margin-bottom: 1em;
 }
 
-.wpcf7-form input {
+.wpcf7-form input, .wpcf7-form textarea {
+	border: 0;
+	padding: 10px;
+	margin: .5em auto 0 auto;
 	width: 100%;
 }
 
 .wpcf7-form input[type="submit"] {
 	width: auto;
 	display: block;
+	padding: .25em .5em;
 	margin: 0 auto;
 }
 
 .wpcf7-form select[multiple], .wpcf7-form select {
+	border: 0;
+	margin: .5em auto 0 auto;
+	padding: 10px !important;
 	width: 100%;
+	color: #9a9a9a;
 }
 
 .wpcf7-form select[multiple] option:hover, .wpcf7-form select[multiple] option:active, .wpcf7-form select[multiple] option:focus, .wpcf7-form select[multiple] option:focus-within, .wpcf7-form select option:hover, .wpcf7-form select option:active, .wpcf7-form select option:focus, .wpcf7-form select option:focus-within {

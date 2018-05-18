@@ -50,7 +50,7 @@
             <div class="container copyright">
                 <div class="row">
                     <div class="col-md-12">
-                        <p>Website design &amp; development by <a href="http://www.stacylauren.com">Stacy Lauren Designs</a> Copyright &copy; <?php echo date(" Y"); ?> </p>
+                        <p>Website design &amp; development by <a href="http://www.stacylauren.com">Stacy Lauren Designs</a> &copy; <?php echo date(" Y"); ?> All rights reserved.</p>
                     	<p>Website not viewing properly? You may need to upgrade your <a href="http://whatbrowser.org/">browser</a>. This site is best viewed in a <a href="http://browsehappy.com/">modern browser</a>.</p>
                     </div><!-- .col-md-12 -->
                 </div> <!-- .row -->   

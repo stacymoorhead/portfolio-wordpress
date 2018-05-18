@@ -158,3 +158,27 @@
 [11-May-2018 16:49:54 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
 [11-May-2018 16:49:54 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
 [11-May-2018 16:49:54 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[18-May-2018 15:19:28 UTC] PHP Strict standards:  Redefining already defined constructor for class CF7reCAPTCHA in /home/ubuntu/workspace/wp-content/plugins/contact-form-7-recaptcha-extension/includes/CF7reCAPTCHA.class.php on line 54
+[18-May-2018 15:19:28 UTC] PHP Stack trace:
+[18-May-2018 15:19:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/plugins.php:0
+[18-May-2018 15:19:28 UTC] PHP   2. activate_plugin() /home/ubuntu/workspace/wp-admin/plugins.php:43
+[18-May-2018 15:19:28 UTC] PHP   3. include_once() /home/ubuntu/workspace/wp-admin/includes/plugin.php:555
+[18-May-2018 15:19:28 UTC] PHP Strict standards:  Redefining already defined constructor for class WPASDPlugin in /home/ubuntu/workspace/wp-content/plugins/contact-form-7-recaptcha-extension/includes/WPASDPlugin.class.php on line 27
+[18-May-2018 15:19:28 UTC] PHP Stack trace:
+[18-May-2018 15:19:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/plugins.php:0
+[18-May-2018 15:19:28 UTC] PHP   2. activate_plugin() /home/ubuntu/workspace/wp-admin/plugins.php:43
+[18-May-2018 15:19:28 UTC] PHP   3. include_once() /home/ubuntu/workspace/wp-admin/includes/plugin.php:555
+[18-May-2018 15:19:28 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-content/plugins/contact-form-7-recaptcha-extension/contact-form-7-recaptcha-extension.php:36
+[18-May-2018 15:19:55 UTC] PHP Notice:  Undefined index: cf7_recaptcha_options_group in /home/ubuntu/workspace/wp-includes/option.php on line 2070
+[18-May-2018 15:19:55 UTC] PHP Stack trace:
+[18-May-2018 15:19:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[18-May-2018 15:19:55 UTC] PHP   2. do_action() /home/ubuntu/workspace/wp-admin/admin-ajax.php:99
+[18-May-2018 15:19:55 UTC] PHP   3. WP_Hook->do_action() /home/ubuntu/workspace/wp-includes/plugin.php:453
+[18-May-2018 15:19:55 UTC] PHP   4. WP_Hook->apply_filters() /home/ubuntu/workspace/wp-includes/class-wp-hook.php:310
+[18-May-2018 15:19:55 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/wp-includes/class-wp-hook.php:286}() /home/ubuntu/workspace/wp-includes/class-wp-hook.php:286
+[18-May-2018 15:19:55 UTC] PHP   6. wp_ajax_delete_plugin() /home/ubuntu/workspace/wp-includes/class-wp-hook.php:286
+[18-May-2018 15:19:55 UTC] PHP   7. delete_plugins() /home/ubuntu/workspace/wp-admin/includes/ajax-actions.php:3899
+[18-May-2018 15:19:55 UTC] PHP   8. uninstall_plugin() /home/ubuntu/workspace/wp-admin/includes/plugin.php:831
+[18-May-2018 15:19:55 UTC] PHP   9. include() /home/ubuntu/workspace/wp-admin/includes/plugin.php:1018
+[18-May-2018 15:19:55 UTC] PHP  10. WPASDPlugin::uninstall_options() /home/ubuntu/workspace/wp-content/plugins/contact-form-7-recaptcha-extension/uninstall.php:10
+[18-May-2018 15:19:55 UTC] PHP  11. unregister_setting() /home/ubuntu/workspace/wp-content/plugins/contact-form-7-recaptcha-extension/includes/WPASDPlugin.class.php:200

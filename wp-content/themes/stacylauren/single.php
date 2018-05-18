@@ -46,8 +46,11 @@ get_header();
 						</div> <!-- .col-md-8 -->
 						<div class="col-md-4 projects-sidebar">
 							<?php if ( 'projects' == get_post_type() ) { ?>
-								<ul class="post-categories">
+								<ul class="project-categories">
 									<?php the_terms( $post->ID, 'project-categories', '<li>', '', '</li>'); ?> 
+								</ul>
+								<ul class="project-tags">
+									Tagged: <?php the_terms( $post->ID, 'project-tags', '<li>', ', ', '</li>'); ?> 
 								</ul>
 								<p class="project_description">
 									<?php the_field('project_description'); ?>

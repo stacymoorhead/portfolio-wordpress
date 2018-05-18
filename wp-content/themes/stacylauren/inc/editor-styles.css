@@ -1,0 +1,354 @@
+/**
+    * Theme: Stacy Lauren
+    * Editor styles for TinyMCE
+    */
+html {
+    padding: 0 2em;
+    
+}    
+body {
+    max-width: 1080px;
+    margin: 0 auto;
+    color: black;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	font-size: 1.25rem;
+	line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	font-family: "Montserrat", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+h2 {
+	font-size: 2.6em;
+}
+
+h3 {
+	font-size: 2.2em;
+}
+
+h4 {
+	font-size: 2em;
+}
+
+h5 {
+	font-size: 1.8em;
+}
+
+h6 {
+	font-size: 1.6em;
+}
+
+h1, h2, h3, h4 {
+	font-family: "Montserrat", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+}
+
+h3, h4 {
+	color: #78A22F;
+}
+
+p {
+	margin-bottom: 1.5em;
+}
+
+dfn, cite, em, i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 0 1.5em;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+pre {
+	background: #eee;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size: 18.75px;
+	font-size: 1.17188rem;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+
+code, kbd, tt, var {
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	font-size: 18.75px;
+	font-size: 1.17188rem;
+}
+
+abbr, acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+mark, ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+big {
+	font-size: 125%;
+}
+
+a {
+	color: #93278F;
+	transition: .5s background-color;
+}
+
+a:hover {
+	color: #D9E021;
+}
+
+blockquote {
+	font-size: .9em;
+	font-style: italic;
+	border-left: 5px solid #78A22F;
+}
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	/* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+body {
+	/*background: $color__background-body;  Fallback for when there is no custom background color defined. */
+}
+
+hr {
+	width: 30px;
+	color: #78A22F;
+	background: #78A22F;
+	border: none;
+	margin: 10px;
+	height: 2px;
+}
+
+ul, ol {
+	margin: 0 0 1.5em 1em;
+}
+
+ul {
+	list-style: disc;
+}
+
+ul li > ul {
+	list-style: circle;
+}
+
+ol {
+	list-style: decimal;
+}
+
+ol li > ol {
+	list-style: lower-alpha;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 0;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 1.5em 1em;
+}
+
+img {
+	height: auto;
+	/* Make sure images are scaled correctly. */
+	max-width: 100%;
+	/* Adhere to container width. */
+}
+
+figure {
+	margin: 1em 0;
+	/* Extra wide images within figure tags don't overflow the content area. */
+}
+
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+}
+
+thead {
+	color: #78A22F;
+	text-transform: uppercase;
+	border-bottom: 4px solid #e3e3e3;
+	font-size: 1.2em;
+}
+
+thead th {
+	padding: .5em 0;
+}
+
+tr {
+	border-bottom: 2px solid #e3e3e3;
+}
+
+tr:last-child {
+	border: 0;
+}
+
+td {
+	padding: .5em 0;
+}
+
+a {
+	color: black;
+}
+
+a:visited {
+	color: black;
+}
+
+a:hover, a:focus, a:active {
+	color: #78A22F;
+	transition: all 0.7s ease-in-out;
+}
+
+a:focus {
+	outline: thin dotted;
+}
+
+a:hover, a:active {
+	outline: 0;
+}
+
+.page-content a,
+.entry-content a,
+.entry-summary a {
+	color: black;
+	font-weight: 800;
+}
+
+.page-content a:hover, .page-content a:active, .page-content a:focus,
+.entry-content a:hover,
+.entry-content a:active,
+.entry-content a:focus,
+.entry-summary a:hover,
+.entry-summary a:active,
+.entry-summary a:focus {
+	color: #78A22F !important;
+	transition: all 0.7s ease-in-out !important;
+	text-decoration: none !important;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+.wp-caption {
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption .wp-caption-text {
+	margin: 0.8075em 0;
+}
+
+.wp-caption-text {
+	text-align: center;
+}
+
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+.video {
+	position: relative;
+	padding-bottom: 56.25%;
+	/* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+
+.video iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.gallery {
+	margin-bottom: 1.5em;
+}
+
+.gallery-item {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+	max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+	max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+	max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+	max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+	max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+	max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+	max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+	max-width: 11.11%;
+}
+
+.gallery-caption {
+	display: block;
+}
+    

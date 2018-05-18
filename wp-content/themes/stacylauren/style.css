@@ -8,7 +8,7 @@ Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: stacylauren
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+Tags: custom-logos, social menu, custom-menu, featured-images, threaded-comments, translation-ready
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -2059,6 +2059,63 @@ ul.post-categories li a:hover {
 
 @media (max-width: 767px) {
 	ul.post-categories {
+		margin: 1em 0;
+	}
+}
+
+ul.project-categories {
+	list-style-type: none !important;
+	margin: 0 0 .5em 0;
+	padding: 0;
+}
+
+ul.project-categories li {
+	margin: 0 !important;
+	display: inline-block !important;
+}
+
+ul.project-categories li a {
+	background: #D9E021 !important;
+	padding: .25em .5em !important;
+	margin-right: .5em;
+}
+
+ul.project-categories li a:hover {
+	transition: all 0.7s ease-in-out !important;
+	background: #626262 !important;
+	color: white !important;
+}
+
+@media (max-width: 767px) {
+	ul.project-categories {
+		margin: 1em 0;
+	}
+}
+
+ul.project-tags {
+	font-size: .8em;
+	list-style-type: none !important;
+	margin: 0 0 1em 0;
+	padding: 0;
+}
+
+ul.project-tags li {
+	margin: 0 !important;
+	display: inline-block !important;
+	/*a {
+      background: $medgray !important;
+      padding: .25em .5em !important;
+      margin-right: .5em;
+      &:hover {
+  				transition: $transition !important;        
+  				background: $darkgray !important;
+  				color: white !important;
+  			}
+    }	*/
+}
+
+@media (max-width: 767px) {
+	ul.project-tags {
 		margin: 1em 0;
 	}
 }

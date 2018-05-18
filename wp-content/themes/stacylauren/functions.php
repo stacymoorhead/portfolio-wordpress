@@ -81,6 +81,9 @@ if ( ! function_exists( 'stacylauren_setup' ) ) :
 			'flex-width'  => true,
 			'flex-height' => true,
 		) );
+		
+		/* Editor style*/
+		add_editor_style( array ('inc/editor-styles.css', stacylauren_fonts_url() ));
 	}
 endif;
 add_action( 'after_setup_theme', 'stacylauren_setup' );
@@ -99,6 +102,37 @@ function stacylauren_content_width() {
 	$GLOBALS['content_width'] = apply_filters( 'stacylauren_content_width', 640 );
 }
 add_action( 'after_setup_theme', 'stacylauren_content_width', 0 );
+
+function stacylauren_fonts_url() {
+	$fonts_url = '';
+	/**
+	 * Translators: If there are characters in your language that are not
+	 * supported by Source Sans Pro and PT Serif, translate this to 'off'. Do not translate
+	 * into your own language.
+	 * Montserrat:400,700|Open+Sans:300,400,700|Covered+By+Your+Grace
+	 */
+	$montserrat = _x( 'on', 'Montserrat font: on or off', 'stacylauren' );
+	$open_sans = _x( 'on', 'Open Sans font: on or off', 'stacylauren' );
+	$covered_by_your_grace = _x( 'on', 'Covered By Your Grace font: on or off', 'stacylauren' );
+	$font_families = array();
+	if ( 'off' !== $montserrat ) {
+		$font_families[] = 'Montserrat:400,700';
+	}
+	if ( 'off' !== $open_sans ) {
+		$font_families[] = 'Open Sans:300,400,700';
+	}
+	if ( 'off' !== $covered_by_your_grace ) {
+		$font_families[] = 'Covered By Your Grace';
+	}
+	if ( in_array( 'on', array($montserrat, $open_sans, $covered_by_your_grace) ) ) {
+		$query_args = array(
+			'family' => urlencode( implode( '|', $font_families ) ),
+			'subset' => urlencode( 'latin,latin-ext' ),
+		);
+		$fonts_url = add_query_arg( $query_args, 'https://fonts.googleapis.com/css' );
+	}
+	return esc_url_raw( $fonts_url );
+}
 
 /**
  * Add preconnect for Google Fonts.
@@ -215,7 +249,8 @@ function stacylauren_scripts() {
 	wp_enqueue_script('bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js', array('jquery'),'1.12.4');	
 	
 	//Enqueue Google Fonts: Montserrat, Open Sans, Covered by your Grace
-	wp_enqueue_style( 'stacylauren-fonts', 'https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300,400,700|Covered+By+Your+Grace');
+	//wp_enqueue_style( 'stacylauren-fonts', 'https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300,400,700|Covered+By+Your+Grace');
+	wp_enqueue_style( 'stacylauren-fonts', stacylauren_fonts_url() );
 	
 	wp_enqueue_style( 'stacylauren-style', get_stylesheet_uri() );
 

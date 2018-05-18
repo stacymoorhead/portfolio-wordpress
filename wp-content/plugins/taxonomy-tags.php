@@ -18,7 +18,7 @@ $args = array(
 'taxonomy' => $custom_taxonomy,
 'title_li' => ''
 );
- 
+//echo '<h2 class="widget-title">All Project Tags</h2>'; 
 echo wp_tag_cloud($args);
 
 }

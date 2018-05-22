@@ -920,6 +920,14 @@ textarea#comment {
 	outline: 0 none;
 }
 
+.g-recaptcha {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: center;
+	    justify-content: center;
+	margin-bottom: 1em;
+}
+
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/

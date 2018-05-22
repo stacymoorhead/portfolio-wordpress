@@ -11,7 +11,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('single-project'); ?>>
 
-	<?php if (! is_single()) : {
+	<?php if ( is_archive() || is_home() || !is_single() ) : {
 		the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' ); 
 		} endif; 
 		if (! get_post_type('projects')) : { ?>

@@ -422,12 +422,35 @@ ul.project-tags {
   }
 }
 
+.pagination {
+      margin: 0 auto;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+}
+
 .nav-links {
   display: flex;
   justify-content: space-between;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+      li {
+        margin: 0;
+        padding: 0;
+        display: block;
+        .button {
+          margin: 0;
+        }
+      }
+  }  
 }
 
-.nav-previous, .nav-next {
+
+.prev, .next, .nav-previous, .nav-next {
   .button {
     height: auto;
     border: 2px solid black;
@@ -436,8 +459,8 @@ ul.project-tags {
     padding: .25em .5em;
     margin: 1em 0 0 0;
       font-weight: 800;    
-    display: flex;
-    align-items: center;
+    display: flex !important;
+    align-items: center !important;
     a {
       color: black !important;
 
@@ -450,7 +473,24 @@ ul.project-tags {
   }
 }
 
-.nav-previous a{
+a.page-numbers, {
+  height: auto;
+    padding: .25em .5em;
+      display: flex !important;
+    align-items: center !important;
+}
+
+.current {
+  height: auto;
+    padding: .25em .5em;
+    display: flex !important;
+    align-items: center !important;
+    color: black;
+    font-weight: 800;
+    background: $lime-green;
+}
+
+a.prev, .nav-previous a{
 	:before {
 		content: '\f104';
 	   font-family: FontAwesome;
@@ -461,7 +501,7 @@ ul.project-tags {
 	}
 }
 
-.nav-next a{
+a.next, .nav-next a{
 	:after {
 		content: '\f105';
 	   font-family: FontAwesome;

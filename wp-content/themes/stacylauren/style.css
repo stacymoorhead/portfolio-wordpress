@@ -2361,6 +2361,15 @@ ul.project-tags li {
 	font-size: .8em;
 }
 
+.pagination {
+	margin: 0 auto;
+	width: 100%;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: center;
+	    justify-content: center;
+}
+
 .nav-links {
 	display: -ms-flexbox;
 	display: flex;
@@ -2368,7 +2377,27 @@ ul.project-tags li {
 	    justify-content: space-between;
 }
 
-.nav-previous .button, .nav-next .button {
+.nav-links ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: justify;
+	    justify-content: space-between;
+}
+
+.nav-links ul li {
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+
+.nav-links ul li .button {
+	margin: 0;
+}
+
+.prev .button, .next .button, .nav-previous .button, .nav-next .button {
 	height: auto;
 	border: 2px solid black;
 	font-size: .7em;
@@ -2376,23 +2405,44 @@ ul.project-tags li {
 	padding: .25em .5em;
 	margin: 1em 0 0 0;
 	font-weight: 800;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-align: center;
-	    align-items: center;
+	display: -ms-flexbox !important;
+	display: flex !important;
+	-ms-flex-align: center !important;
+	    align-items: center !important;
 }
 
-.nav-previous .button a, .nav-next .button a {
+.prev .button a, .next .button a, .nav-previous .button a, .nav-next .button a {
 	color: black !important;
 }
 
-.nav-previous .button:hover, .nav-next .button:hover {
+.prev .button:hover, .next .button:hover, .nav-previous .button:hover, .nav-next .button:hover {
 	transition: all 0.7s ease-in-out;
 	border: 2px solid #78A22F;
 	color: #78A22F;
 }
 
-.nav-previous a :before {
+a.page-numbers {
+	height: auto;
+	padding: .25em .5em;
+	display: -ms-flexbox !important;
+	display: flex !important;
+	-ms-flex-align: center !important;
+	    align-items: center !important;
+}
+
+.current {
+	height: auto;
+	padding: .25em .5em;
+	display: -ms-flexbox !important;
+	display: flex !important;
+	-ms-flex-align: center !important;
+	    align-items: center !important;
+	color: black;
+	font-weight: 800;
+	background: #D9E021;
+}
+
+a.prev :before, .nav-previous a :before {
 	content: '\f104';
 	font-family: FontAwesome;
 	font-weight: normal;
@@ -2401,7 +2451,7 @@ ul.project-tags li {
 	text-decoration: none;
 }
 
-.nav-next a :after {
+a.next :after, .nav-next a :after {
 	content: '\f105';
 	font-family: FontAwesome;
 	font-weight: normal;

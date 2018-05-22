@@ -47,12 +47,7 @@ get_header();
 									 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
 									 */
 									get_template_part( 'template-parts/content', get_post_type() );
-
-					
 								endwhile;
-					
-								//the_posts_navigation();
-					
 							else :
 					
 								get_template_part( 'template-parts/content', 'none' );
@@ -62,6 +57,11 @@ get_header();
 							<div class="col-md-4">					
 								<?php get_sidebar(); ?>
 							</div><!-- .col-md-4 -->
+							<div class="row">
+								<div class="col-md-12">
+									<?php stacylauren_posts_pagination(); ?>
+								</div><!-- .col-md-12 -->
+							</div><!-- .row -->
 						</div> <!-- .container	-->	
 					</div> <!-- .row -->
 				</div> <!-- .content -->

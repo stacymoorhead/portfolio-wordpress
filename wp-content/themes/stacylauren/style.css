@@ -437,9 +437,6 @@ h1, h2, h3, h4 {
 	font-family: "Montserrat", Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
 	letter-spacing: .1em;
-}
-
-h3, h4 {
 	color: #78A22F;
 }
 
@@ -1954,6 +1951,7 @@ button.hamburger {
 	font-family: "Covered By Your Grace", serif;
 	text-transform: none;
 	margin: -32px 0 0;
+	color: black;
 }
 
 @media (max-width: 767px) {

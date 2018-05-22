@@ -60,12 +60,20 @@ textarea#comment {
 		padding: 10px;
 		margin: .5em auto 0 auto;
 		width: 100%;
+		background: white;
 	}
 	input[type="submit"] {
 		width: auto;
 		display: block;
 		padding: .25em .5em;
 		margin: 0 auto;
+		background-color: $lime-green !important;
+		&:hover {
+	    
+			background: $darkgray !important;
+			color: white !important;
+		}
+		
 	}
 	select[multiple], select, {
 		border: 0;

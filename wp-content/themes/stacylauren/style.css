@@ -1946,6 +1946,7 @@ button.hamburger {
 
 .entry-header h1 {
 	font-size: 7em;
+	line-height: 1em;
 	font-family: "Covered By Your Grace", serif;
 	text-transform: none;
 	margin: -32px 0 0;

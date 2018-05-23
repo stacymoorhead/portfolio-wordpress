@@ -2461,7 +2461,7 @@ a.next :after, .nav-next a :after {
 	color: #9a9a9a !important;
 	background: rgba(0, 0, 0, 0.15) !important;
 	padding: .25em .5em !important;
-	margin: 0 .5em !important;
+	margin: .25em .5em !important;
 }
 
 .entry-footer a:hover {

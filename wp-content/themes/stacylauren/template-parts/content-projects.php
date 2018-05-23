@@ -11,9 +11,9 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('single-project'); ?>>
 
-	<?php /*if (! is_single()) : {
+	<?php if (! is_single()) : {
 		the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' ); 
-		} endif; */
+		} endif; 
 		
 		stacylauren_post_thumbnail(); 
 		if (is_single()) : {

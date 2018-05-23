@@ -24,7 +24,7 @@
 <?php }  else { ?>
 <body <?php body_class(); ?> id="body_bg">
 <?php } ?>		
-		
+		<div id="top"></div>
 		<div id="page" class="site">
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'stacylauren' ); ?></a>
 			<div id="wrapper" class="">

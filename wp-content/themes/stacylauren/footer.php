@@ -57,6 +57,9 @@
             </div><!-- .container .copyright -->
         </div><!--.container-fluid-->
     </footer>
+    <div class="top">
+        <a href="#top"><i class="fa fa-arrow-up fa-2x"></i></a>
+    </div>
     <?php	
     endif; ?>
 </body>

@@ -182,3 +182,13 @@
 [18-May-2018 15:19:55 UTC] PHP   9. include() /home/ubuntu/workspace/wp-admin/includes/plugin.php:1018
 [18-May-2018 15:19:55 UTC] PHP  10. WPASDPlugin::uninstall_options() /home/ubuntu/workspace/wp-content/plugins/contact-form-7-recaptcha-extension/uninstall.php:10
 [18-May-2018 15:19:55 UTC] PHP  11. unregister_setting() /home/ubuntu/workspace/wp-content/plugins/contact-form-7-recaptcha-extension/includes/WPASDPlugin.class.php:200
+[30-May-2018 18:17:45 UTC] PHP Notice:  Undefined index: replace_type in /home/ubuntu/workspace/wp-content/plugins/enable-media-replace/upload.php on line 212
+[30-May-2018 18:17:45 UTC] PHP Stack trace:
+[30-May-2018 18:17:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/upload.php:0
+[30-May-2018 18:17:45 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/upload.php:10
+[30-May-2018 18:17:45 UTC] PHP   3. do_action() /home/ubuntu/workspace/wp-admin/admin.php:224
+[30-May-2018 18:17:45 UTC] PHP   4. WP_Hook->do_action() /home/ubuntu/workspace/wp-includes/plugin.php:453
+[30-May-2018 18:17:45 UTC] PHP   5. WP_Hook->apply_filters() /home/ubuntu/workspace/wp-includes/class-wp-hook.php:310
+[30-May-2018 18:17:45 UTC] PHP   6. call_user_func_array:{/home/ubuntu/workspace/wp-includes/class-wp-hook.php:286}() /home/ubuntu/workspace/wp-includes/class-wp-hook.php:286
+[30-May-2018 18:17:45 UTC] PHP   7. emr_options() /home/ubuntu/workspace/wp-includes/class-wp-hook.php:286
+[30-May-2018 18:17:45 UTC] PHP   8. require_once() /home/ubuntu/workspace/wp-content/plugins/enable-media-replace/enable-media-replace.php:94

@@ -49,9 +49,11 @@ get_header();
 								<ul class="project-categories">
 									<?php the_terms( $post->ID, 'project-categories', '<li>', '', '</li>'); ?> 
 								</ul>
+								<?php if (has_term('', 'project-tags')) { ?>
 								<ul class="project-tags">
 									Tagged: <?php the_terms( $post->ID, 'project-tags', '<li>', ', ', '</li>'); ?> 
 								</ul>
+								<?php } ?>
 								<p class="project_description">
 									<?php the_field('project_description'); ?>
 								</p>	

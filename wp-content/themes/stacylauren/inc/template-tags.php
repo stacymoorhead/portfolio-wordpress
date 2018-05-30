@@ -161,9 +161,9 @@ function stacylauren_post_navigation() {
 
 function stacylauren_posts_pagination() {
 	the_posts_pagination( array(
-		'next_text' => '<span class="button" aria-hidden="true">' . __( 'Next', 'stacylauren' ) . '</span> ' .
+		'next_text' => '<span class="button" aria-hidden="true">' . __( 'Next Page', 'stacylauren' ) . '</span> ' .
 			'<span class="screen-reader-text">' . __( 'Next project:', 'stacylauren' ) . '</span> ',
-		'prev_text' => '<span class="button" aria-hidden="true">' . __( 'Previous', 'stacylauren' ) . '</span> ' .
+		'prev_text' => '<span class="button" aria-hidden="true">' . __( 'Previous Page', 'stacylauren' ) . '</span> ' .
 			'<span class="screen-reader-text">' . __( 'Previous project:', 'stacylauren' ) . '</span> ',
 		'mid_size' => 4,
 		'type' => 'list',

@@ -2154,7 +2154,7 @@ ul.project-tags li {
 
 .projects article {
 	display: inline-block;
-	margin: 0 6px;
+	/*margin: 0 6px;*/
 	width: 100%;
 	padding: 0;
 	box-sizing: border-box;
@@ -2263,7 +2263,7 @@ ul.project-tags li {
 
 .screenshot-caption h2 {
 	color: #D9E021;
-	font-size: 1.6em;
+	font-size: 1.2em;
 	margin-top: 0;
 	display: block;
 	text-align: center;

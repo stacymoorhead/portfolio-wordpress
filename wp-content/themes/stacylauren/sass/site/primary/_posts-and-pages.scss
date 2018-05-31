@@ -252,8 +252,8 @@ ul.project-tags {
 	
 	article {
 		display: inline-block;
-    	margin: 0 6px;
-   		width: 100%;
+    /*margin: 0 6px;*/
+   	width: 100%;
 		padding: 0;
 		box-sizing: border-box;
 		@media ($screen-xxs) {
@@ -338,10 +338,10 @@ ul.project-tags {
   
   h2 {
     color: $lime-green;
-    font-size: 1.6em;
-	margin-top: 0;
-	display: block;
-	text-align: center;
+    font-size: 1.2em;
+    margin-top: 0;
+	  display: block;
+	  text-align: center;
   }
   
   h3 {

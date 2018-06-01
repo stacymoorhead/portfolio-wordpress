@@ -81,6 +81,10 @@
 	}
 }
 
+article.page, article.post {
+    font-size: 1.2em;
+}
+
 article.sticky h2 {
     ::before {
     content: '\f004' !important;

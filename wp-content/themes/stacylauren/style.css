@@ -584,6 +584,10 @@ ul, ol {
 	margin: 0 0 1.5em 1em;
 }
 
+ul li, ol li {
+	margin-bottom: .75em;
+}
+
 ul {
 	list-style: disc;
 }
@@ -1556,6 +1560,7 @@ body, html {
 	line-height: 20px;
 	position: relative;
 	width: 100%;
+	margin-bottom: 0;
 }
 
 .sidebar-nav li:before {
@@ -1959,6 +1964,10 @@ button.hamburger {
 	.entry-header {
 		min-height: 200px;
 	}
+}
+
+article.page, article.post {
+	font-size: 1.2em;
 }
 
 article.sticky h2 ::before {
@@ -2589,7 +2598,6 @@ ol.comment-list li {
 .widget_categories ul li a, .widget_archive ul li a, .widget_tags ul li a {
 	color: #9a9a9a;
 	background: #e3e3e3;
-	color: #9a9a9a;
 	padding: .25em .5em;
 	font-size: .8em;
 }

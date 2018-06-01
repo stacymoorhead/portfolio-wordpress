@@ -1,5 +1,9 @@
+.comments-title {
+	text-align: center;
+}
+
 .comment-content {
-	color: $medgray;
+	color: black;
 }
 
 .comment-content a {
@@ -24,3 +28,106 @@ ol.comment-list {
 .comment-author {
 	color: $green;
 }
+
+.comment-respond {
+	color: $medgray;
+}
+
+.comment-form {
+	textarea {
+		background: $lightgray;
+	}	
+	label {
+		display: block;
+		color: black;
+	}
+	input[type="text"],
+	input[type="email"],
+	input[type="url"] {
+		border: 0;
+		background: $lightgray;
+	}
+	.form-submit {
+		text-align: center;
+	}
+}
+
+.comment-notes {
+	color: white;
+}
+
+.comment-form-author, .comment-form-email, .comment-form-url {
+	width: 33%;
+	float: left;
+	padding-right: 1em;
+	input {
+		width: 100%;
+	}
+	@media ($screen-xs) {
+		width: 100%;
+		padding: 0;
+	}
+}
+
+.comment-form-url {
+	width: 33.33333333%;
+	float: left;
+	padding-right: 0;
+	input {
+		width: 100%;
+	}
+	@media ($screen-xs) {
+		width: 100%;
+		padding: 0;
+	}	
+}
+
+.comment-form-cookies-consent {
+	text-align: center;
+	input[type="checkbox"] {
+		margin-right: .5em;
+	}
+	label {
+		display: inline;
+		color: white;
+		font-weight: 400;
+	}
+}
+
+.fn, .says {
+	color: white;
+	font-size: 1.2em;
+}
+
+.comment-metadata {
+	font-size: .8em;
+	a {
+		color: $lightgray;
+		text-decoration: none;
+		font-style: italic;
+	}	
+}
+
+a.comment-reply-link {
+	font-family: "Montserrat", Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	background-color: #D9E021;
+	color: black;
+	margin: 0;
+	padding: .25em .5em;
+	width: auto;
+	height: auto;
+	font-weight: 800;
+	border-style: none;
+	transition: all 0.7s ease-in-out;
+	text-decoration: none;
+	&:hover {
+		background: black;
+		color: white;	
+	}
+}
+
+
+
+
+

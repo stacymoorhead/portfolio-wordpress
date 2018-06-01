@@ -2538,8 +2538,12 @@ a.post-edit-link:hover {
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
+.comments-title {
+	text-align: center;
+}
+
 .comment-content {
-	color: #9a9a9a;
+	color: black;
 }
 
 .comment-content a {
@@ -2566,6 +2570,117 @@ ol.comment-list li {
 
 .comment-author {
 	color: #78A22F;
+}
+
+.comment-respond {
+	color: #9a9a9a;
+}
+
+.comment-form textarea {
+	background: #e3e3e3;
+}
+
+.comment-form label {
+	display: block;
+	color: black;
+}
+
+.comment-form input[type="text"],
+.comment-form input[type="email"],
+.comment-form input[type="url"] {
+	border: 0;
+	background: #e3e3e3;
+}
+
+.comment-form .form-submit {
+	text-align: center;
+}
+
+.comment-notes {
+	color: white;
+}
+
+.comment-form-author, .comment-form-email, .comment-form-url {
+	width: 33%;
+	float: left;
+	padding-right: 1em;
+}
+
+.comment-form-author input, .comment-form-email input, .comment-form-url input {
+	width: 100%;
+}
+
+@media (max-width: 767px) {
+	.comment-form-author, .comment-form-email, .comment-form-url {
+		width: 100%;
+		padding: 0;
+	}
+}
+
+.comment-form-url {
+	width: 33.33333333%;
+	float: left;
+	padding-right: 0;
+}
+
+.comment-form-url input {
+	width: 100%;
+}
+
+@media (max-width: 767px) {
+	.comment-form-url {
+		width: 100%;
+		padding: 0;
+	}
+}
+
+.comment-form-cookies-consent {
+	text-align: center;
+}
+
+.comment-form-cookies-consent input[type="checkbox"] {
+	margin-right: .5em;
+}
+
+.comment-form-cookies-consent label {
+	display: inline;
+	color: white;
+	font-weight: 400;
+}
+
+.fn, .says {
+	color: white;
+	font-size: 1.2em;
+}
+
+.comment-metadata {
+	font-size: .8em;
+}
+
+.comment-metadata a {
+	color: #e3e3e3;
+	text-decoration: none;
+	font-style: italic;
+}
+
+a.comment-reply-link {
+	font-family: "Montserrat", Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	background-color: #D9E021;
+	color: black;
+	margin: 0;
+	padding: .25em .5em;
+	width: auto;
+	height: auto;
+	font-weight: 800;
+	border-style: none;
+	transition: all 0.7s ease-in-out;
+	text-decoration: none;
+}
+
+a.comment-reply-link:hover {
+	background: black;
+	color: white;
 }
 
 /*--------------------------------------------------------------

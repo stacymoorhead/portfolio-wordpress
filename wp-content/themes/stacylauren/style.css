@@ -2528,6 +2528,13 @@ a.post-edit-link:hover {
 	}
 }
 
+.featured-image-caption {
+	font-size: .8em;
+	font-style: italic;
+	color: #9a9a9a;
+	margin-bottom: 1em;
+}
+
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/

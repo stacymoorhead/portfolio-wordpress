@@ -20,7 +20,8 @@ get_header();
 				<?php //if ( is_single() && 'projects' == get_post_type()) : 
 
 				while ( have_posts() ) :
-					the_post(); ?>
+					the_post(); 
+					if ( has_excerpt() ) { ?>
 				<div class="row">
 					<div class="container">
 						<div class="col-md-12 project-excerpt">
@@ -28,7 +29,7 @@ get_header();
 						</div> <!-- .col-md-12 -->
 					</div> <!-- .container -->
 				</div><!-- .row -->
-				<?php //endif; ?>
+				<?php } ?>
 			</div> <!-- row -->
 	    	<div class="arrow-down"></div>
 		</header><!-- .entry-header -->	

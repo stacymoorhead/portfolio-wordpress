@@ -22,9 +22,13 @@
 		<?php
 		} endif; 	
 		stacylauren_post_thumbnail(); 
+		
 
-		if (is_single()) : {
-			the_content( sprintf(
+		if (is_single()) : { ?>
+			<figcaption class="featured-image-caption">
+			<?php echo get_post(get_post_thumbnail_id())->post_excerpt; ?>
+			</figcaption>
+			<?php the_content( sprintf(
 			/* translators: %s: Name of current post. */
 			wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'stacylauren' ), array( 'span' => array( 'class' => array() ) ) ),
 			the_title( '<span class="screen-reader-text">"', '"</span>', false )

@@ -77,12 +77,12 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	.button a{
+	.button a {
 		color: white !important;
-		:hover, :active {
-			color: $green !important;
-		}
-	}
+	}	
+	.button a:hover, .button a:active {
+		color: $green !important;
+	}	
 }
 
 .contact-box {

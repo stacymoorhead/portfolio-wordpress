@@ -1319,7 +1319,7 @@ textarea#comment {
 	color: white !important;
 }
 
-.footer-branding .button a :hover, .footer-branding .button a :active {
+.footer-branding .button a:hover, .footer-branding .button a:active {
 	color: #78A22F !important;
 }
 

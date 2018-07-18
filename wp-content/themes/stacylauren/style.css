@@ -2573,7 +2573,7 @@ a.post-edit-link:hover {
 	}
 }
 
-.featured-image-caption {
+.featured-image-caption, .wp-caption-text {
 	font-size: .8em;
 	font-style: italic;
 	color: #9a9a9a;
